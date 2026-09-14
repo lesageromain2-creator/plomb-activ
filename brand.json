@@ -1,0 +1,17 @@
+{
+  "name": "PLOMB'ACTIV",
+  "slug": "plomb-activ",
+  "sector": "plomberie",
+  "primaryColor": "#0369a1",
+  "secondaryColor": "#0ea5e9",
+  "accentColor": "#f0f9ff",
+  "fontHeading": "Barlow",
+  "fontBody": "Open Sans",
+  "contact": {
+    "phone": "07 65 26 65 26",
+    "address": "130 Grande rue de Saint Clair, 69300 Caluire-et-Cuire",
+    "hours": "Lun–Ven 8h–18h"
+  },
+  "siret": "93937969900019",
+  "source": "SIRENE / Omizi — téléphone issu d'annuaires publics, à confirmer"
+}
