@@ -9,13 +9,10 @@ const navLinks = [
   { href: "/", label: "Accueil" },
   { href: "/services", label: "Services" },
   { href: "/urgences", label: "Urgences" },
-  { href: "/pac-clim", label: "PAC & Clim" },
-  { href: "/aides-etat", label: "Aides État" },
-  { href: "/entretien", label: "Entretien" },
-  { href: "/devis", label: "Devis" },
-  { href: "/realisations", label: "Réalisations" },
-  { href: "/tarifs", label: "Tarifs" },
+  { href: "/entretien", label: "Chauffage" },
+  { href: "/pac-clim", label: "Clim" },
   { href: "/avis", label: "Avis" },
+  { href: "/devis", label: "Devis" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -23,7 +20,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-primary/10">
-      <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
         <Link href="/" className="flex items-center gap-3 min-w-0">
           <Image
             src="/images/logo.png"
@@ -35,10 +32,10 @@ export default function Header() {
           />
           <span className="flex flex-col min-w-0">
             <span className="font-heading text-xl font-semibold text-primary leading-tight">{brand.name}</span>
-            <span className="text-[11px] text-gray-500 hidden sm:block">Plombier — Caluire-et-Cuire</span>
+            <span className="text-[11px] text-gray-500 hidden sm:block">GHOULI Foued — Caluire &amp; Lyon</span>
           </span>
         </Link>
-        <nav className="hidden xl:flex flex-wrap items-center justify-end gap-x-2 gap-y-1 text-xs 2xl:text-sm max-w-3xl">
+        <nav className="hidden lg:flex flex-wrap items-center justify-end gap-x-4 text-sm">
           {navLinks.map((l) => (
             <Link key={l.href} href={l.href} className="text-gray-700 hover:text-primary font-medium">
               {l.label}
@@ -47,11 +44,11 @@ export default function Header() {
         </nav>
         <a
           href={brand.phoneHref}
-          className="hidden xl:inline rounded-lg bg-primary text-white px-3 py-2 text-sm font-medium hover:opacity-90 shrink-0"
+          className="hidden md:inline rounded-lg bg-red-600 text-white px-3 py-2 text-sm font-semibold hover:opacity-90 shrink-0"
         >
           {brand.phone}
         </a>
-        <button className="xl:hidden p-2" onClick={() => setOpen(!open)} aria-label="Menu">
+        <button className="lg:hidden p-2" onClick={() => setOpen(!open)} aria-label="Menu">
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {open ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -62,19 +59,17 @@ export default function Header() {
         </button>
       </div>
       {open && (
-        <div className="xl:hidden border-t border-primary/10 bg-white px-4 py-4 flex flex-col gap-2">
+        <div className="lg:hidden border-t border-primary/10 bg-white px-4 py-4 flex flex-col gap-2">
           {navLinks.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className="text-gray-700 hover:text-primary font-medium"
-              onClick={() => setOpen(false)}
-            >
+            <Link key={l.href} href={l.href} className="text-gray-700 hover:text-primary font-medium" onClick={() => setOpen(false)}>
               {l.label}
             </Link>
           ))}
-          <a href={brand.phoneHref} className="text-primary font-semibold">
-            {brand.phone}
+          <a href={brand.phoneHref} className="text-red-600 font-semibold">
+            Appeler {brand.phone}
+          </a>
+          <a href={`mailto:${brand.email}`} className="text-primary font-medium">
+            {brand.email}
           </a>
         </div>
       )}

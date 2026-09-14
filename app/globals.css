@@ -3,3 +3,9 @@
 @tailwind utilities;
 
 body { font-family: var(--font-body), system-ui, sans-serif; }
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar { display: none; }

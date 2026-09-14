@@ -4,12 +4,17 @@ import { useState } from "react";
 import { api } from "@/lib/api";
 import { brand } from "@/lib/siteCopy";
 
+function mailTo(form: { name: string; email: string; phone: string; subject: string; message: string }) {
+  const body = `Nom: ${form.name}\nEmail: ${form.email}\nTél: ${form.phone}\n\n${form.message}`;
+  window.location.href = `mailto:${brand.email}?subject=${encodeURIComponent("Devis — " + form.subject)}&body=${encodeURIComponent(body)}`;
+}
+
 export default function DevisForm() {
   const [form, setForm] = useState({
     name: "",
     email: "",
     phone: "",
-    subject: "Demande de devis",
+    subject: "Fuite / dépannage urgence",
     message: "",
   });
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
@@ -17,14 +22,20 @@ export default function DevisForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("sending");
+    if (!process.env.NEXT_PUBLIC_BACKEND_URL) {
+      mailTo(form);
+      setStatus("success");
+      return;
+    }
     try {
       const res = await api.contact(form);
       if (res.ok) {
         setStatus("success");
-        setForm({ name: "", email: "", phone: "", subject: "Demande de devis", message: "" });
+        setForm({ name: "", email: "", phone: "", subject: "Fuite / dépannage urgence", message: "" });
       } else setStatus("error");
     } catch {
-      setStatus("error");
+      mailTo(form);
+      setStatus("success");
     }
   };
 
@@ -32,7 +43,7 @@ export default function DevisForm() {
     <>
       {status === "success" && (
         <div className="mb-6 p-4 bg-green-50 text-green-700 rounded-xl border border-green-200">
-          Votre demande a bien été envoyée. Nous vous recontacterons rapidement.
+          Votre demande s&apos;ouvre vers {brand.email}. Sinon appelez le {brand.phone}.
         </div>
       )}
       {status === "error" && (
@@ -80,12 +91,12 @@ export default function DevisForm() {
             onChange={(e) => setForm((f) => ({ ...f, subject: e.target.value }))}
             className="w-full rounded-xl border border-gray-200 px-4 py-3 focus:ring-2 focus:ring-secondary/40 outline-none"
           >
-            <option>Fuite / dépannage</option>
-            <option>Débouchage</option>
-            <option>Installation sanitaire</option>
-            <option>Réseaux / tuyauterie</option>
-            <option>Chauffe-eau / détartrage</option>
-            <option>Salle de bain complète</option>
+            <option>Fuite / dépannage urgence</option>
+            <option>Chauffe-eau</option>
+            <option>Chaudière / chauffage</option>
+            <option>Pose clim / entretien clim</option>
+            <option>Plomberie / sanitaires</option>
+            <option>Salle de bain</option>
             <option>Autre</option>
           </select>
         </div>

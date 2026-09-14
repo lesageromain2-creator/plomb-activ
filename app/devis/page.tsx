@@ -5,8 +5,9 @@ import DevisForm from "@/components/DevisForm";
 import { brand, equipeConfiance } from "@/lib/siteCopy";
 
 export const metadata = {
-  title: "Devis gratuit — PLOMB'ACTIV | Plombier Caluire",
-  description: "Demande de devis plomberie à Caluire-et-Cuire. Réponse rapide, artisan local.",
+  title: "Devis gratuit plombier Lyon | Clim chaudière urgence PLOMB'ACTIV",
+  description:
+    "Devis gratuit plomberie, chauffage, clim et dépannage à Caluire et Lyon. GHOULI Foued — 07 65 26 65 26.",
 };
 
 export default function DevisPage() {

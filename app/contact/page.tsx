@@ -4,52 +4,52 @@ import ContactForm from "@/components/ContactForm";
 import { brand, pages, zone } from "@/lib/siteCopy";
 
 export const metadata = {
-  title: "Contact — PLOMB'ACTIV | Plombier Caluire-et-Cuire",
-  description: "Contactez PLOMB'ACTIV, plombier à Caluire-et-Cuire. Devis gratuit, 130 Grande rue de Saint Clair.",
+  title: "Contact plombier Caluire Lyon | GHOULI Foued 07 65 26 65 26",
+  description:
+    "Contactez GHOULI Foued — PLOMB'ACTIV, QVR5+49 Caluire-et-Cuire. Tél 07 65 26 65 26 · ghoulifoued@icloud.com. Urgence Lyon.",
 };
 
 export default function ContactPage() {
-  const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(brand.address)}&output=embed`;
+  const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(brand.mapsQuery)}&output=embed`;
 
   return (
     <div className="min-h-screen">
-      <PageHero
-        title="Contact"
-        subtitle={`${pages.contactIntro} ${brand.address} — ${brand.hours}.`}
-        kicker="À votre écoute"
-      />
+      <PageHero title="Contact" subtitle={`${pages.contactIntro}`} kicker={brand.owner} />
       <section className="py-16 px-4 bg-slate-50">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-card ring-1 ring-primary/10">
-              <Image src="/images/about.jpg" alt="Intervention plomberie" fill className="object-cover" />
+              <Image src="/images/about.jpg" alt="GHOULI Foued — PLOMB'ACTIV Caluire" fill className="object-cover" />
             </div>
             <div className="rounded-2xl bg-white border border-primary/10 p-6 shadow-sm">
-              <h2 className="font-heading text-xl text-primary mb-4">Coordonnées</h2>
+              <h2 className="font-heading text-xl text-primary mb-4">{brand.owner}</h2>
               <p className="text-gray-700 mb-2">
                 <strong>Adresse :</strong> {brand.address}
               </p>
               <p className="text-gray-700 mb-2">
-                <strong>Zone :</strong> rayon ~{zone.radiusKm} km
+                <strong>Plus Code :</strong> {brand.plusCode}
+              </p>
+              <p className="text-gray-700 mb-2">
+                <strong>Zone :</strong> Lyon, Caluire, Villeurbanne, Monts d&apos;Or ({zone.radiusKm} km)
               </p>
               <p className="text-gray-700 mb-2">
                 <strong>Horaires :</strong> {brand.hours}
               </p>
               <p className="text-gray-700 mb-2">
-                <strong>SIRET :</strong> {brand.siret}
-              </p>
-              <p className="text-gray-700 mb-2">
-                <a href={brand.phoneHref} className="text-primary font-bold text-lg">
+                <a href={brand.phoneHref} className="text-primary font-bold text-xl">
                   {brand.phone}
                 </a>
               </p>
-              <p className="mt-4 text-sm text-gray-600 leading-relaxed">
-                Artisan local — un interlocuteur, du premier appel à la fin des travaux.
+              <p className="text-gray-700">
+                <a href={`mailto:${brand.email}`} className="text-secondary font-medium hover:underline">
+                  {brand.email}
+                </a>
               </p>
+              <p className="mt-4 text-sm text-gray-600">SIRET {brand.siret}</p>
             </div>
           </div>
           <div>
-            <h2 className="font-heading text-xl text-primary mb-4">Envoyer un message</h2>
+            <h2 className="font-heading text-xl text-primary mb-4">Écrire à Foued</h2>
             <ContactForm />
           </div>
         </div>
@@ -62,7 +62,7 @@ export default function ContactPage() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Carte PLOMB'ACTIV Caluire-et-Cuire"
+            title="Carte PLOMB'ACTIV QVR5+49 Caluire-et-Cuire"
           />
         </div>
       </section>
