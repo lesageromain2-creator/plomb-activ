@@ -9,3 +9,32 @@ body { font-family: var(--font-body), system-ui, sans-serif; }
   scrollbar-width: none;
 }
 .scrollbar-hide::-webkit-scrollbar { display: none; }
+
+/* Landing hero: full-bleed on phone, 16/9 under the header on desktop so the plumber stays in frame */
+.hero-landing {
+  min-height: 92svh;
+}
+.hero-photo {
+  position: absolute;
+  inset: 0;
+}
+@media (min-width: 768px) {
+  .hero-landing {
+    min-height: 0;
+    height: calc(100svh - 4.75rem);
+    display: grid;
+    grid-template-columns: minmax(22rem, 0.92fr) minmax(0, 1.08fr);
+  }
+  .hero-photo {
+    position: relative;
+    inset: auto;
+    height: 100%;
+    min-height: 0;
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .hero-copy {
+    grid-row: 1;
+    grid-column: 1;
+  }
+}

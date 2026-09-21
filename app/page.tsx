@@ -8,25 +8,27 @@ import DevisForm from "@/components/DevisForm";
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-cream">
-      <section className="relative min-h-[92vh] w-full text-white overflow-hidden flex items-center">
-        <Image
-          src={photos.hero}
-          alt="Plombier PLOMB'ACTIV en train d'installer un chauffe-eau, Caluire Lyon"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-right"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/20 to-transparent" aria-hidden />
-        <div className="relative z-10 max-w-6xl mx-auto px-4 py-24 w-full">
+      <section className="hero-landing relative w-full overflow-hidden text-white flex items-end md:items-stretch md:grid">
+        <div className="hero-photo">
+          <Image
+            src={photos.hero}
+            alt="Plombier PLOMB'ACTIV en train d'installer un chauffe-eau, Caluire Lyon"
+            fill
+            priority
+            sizes="(min-width: 768px) 55vw, 100vw"
+            className="object-cover object-[88%_center] md:object-[90%_78%]"
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/25 to-black/10 md:hidden" aria-hidden />
+        <div className="hero-copy relative z-10 w-full px-4 pt-16 pb-10 md:flex md:flex-col md:justify-center md:px-10 lg:px-14 md:py-12 md:bg-primary">
           <p className="text-secondary font-extrabold uppercase tracking-[0.18em] text-sm mb-3 drop-shadow">
             {home.heroKicker}
           </p>
-          <h1 className="font-heading text-5xl md:text-7xl font-extrabold tracking-tight max-w-xl leading-[0.95] drop-shadow-lg">
+          <h1 className="font-heading text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-extrabold tracking-tight max-w-md leading-[0.95] drop-shadow-lg">
             {home.heroTitle}
             <span className="block text-secondary">{home.heroTitleAccent}</span>
           </h1>
-          <p className="mt-5 text-base md:text-lg text-white max-w-lg leading-relaxed bg-black/45 border-l-4 border-secondary pl-4 py-3 rounded-r-md">
+          <p className="mt-5 text-base md:text-lg text-white max-w-lg leading-relaxed bg-black/45 md:bg-white/10 border-l-4 border-secondary pl-4 py-3 rounded-r-md">
             {home.heroLead}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
@@ -44,9 +46,9 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="mt-8 flex flex-wrap gap-2 text-sm">
-            <span className="rounded-full bg-black/55 border border-white/25 px-3 py-1.5 font-medium">Entreprise locale</span>
-            <span className="rounded-full bg-black/55 border border-white/25 px-3 py-1.5 font-medium">Urgence 7j/7</span>
-            <span className="rounded-full bg-black/55 border border-white/25 px-3 py-1.5 font-medium">Devis gratuit</span>
+            <span className="rounded-full bg-black/55 md:bg-white/10 border border-white/25 px-3 py-1.5 font-medium">Entreprise locale</span>
+            <span className="rounded-full bg-black/55 md:bg-white/10 border border-white/25 px-3 py-1.5 font-medium">Urgence 7j/7</span>
+            <span className="rounded-full bg-black/55 md:bg-white/10 border border-white/25 px-3 py-1.5 font-medium">Devis gratuit</span>
           </div>
         </div>
       </section>

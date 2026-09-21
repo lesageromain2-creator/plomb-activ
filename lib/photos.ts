@@ -1,6 +1,6 @@
 /** Chantiers réels PLOMB'ACTIV, uniquement le dossier « images site web ». */
 export const photos = {
-  hero: "/images/chantier/hero-landing.jpg",
+  hero: "/images/chantier/hero-landing-v3.jpg",
   heroWork: "/images/chantier/hero.jpg",
   artisan: "/images/chantier/artisan.jpg",
   chaudiere: "/images/chantier/chaudiere.jpg",
