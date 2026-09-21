@@ -95,7 +95,7 @@ export const equipeConfiance = {
 };
 
 export const home = {
-  heroKicker: "Artisan de proximité",
+  heroKicker: "Plombier Caluire-et-Cuire et Lyon",
   heroTitle: "Le plombier",
   heroTitleAccent: "qu'il vous faut",
   heroLead:
@@ -117,21 +117,21 @@ export const home = {
     {
       title: "Débouchage et sanitaires",
       desc: "WC, colonnes d'évacuation, siphons. Pose et remplacement de WC à poser ou suspendu.",
-      href: "/services",
+      href: "/debouchage",
       tag: "Sanitaire",
       image: "/images/chantier/wc.jpg",
     },
     {
       title: "Ballon ECS / chauffe-eau",
       desc: "Diagnostic, groupe de sécurité, remplacement de cumulus (Atlantic et autres), raccordement PER / cuivre.",
-      href: "/entretien",
+      href: "/chauffe-eau",
       tag: "Eau chaude",
       image: "/images/chantier/cumulus.jpg",
     },
     {
       title: "Chaudière gaz",
       desc: "Dépannage, entretien, remplacement (dont Vaillant). Brûleur, vase d'expansion, organe gaz.",
-      href: "/entretien",
+      href: "/chauffage",
       tag: "Chauffage",
       image: "/images/chantier/chaudiere.jpg",
     },
@@ -145,7 +145,7 @@ export const home = {
     {
       title: "Climatisation split",
       desc: "Pose, charge frigorifique, mise en service (Fujitsu, Atlantic…). Entretien et dépannage.",
-      href: "/pac-clim",
+      href: "/climatisation",
       tag: "Clim",
       image: "/images/chantier/clim.jpg",
     },

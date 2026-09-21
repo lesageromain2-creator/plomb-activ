@@ -1,7 +1,7 @@
-import { faqJsonLd, localBusinessJsonLd } from "@/lib/seo";
+import { localBusinessJsonLd, websiteJsonLd } from "@/lib/seo";
 
 export default function JsonLd() {
-  const blocks = [localBusinessJsonLd(), faqJsonLd()];
+  const blocks = [localBusinessJsonLd(), websiteJsonLd()];
   return (
     <>
       {blocks.map((data, i) => (

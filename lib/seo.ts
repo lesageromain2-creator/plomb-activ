@@ -45,9 +45,9 @@ export function localBusinessJsonLd() {
       {
         "@type": "OpeningHoursSpecification",
         dayOfWeek: ["Saturday", "Sunday"],
-        opens: "00:00",
-        closes: "23:59",
-        description: "Astreinte dépannage",
+        opens: "08:00",
+        closes: "18:00",
+        description: "Astreinte dépannage, joignable 7j/7. Pas d'accueil atelier le week-end.",
       },
     ],
     contactPoint: [
@@ -102,6 +102,18 @@ export function localBusinessJsonLd() {
         itemOffered: { "@type": "Service", name: c.title, description: c.desc },
       })),
     },
+  };
+}
+
+export function websiteJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${brand.siteUrl}/#website`,
+    name: brand.name,
+    url: brand.siteUrl,
+    inLanguage: "fr-FR",
+    publisher: { "@id": `${brand.siteUrl}/#business` },
   };
 }
 

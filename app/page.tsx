@@ -4,9 +4,10 @@ import { brand, home, localLyon, zone } from "@/lib/siteCopy";
 import { photos } from "@/lib/photos";
 import GoogleReviewsCarousel from "@/components/GoogleReviewsCarousel";
 import DevisForm from "@/components/DevisForm";
+import { faqJsonLd } from "@/lib/seo";
 
 export const metadata = {
-  title: { absolute: "Plombier Lyon Caluire | PLOMB'ACTIV" },
+  title: { absolute: "Plombier Caluire-et-Cuire et Lyon | PLOMB'ACTIV" },
   description:
     "Appelez directement nos experts chez PLOMB'ACTIV au 06 67 44 79 29. Dépannage plomberie, chauffage et clim à Caluire-et-Cuire, Lyon et le Grand Lyon. Devis gratuit.",
 };
@@ -14,6 +15,7 @@ export const metadata = {
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-cream">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd()) }} />
       <section className="hero-landing relative w-full overflow-hidden text-white flex items-end md:items-stretch md:grid">
         <div className="hero-photo">
           <Image
@@ -40,15 +42,23 @@ export default function HomePage() {
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href={brand.phoneHref}
+              data-cta="tel"
               className="rounded-lg bg-secondary text-white px-8 py-4 text-lg font-extrabold shadow-lg hover:opacity-90"
             >
               {brand.phone}
             </a>
             <Link
               href="#devis-form"
+              data-cta="devis"
               className="rounded-lg bg-white text-primary px-8 py-4 text-lg font-extrabold hover:bg-accent"
             >
-              Devis gratuit →
+              Devis gratuit
+            </Link>
+            <Link
+              href="/urgences"
+              className="rounded-lg border-2 border-white text-white px-8 py-4 text-lg font-extrabold hover:bg-white/10"
+            >
+              Urgence plomberie
             </Link>
           </div>
           <div className="mt-8 flex flex-wrap gap-2 text-sm">
@@ -223,6 +233,16 @@ export default function HomePage() {
               </dd>
             </div>
             <div className="rounded-2xl bg-white border border-black/5 p-5">
+              <dt className="font-semibold text-primary">Intervenez-vous à Caluire ?</dt>
+              <dd className="mt-2 text-gray-700 text-sm leading-relaxed">
+                Oui, l&apos;atelier est à Caluire-et-Cuire.{" "}
+                <Link href="/plombier-caluire-et-cuire" className="text-secondary font-semibold">
+                  Page plombier Caluire
+                </Link>
+                .
+              </dd>
+            </div>
+            <div className="rounded-2xl bg-white border border-black/5 p-5">
               <dt className="font-semibold text-primary">Quelle zone d&apos;intervention ?</dt>
               <dd className="mt-2 text-gray-700 text-sm leading-relaxed">
                 Caluire-et-Cuire, Lyon 1er à 9e, Villeurbanne, Rillieux, Monts d&apos;Or, Bron, Vénissieux.{" "}
@@ -232,6 +252,25 @@ export default function HomePage() {
               </dd>
             </div>
           </dl>
+        </div>
+      </section>
+
+      <section className="py-14 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="font-heading text-3xl text-primary text-center font-bold mb-8">Caluire, Lyon et alentours</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { href: "/plombier-caluire-et-cuire", t: "Plombier Caluire-et-Cuire", d: "L'atelier, 130 Grande rue de Saint Clair" },
+              { href: "/plombier-lyon", t: "Plombier Lyon", d: "1er à 9e, depuis Caluire" },
+              { href: "/urgences", t: "Urgence plomberie", d: "Joignable 7j/7" },
+              { href: "/conseils", t: "Conseils", d: "Fuite, WC, chauffe-eau" },
+            ].map((x) => (
+              <Link key={x.href} href={x.href} className="rounded-2xl border border-black/10 p-5 hover:border-secondary bg-cream">
+                <h3 className="font-heading font-bold text-primary">{x.t}</h3>
+                <p className="text-sm text-gray-600 mt-1">{x.d}</p>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

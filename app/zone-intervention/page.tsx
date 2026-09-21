@@ -27,7 +27,17 @@ export default function ZonePage() {
           <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-2">
             {zone.cities.map((c) => (
               <li key={c} className="rounded-xl bg-white border border-black/5 px-4 py-3 text-sm text-gray-800">
-                Plombier {c}
+                {c === "Caluire-et-Cuire" ? (
+                  <Link href="/plombier-caluire-et-cuire" className="text-secondary font-semibold">
+                    Plombier {c}
+                  </Link>
+                ) : c.startsWith("Lyon") ? (
+                  <Link href="/plombier-lyon" className="hover:text-secondary">
+                    Plombier {c}
+                  </Link>
+                ) : (
+                  <>Plombier {c}</>
+                )}
               </li>
             ))}
           </ul>

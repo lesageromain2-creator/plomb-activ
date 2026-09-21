@@ -21,7 +21,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || brand.si
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Plombier Lyon Caluire | PLOMB'ACTIV",
+    default: "Plombier Caluire-et-Cuire et Lyon | PLOMB'ACTIV",
     template: "%s | PLOMB'ACTIV",
   },
   description:
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     url: siteUrl,
     siteName: "PLOMB'ACTIV",
-    title: "Plombier Lyon Caluire | PLOMB'ACTIV",
+    title: "Plombier Caluire-et-Cuire et Lyon | PLOMB'ACTIV",
     description:
       "Appelez directement nos experts chez PLOMB'ACTIV au 06 67 44 79 29. Plomberie, chauffage, clim. Caluire, Lyon, Grand Lyon. Devis gratuit.",
     images: [{ url: "/images/chantier/hero-landing-v3.jpg", width: 1920, height: 1080, alt: "PLOMB'ACTIV, pose de chauffe-eau Caluire Lyon" }],

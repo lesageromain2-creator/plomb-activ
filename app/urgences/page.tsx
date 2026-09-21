@@ -1,11 +1,12 @@
 import Image from "next/image";
-import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import { brand, pages } from "@/lib/siteCopy";
 import { photos } from "@/lib/photos";
+import RelatedLinks from "@/components/RelatedLinks";
+import CtaRow from "@/components/CtaRow";
 
 export const metadata = {
-  title: "Urgence plombier Lyon Caluire | Fuite, dégât des eaux 7j/7",
+  title: "Plombier urgence Lyon | Dépannage PLOMB'ACTIV Caluire",
   description:
     "Appelez directement nos experts chez PLOMB'ACTIV au 06 67 44 79 29. Fuite, dégât des eaux, WC, chaudière. Caluire et Lyon, 7j/7.",
 };
@@ -15,7 +16,7 @@ export default function UrgencesPage() {
     <div className="min-h-screen bg-cream">
       <PageHero
         variant="urgent"
-        title="Urgence et dégât des eaux"
+        title="Plombier urgence à Lyon et Caluire"
         subtitle="Fuite, inondation, WC, plus d'ECS, chaudière en sécurité : isolation du réseau et réparation."
         kicker={brand.phone}
         imageSrc={photos.degatEaux}
@@ -43,15 +44,14 @@ export default function UrgencesPage() {
               <li>Ballon ECS, chaudière gaz, split</li>
               <li>Commerce en service (intervention discrète)</li>
             </ul>
-            <a href={brand.phoneHref} className="inline-block rounded-lg bg-secondary text-white px-8 py-4 text-lg font-bold">
-              Appeler maintenant
-            </a>
-            <p className="mt-6 text-sm text-gray-600">
-              Travaux programmés :{" "}
-              <Link href="/devis" className="text-secondary font-semibold">
-                devis gratuit
-              </Link>
-            </p>
+            <CtaRow showUrgence={false} />
+            <RelatedLinks
+              items={[
+                { href: "/fuite-eau", label: "Fuite d'eau" },
+                { href: "/debouchage", label: "Débouchage" },
+                { href: "/plombier-lyon", label: "Plombier Lyon" },
+              ]}
+            />
           </div>
         </div>
       </section>

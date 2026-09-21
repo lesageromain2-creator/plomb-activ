@@ -4,17 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { brand } from "@/lib/siteCopy";
-
-const navLinks = [
-  { href: "/", label: "Accueil" },
-  { href: "/services", label: "Prestations" },
-  { href: "/urgences", label: "Urgences" },
-  { href: "/entretien", label: "Chauffage" },
-  { href: "/pac-clim", label: "Clim" },
-  { href: "/avis", label: "Avis" },
-  { href: "/devis", label: "Devis" },
-  { href: "/contact", label: "Contact" },
-];
+import { navLinks } from "@/lib/nav";
 
 export default function Header() {
   const [open, setOpen] = useState(false);

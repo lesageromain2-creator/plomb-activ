@@ -1,6 +1,7 @@
 import Link from "next/link";
 import LsdevFooterCredit from "@/components/LsdevFooterCredit";
 import { brand, zone } from "@/lib/siteCopy";
+import { footerServices } from "@/lib/nav";
 
 export default function Footer() {
   return (
@@ -16,34 +17,21 @@ export default function Footer() {
         <div>
           <h3 className="font-heading text-lg font-semibold mb-2">Prestations</h3>
           <ul className="space-y-1 text-sm text-white/90">
+            {footerServices.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} className="hover:text-white">
+                  {l.label}
+                </Link>
+              </li>
+            ))}
             <li>
-              <Link href="/urgences" className="hover:text-white">
-                Urgence et dégât des eaux
+              <Link href="/conseils" className="hover:text-white">
+                Conseils
               </Link>
             </li>
             <li>
-              <Link href="/services" className="hover:text-white">
-                Plomberie et sanitaires
-              </Link>
-            </li>
-            <li>
-              <Link href="/entretien" className="hover:text-white">
-                Chaudière et ECS
-              </Link>
-            </li>
-            <li>
-              <Link href="/pac-clim" className="hover:text-white">
-                Climatisation split
-              </Link>
-            </li>
-            <li>
-              <Link href="/zone-intervention" className="hover:text-white">
-                Zone Grand Lyon
-              </Link>
-            </li>
-            <li>
-              <Link href="/realisations" className="hover:text-white">
-                Réalisations
+              <Link href="/a-propos" className="hover:text-white">
+                À propos
               </Link>
             </li>
           </ul>

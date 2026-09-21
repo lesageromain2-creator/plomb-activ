@@ -5,10 +5,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = brand.siteUrl;
   const paths = [
     "",
-    "/services",
+    "/plombier-caluire-et-cuire",
+    "/plombier-lyon",
     "/urgences",
-    "/entretien",
-    "/pac-clim",
+    "/fuite-eau",
+    "/debouchage",
+    "/chauffe-eau",
+    "/chauffage",
+    "/climatisation",
+    "/services",
     "/aides-etat",
     "/devis",
     "/realisations",
@@ -16,6 +21,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/avis",
     "/contact",
     "/zone-intervention",
+    "/a-propos",
+    "/conseils",
+    "/conseils/que-faire-en-cas-de-fuite",
+    "/conseils/couper-eau-urgence",
+    "/conseils/wc-bouche",
+    "/conseils/chauffe-eau-ne-chauffe-plus",
   ];
   return paths.map((p) => ({
     url: `${base}${p}`,
