@@ -4,7 +4,7 @@ import PageHero from "@/components/PageHero";
 import { pages } from "@/lib/siteCopy";
 
 export const metadata = {
-  title: "Aides de l'État PLOMB'ACTIV | Caluire-et-Cuire"
+  title: "Aides de l'État PLOMB'ACTIV | Caluire-et-Cuire",
   description: "Repères MaPrimeRénov', CEE, TVA 5,5% pour un projet plomberie / rénovation à Caluire-et-Cuire.",
 };
 

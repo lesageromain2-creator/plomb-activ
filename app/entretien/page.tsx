@@ -5,7 +5,7 @@ import { brand, pages } from "@/lib/siteCopy";
 import { photos } from "@/lib/photos";
 
 export const metadata = {
-  title: "Chaudière gaz et ballon ECS Lyon Caluire | PLOMB'ACTIV"
+  title: "Chaudière gaz et ballon ECS Lyon Caluire | PLOMB'ACTIV",
   description:
     "Remplacement chaudière gaz (Vaillant…), entretien, ballon ECS Atlantic. PLOMB'ACTIV, Caluire-et-Cuire. 06 67 44 79 29.",
 };

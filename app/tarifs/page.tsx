@@ -4,7 +4,7 @@ import PageHero from "@/components/PageHero";
 import { pages } from "@/lib/siteCopy";
 
 export const metadata = {
-  title: "Tarifs PLOMB'ACTIV | Prix indicatifs plomberie Caluire"
+  title: "Tarifs PLOMB'ACTIV | Prix indicatifs plomberie Caluire",
   description:
     "Fourchettes de marché pour un plombier à Caluire-et-Cuire. Devis gratuit PLOMB'ACTIV selon votre chantier.",
 };
