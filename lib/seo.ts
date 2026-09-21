@@ -7,9 +7,9 @@ export function localBusinessJsonLd() {
     "@type": ["Plumber", "HVACBusiness", "LocalBusiness"],
     "@id": `${brand.siteUrl}/#business`,
     name: brand.name,
-    alternateName: ["Plomb'activ", "Plombactiv", "GHOULI Foued", "Plomb'Activ Caluire"],
+    alternateName: ["Plomb'activ", "Plombactiv", "Plomb'Activ Caluire"],
     description:
-      "PLOMB'ACTIV — GHOULI Foued, plombier chauffagiste à Caluire-et-Cuire. Recherche de fuite, débouchage, ballon ECS, chaudière gaz, climatisation split. Dépannage Lyon.",
+      "PLOMB'ACTIV, plombier chauffagiste à Caluire-et-Cuire. Recherche de fuite, débouchage, ballon ECS, chaudière gaz, climatisation split. Dépannage Lyon.",
     url: brand.siteUrl,
     telephone: "+33667447929",
     email: brand.email,
@@ -19,8 +19,7 @@ export function localBusinessJsonLd() {
       `${brand.siteUrl}/images/logo.png`,
     ],
     logo: `${brand.siteUrl}/images/logo.png`,
-    founder: { "@type": "Person", name: brand.owner },
-    employee: { "@type": "Person", name: brand.owner, jobTitle: "Plombier chauffagiste" },
+    founder: { "@type": "Organization", name: brand.name },
     address: {
       "@type": "PostalAddress",
       streetAddress: "130 Grande rue de Saint Clair",
@@ -110,14 +109,14 @@ export function faqJsonLd() {
   const faqs = [
     {
       q: "Quel est le numéro d'un plombier d'urgence à Caluire et Lyon ?",
-      a: "PLOMB'ACTIV — GHOULI Foued : 06 67 44 79 29. Établissement 130 Grande rue de Saint Clair, 69300 Caluire-et-Cuire. Fiche Google Business validée.",
+      a: "PLOMB'ACTIV : 06 67 44 79 29. Établissement 130 Grande rue de Saint Clair, 69300 Caluire-et-Cuire. Fiche Google Business validée.",
     },
     {
       q: "PLOMB'ACTIV intervient-il pour chaudière et climatisation ?",
       a: "Oui. Chaudière gaz (dépannage, entretien, remplacement dont Vaillant), ballon ECS, pose et mise en service de split inverter, charge frigorifique.",
     },
     {
-      q: "Où est basé GHOULI Foued ?",
+      q: "Où est basé PLOMB'ACTIV ?",
       a: "À Caluire-et-Cuire, 130 Grande rue de Saint Clair (Plus Code QVR5+49). Zone : Lyon 1er à 9e, Villeurbanne, Rillieux, Monts d'Or, Bron, Vénissieux.",
     },
     {

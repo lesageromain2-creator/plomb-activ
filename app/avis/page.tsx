@@ -5,7 +5,7 @@ import { pages } from "@/lib/siteCopy";
 export const metadata = {
   title: "Avis Google PLOMB'ACTIV | 5,0/5 plombier Caluire Lyon",
   description:
-    "Avis Google 5,0/5 — 8 avis. Chauffe-eau, chaudière Vaillant, plomberie, fuite en commerce. GHOULI Foued, Caluire-et-Cuire.",
+    "Avis Google 5,0/5 — 8 avis. Chauffe-eau, chaudière Vaillant, plomberie, fuite en commerce. PLOMB'ACTIV, Caluire-et-Cuire.",
 };
 
 export default function AvisPage() {

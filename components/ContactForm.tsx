@@ -44,7 +44,7 @@ export default function ContactForm() {
         <input type="tel" placeholder="Téléphone" value={form.phone} onChange={(e) => setForm((f) => ({ ...f, phone: e.target.value }))} className="w-full rounded-xl border border-gray-200 px-4 py-3 outline-none focus:ring-2 focus:ring-secondary/40" />
         <textarea required rows={4} placeholder="Message *" value={form.message} onChange={(e) => setForm((f) => ({ ...f, message: e.target.value }))} className="w-full rounded-xl border border-gray-200 px-4 py-3 outline-none focus:ring-2 focus:ring-secondary/40" />
         <button type="submit" disabled={status === "sending"} className="w-full rounded-xl bg-primary text-white py-3 font-semibold hover:opacity-90 disabled:opacity-50">
-          {status === "sending" ? "Envoi…" : "Envoyer à Foued"}
+          {status === "sending" ? "Envoi…" : "Envoyer"}
         </button>
       </form>
     </>

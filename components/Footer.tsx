@@ -9,7 +9,7 @@ export default function Footer() {
         <div>
           <h3 className="font-heading text-lg font-semibold mb-2">{brand.name}</h3>
           <p className="text-white/90 text-sm leading-relaxed">
-            <strong>{brand.owner}</strong> — plombier chauffagiste à Caluire-et-Cuire. Recherche de fuite, débouchage,
+            Plombier chauffagiste à Caluire-et-Cuire. Recherche de fuite, débouchage,
             ballon ECS, chaudière gaz, climatisation.
           </p>
         </div>
@@ -74,7 +74,7 @@ export default function Footer() {
       </div>
       <div className="max-w-6xl mx-auto mt-8 px-4">
         <p className="pt-8 border-t border-white/20 text-center text-sm text-white/70">
-          © {brand.name} — {brand.owner} · {brand.address} · SIRET {brand.siret}
+          © {brand.name} · {brand.address} · SIRET {brand.siret}
         </p>
         <LsdevFooterCredit />
       </div>

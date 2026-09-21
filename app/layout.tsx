@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | PLOMB'ACTIV Caluire",
   },
   description:
-    "PLOMB'ACTIV — GHOULI Foued, plombier à Caluire-et-Cuire (130 Grande rue de Saint Clair). Recherche de fuite, débouchage, ballon ECS, chaudière gaz, split. 06 67 44 79 29. Fiche Google 5,0/5.",
+    "PLOMB'ACTIV, plombier à Caluire-et-Cuire (130 Grande rue de Saint Clair). Recherche de fuite, débouchage, ballon ECS, chaudière gaz, split. 06 67 44 79 29. Fiche Google 5,0/5.",
   keywords: [
     "plombier Caluire-et-Cuire",
     "plombier Lyon",
@@ -39,9 +39,8 @@ export const metadata: Metadata = {
     "climatisation split Lyon",
     "dégât des eaux Lyon",
     "PLOMB'ACTIV",
-    "GHOULI Foued",
   ],
-  authors: [{ name: "GHOULI Foued" }],
+  authors: [{ name: "PLOMB'ACTIV" }],
   openGraph: {
     type: "website",
     locale: "fr_FR",
@@ -49,7 +48,7 @@ export const metadata: Metadata = {
     siteName: "PLOMB'ACTIV",
     title: "Plombier Caluire & Lyon — PLOMB'ACTIV, dépannage 7j/7",
     description:
-      "GHOULI Foued. Recherche de fuite, sanitaires, ECS, chaudière, clim. 130 Grande rue de Saint Clair, Caluire. 06 67 44 79 29.",
+      "PLOMB'ACTIV. Recherche de fuite, sanitaires, ECS, chaudière, clim. 130 Grande rue de Saint Clair, Caluire. 06 67 44 79 29.",
     images: [{ url: "/images/chantier/hero.jpg", width: 1200, height: 800, alt: "PLOMB'ACTIV plomberie Caluire" }],
   },
   twitter: { card: "summary_large_image" },

@@ -96,7 +96,7 @@ export default function HomePage() {
           <div className="relative w-full aspect-[3/4] overflow-hidden rounded-2xl shadow-card">
             <Image
               src={photos.artisan}
-              alt="GHOULI Foued — brasage cuivre sous ballon ECS, PLOMB'ACTIV"
+              alt="Brasage cuivre sous ballon ECS — PLOMB'ACTIV"
               fill
               className="object-cover"
             />
@@ -194,7 +194,7 @@ export default function HomePage() {
             <div className="rounded-2xl bg-white border border-black/5 p-5">
               <dt className="font-semibold text-primary">Intervenez-vous en urgence sur Lyon ?</dt>
               <dd className="mt-2 text-gray-700 text-sm leading-relaxed">
-                Oui. GHOULI Foued est joignable au {brand.phone} pour fuite, WC, ECS, chaudière et clim. Base : Caluire-et-Cuire,
+                Oui. PLOMB&apos;ACTIV est joignable au {brand.phone} pour fuite, WC, ECS, chaudière et clim. Base : Caluire-et-Cuire,
                 déplacements Grand Lyon.
               </dd>
             </div>
@@ -227,7 +227,7 @@ export default function HomePage() {
       <section className="py-16 px-4 bg-secondary text-white text-center">
         <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-3">Besoin d&apos;un plombier ?</h2>
         <p className="mb-6 text-white/95 max-w-xl mx-auto">
-          {brand.owner} · {brand.address} · fiche Google Business en ligne
+          {brand.name} · {brand.address} · fiche Google Business en ligne
         </p>
         <a href={brand.phoneHref} className="inline-block rounded-lg bg-primary text-white px-10 py-4 text-lg font-bold">
           Appeler {brand.phone}

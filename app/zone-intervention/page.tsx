@@ -21,7 +21,7 @@ export default function ZonePage() {
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <p className="text-gray-700 leading-relaxed mb-8">
-            PLOMB&apos;ACTIV — {brand.owner} — se déplace depuis {brand.address} pour la plomberie, le chauffage gaz, la
+            PLOMB&apos;ACTIV se déplace depuis {brand.address} pour la plomberie, le chauffage gaz, la
             climatisation split et les urgences. NAP identique à la fiche Google Business. {brand.phone}.
           </p>
           <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-2">

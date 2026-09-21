@@ -1,9 +1,9 @@
-/** PLOMB'ACTIV — GHOULI Foued, Caluire-et-Cuire / Grand Lyon */
+/** PLOMB'ACTIV — Caluire-et-Cuire / Grand Lyon */
 
 export const brand = {
   name: "PLOMB'ACTIV",
-  owner: "GHOULI Foued",
-  legalName: "Foued Ghouli",
+  owner: "PLOMB'ACTIV",
+  legalName: "PLOMB'ACTIV",
   slug: "plomb-activ",
   phone: "06 67 44 79 29",
   phoneHref: "tel:+33667447929",
@@ -69,7 +69,7 @@ export const localLyon = {
   badge: "Artisan local · Caluire-et-Cuire",
   title: "Un interlocuteur unique, du diagnostic à la mise en eau",
   text:
-    "GHOULI Foued, titulaire de PLOMB'ACTIV, intervient lui-même sur vos réseaux d'eau froide / eau chaude sanitaire, gaz et chauffage. Établissement à Caluire-et-Cuire (130 Grande rue de Saint Clair, QVR5+49). Pas de standard : vous joignez l'artisan qui se déplace.",
+    "PLOMB'ACTIV intervient sur vos réseaux d'eau froide / eau chaude sanitaire, gaz et chauffage. Établissement à Caluire-et-Cuire (130 Grande rue de Saint Clair, QVR5+49). Pas de standard : vous joignez l'atelier qui se déplace.",
   sub:
     "Collecteurs PER, cuivre, évacuation PVC, ballon ECS, chaudière gaz, split inverter. Devis avant ouverture du chantier. Fiche Google Business validée — 5,0/5.",
 };
@@ -98,11 +98,11 @@ export const home = {
   heroKicker: "Artisan de proximité · Caluire & Grand Lyon",
   heroTitle: "Le plombier qu'il vous faut",
   heroLead:
-    "Recherche de fuite, débouchage, ballon d'eau chaude, chaudière gaz, pose et mise en service de climatisation. GHOULI Foued se déplace. Devis gratuit, sans engagement.",
+    "Recherche de fuite, débouchage, ballon d'eau chaude, chaudière gaz, pose et mise en service de climatisation. PLOMB'ACTIV se déplace. Devis gratuit, sans engagement.",
   stats: [
     { value: "5,0/5", label: "Google Business", detail: "8 avis vérifiés" },
     { value: "7j/7", label: "Dépannage", detail: "Caluire & métropole" },
-    { value: "06 67 44 79 29", label: "Ligne directe", detail: "GHOULI Foued" },
+    { value: "06 67 44 79 29", label: "Ligne directe", detail: "PLOMB'ACTIV" },
     { value: "Devis", label: "Gratuit", detail: "Sans engagement" },
   ],
   serviceCards: [
@@ -158,7 +158,7 @@ export const home = {
     {
       n: "02",
       title: "Diagnostic sur site",
-      text: "GHOULI Foued se déplace, isole si besoin, identifie la panne (groupe de sécurité, vanne, brûleur, carte, fuite).",
+      text: "PLOMB'ACTIV se déplace, isole si besoin, identifie la panne (groupe de sécurité, vanne, brûleur, carte, fuite).",
     },
     {
       n: "03",
@@ -172,9 +172,9 @@ export const pages = {
   servicesIntro:
     "PLOMB'ACTIV couvre l'installation et le dépannage : réseaux d'alimentation et d'évacuation, sanitaires, ballon ECS, chaudière gaz, climatisation split. Chaque intervention est expliquée avant ouverture du chantier.",
   urgencesBody:
-    "Fuite, WC bouché, plus d'eau chaude, chaudière en sécurité, split à l'arrêt : appelez GHOULI Foued au 06 67 44 79 29. Établissement à Caluire-et-Cuire. Isolation du réseau, recherche de fuite, réparation.",
+    "Fuite, WC bouché, plus d'eau chaude, chaudière en sécurité, split à l'arrêt : appelez PLOMB'ACTIV au 06 67 44 79 29. Établissement à Caluire-et-Cuire. Isolation du réseau, recherche de fuite, réparation.",
   contactIntro:
-    "Devis, dépannage ou entretien : une ligne directe, pas de plateforme. GHOULI Foued — PLOMB'ACTIV, Caluire-et-Cuire.",
+    "Devis, dépannage ou entretien : une ligne directe, pas de plateforme. PLOMB'ACTIV, Caluire-et-Cuire.",
   entretienExtra:
     "Entretien chaudière gaz (corps de chauffe, brûleur, vase d'expansion), détartrage de ballon ECS, contrôle groupe de sécurité, entretien clim (filtres, pression, étanchéité).",
   pacExtra:

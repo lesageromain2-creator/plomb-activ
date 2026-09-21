@@ -7,7 +7,7 @@ import { photos } from "@/lib/photos";
 export const metadata = {
   title: "Pose clim split Lyon Caluire | Mise en service PLOMB'ACTIV",
   description:
-    "Pose, charge frigorifique et mise en service de climatisation split (Fujitsu, Atlantic). Entretien et dépannage. GHOULI Foued, Caluire.",
+    "Pose, charge frigorifique et mise en service de climatisation split (Fujitsu, Atlantic). Entretien et dépannage. PLOMB'ACTIV, Caluire.",
 };
 
 export default function PacClimPage() {

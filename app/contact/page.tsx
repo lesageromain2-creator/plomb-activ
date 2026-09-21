@@ -5,7 +5,7 @@ import { brand, pages, zone } from "@/lib/siteCopy";
 import { photos } from "@/lib/photos";
 
 export const metadata = {
-  title: "Contact plombier Caluire | GHOULI Foued 06 67 44 79 29",
+  title: "Contact plombier Caluire | PLOMB'ACTIV 06 67 44 79 29",
   description:
     "PLOMB'ACTIV — 130 Grande rue de Saint Clair, 69300 Caluire-et-Cuire. Tél 06 67 44 79 29 · ghoulifoued@icloud.com. Fiche Google Business.",
 };
@@ -15,18 +15,15 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-cream">
-      <PageHero title="Contact" subtitle={pages.contactIntro} kicker={brand.owner} imageSrc={photos.interventionLyon} />
+      <PageHero title="Contact" subtitle={pages.contactIntro} kicker={brand.name} imageSrc={photos.interventionLyon} />
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-              <Image src={photos.artisan} alt="GHOULI Foued — brasage cuivre PLOMB'ACTIV" fill className="object-cover" />
+              <Image src={photos.artisan} alt="Brasage cuivre sous ballon ECS — PLOMB'ACTIV" fill className="object-cover" />
             </div>
             <div className="rounded-2xl bg-white border border-black/5 p-6">
               <h2 className="font-heading text-xl text-primary mb-4 font-bold">{brand.name}</h2>
-              <p className="text-gray-700 mb-2">
-                <strong>Artisan :</strong> {brand.owner}
-              </p>
               <p className="text-gray-700 mb-2">
                 <strong>Adresse (NAP) :</strong> {brand.address}
               </p>

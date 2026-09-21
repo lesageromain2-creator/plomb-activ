@@ -7,7 +7,7 @@ import { photos } from "@/lib/photos";
 export const metadata = {
   title: "Urgence plombier Lyon Caluire | Fuite, dégât des eaux 7j/7",
   description:
-    "Dépannage plomberie à Caluire et Lyon : fuite, dégât des eaux, WC, chaudière en sécurité. GHOULI Foued — 06 67 44 79 29.",
+    "Dépannage plomberie à Caluire et Lyon : fuite, dégât des eaux, WC, chaudière en sécurité. PLOMB'ACTIV — 06 67 44 79 29.",
 };
 
 export default function UrgencesPage() {
@@ -25,7 +25,7 @@ export default function UrgencesPage() {
           {brand.phone}
         </a>
         <p className="mt-2 text-sm text-white/90">
-          {brand.owner} · {brand.address}
+          {brand.name} · {brand.address}
         </p>
       </section>
       <section className="py-16 px-4">

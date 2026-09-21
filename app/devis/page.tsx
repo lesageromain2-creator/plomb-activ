@@ -8,7 +8,7 @@ import { photos } from "@/lib/photos";
 export const metadata = {
   title: "Devis gratuit plombier Caluire Lyon | PLOMB'ACTIV",
   description:
-    "Devis gratuit plomberie, recherche de fuite, chaudière, ballon ECS, clim à Caluire et Lyon. GHOULI Foued — 06 67 44 79 29.",
+    "Devis gratuit plomberie, recherche de fuite, chaudière, ballon ECS, clim à Caluire et Lyon. PLOMB'ACTIV — 06 67 44 79 29.",
 };
 
 export default function DevisPage() {
