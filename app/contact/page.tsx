@@ -1,6 +1,6 @@
-import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import ContactForm from "@/components/ContactForm";
+import BrandCard from "@/components/BrandCard";
 import { brand, pages, zone } from "@/lib/siteCopy";
 import { photos } from "@/lib/photos";
 
@@ -19,9 +19,7 @@ export default function ContactPage() {
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-              <Image src={photos.artisan} alt="Brasage cuivre sous ballon ECS, PLOMB'ACTIV" fill className="object-cover" />
-            </div>
+            <BrandCard variant="panel" />
             <div className="rounded-2xl bg-white border border-black/5 p-6">
               <h2 className="font-heading text-xl text-primary mb-4 font-bold">{brand.name}</h2>
               <p className="text-gray-700 mb-2">

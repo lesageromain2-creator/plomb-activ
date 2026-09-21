@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LocalTrustBand from "@/components/LocalTrustBand";
+import BrandCard from "@/components/BrandCard";
 import JsonLd from "@/components/JsonLd";
 import StickyCall from "@/components/StickyCall";
 import { brand } from "@/lib/siteCopy";
@@ -65,6 +66,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main className="flex-1 flex flex-col min-h-0">{children}</main>
         <LocalTrustBand />
+        <BrandCard />
         <Footer />
         <StickyCall />
       </body>

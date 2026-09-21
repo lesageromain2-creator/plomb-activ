@@ -13,6 +13,7 @@ export const photos = {
   wcAvantApres: "/images/chantier/wc-avant-apres.jpg",
   clim: "/images/chantier/clim.jpg",
   reseaux: "/images/chantier/reseaux.jpg",
+  card: "/images/carte-plombactiv.jpg",
 } as const;
 
 export const gallery = [
