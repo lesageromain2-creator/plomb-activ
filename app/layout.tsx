@@ -56,6 +56,9 @@ export const metadata: Metadata = {
   alternates: { canonical: siteUrl },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" } },
   icons: { icon: "/images/logo.png", apple: "/images/logo.png" },
+  verification: {
+    google: "aqpn7M3cGn6N6rg19DzZpuTRFav1A93IdTsIlP87eC4",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
