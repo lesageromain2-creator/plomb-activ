@@ -4,7 +4,7 @@ import PageHero from "@/components/PageHero";
 import { pages } from "@/lib/siteCopy";
 
 export const metadata = {
-  title: "Aides de l'État — PLOMB'ACTIV | Caluire-et-Cuire",
+  title: "Aides de l'État PLOMB'ACTIV | Caluire-et-Cuire"
   description: "Repères MaPrimeRénov', CEE, TVA 5,5% pour un projet plomberie / rénovation à Caluire-et-Cuire.",
 };
 
@@ -13,14 +13,14 @@ export default function AidesEtatPage() {
     <div className="min-h-screen">
       <PageHero
         title="Aides de l&apos;État"
-        subtitle="MaPrimeRénov', CEE, TVA 5,5 % — financez votre projet chauffage et rénovation énergétique."
+        subtitle="MaPrimeRénov', CEE, TVA 5,5 %, financez votre projet chauffage et rénovation énergétique."
         kicker="Accompagnement"
         imageSrc="/images/chantier/chaudiere.jpg"
       />
       <section className="py-16 px-4 bg-slate-50">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-card">
-            <Image src="/images/chantier/clim.jpg" alt="Mise en service climatisation — PLOMB'ACTIV" fill className="object-cover" />
+            <Image src="/images/chantier/clim.jpg" alt="Mise en service climatisation, PLOMB'ACTIV" fill className="object-cover" />
           </div>
           <div className="space-y-8">
             <div>

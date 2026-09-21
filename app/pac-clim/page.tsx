@@ -14,7 +14,7 @@ export default function PacClimPage() {
   return (
     <div className="min-h-screen bg-cream">
       <PageHero
-        title="Climatisation split — pose & mise en service"
+        title="Climatisation split, pose et mise en service"
         subtitle="Liaisons frigorifiques, tirage au vide, charge, mise en service. Entretien et dépannage."
         kicker="Clim"
         imageSrc={photos.clim}
@@ -27,7 +27,7 @@ export default function PacClimPage() {
               <p className="text-gray-700 leading-relaxed">{pages.pacExtra}</p>
             </div>
             <div>
-              <h2 className="font-heading text-2xl text-primary mb-3 font-bold">Entretien &amp; dépannage</h2>
+              <h2 className="font-heading text-2xl text-primary mb-3 font-bold">Entretien et dépannage</h2>
               <p className="text-gray-700 leading-relaxed">
                 Contrôle d&apos;étanchéité, filtres, pressions. Panne en saison : {brand.phone}.
               </p>
@@ -42,7 +42,7 @@ export default function PacClimPage() {
             </div>
           </div>
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden order-1 lg:order-2">
-            <Image src={photos.clim} alt="Mise en service split Fujitsu Atlantic — manomètres" fill className="object-cover" />
+            <Image src={photos.clim} alt="Mise en service split Fujitsu Atlantic, manomètres" fill className="object-cover" />
           </div>
         </div>
       </section>

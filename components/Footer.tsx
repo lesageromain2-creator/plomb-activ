@@ -18,17 +18,17 @@ export default function Footer() {
           <ul className="space-y-1 text-sm text-white/90">
             <li>
               <Link href="/urgences" className="hover:text-white">
-                Urgence &amp; dégât des eaux
+                Urgence et dégât des eaux
               </Link>
             </li>
             <li>
               <Link href="/services" className="hover:text-white">
-                Plomberie &amp; sanitaires
+                Plomberie et sanitaires
               </Link>
             </li>
             <li>
               <Link href="/entretien" className="hover:text-white">
-                Chaudière &amp; ECS
+                Chaudière et ECS
               </Link>
             </li>
             <li>
@@ -49,7 +49,7 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h3 className="font-heading text-lg font-semibold mb-2">NAP — Google</h3>
+          <h3 className="font-heading text-lg font-semibold mb-2">Fiche Google</h3>
           <p className="text-white/90 text-sm">{brand.name}</p>
           <p className="text-white/90 text-sm">{brand.address}</p>
           <a href={brand.phoneHref} className="block text-secondary font-bold mt-2">

@@ -6,7 +6,7 @@ import { brand } from "@/lib/siteCopy";
 
 function mailTo(form: { name: string; email: string; phone: string; subject: string; message: string }) {
   const body = `Nom: ${form.name}\nEmail: ${form.email}\nTél: ${form.phone}\n\n${form.message}`;
-  window.location.href = `mailto:${brand.email}?subject=${encodeURIComponent("Devis — " + form.subject)}&body=${encodeURIComponent(body)}`;
+  window.location.href = `mailto:${brand.email}?subject=${encodeURIComponent("Devis " + form.subject)}&body=${encodeURIComponent(body)}`;
 }
 
 export default function DevisForm() {

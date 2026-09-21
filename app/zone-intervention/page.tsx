@@ -6,14 +6,14 @@ import { photos } from "@/lib/photos";
 export const metadata = {
   title: "Plombier Lyon Villeurbanne Caluire | Zone d'intervention PLOMB'ACTIV",
   description:
-    "Plombier à Caluire-et-Cuire : interventions Lyon 1er–9e, Villeurbanne, Rillieux, Monts d'Or, Bron, Vénissieux. Dépannage, chauffage, clim.",
+    "Plombier à Caluire-et-Cuire : interventions Lyon 1er à 9e, Villeurbanne, Rillieux, Monts d'Or, Bron, Vénissieux. Dépannage, chauffage, clim.",
 };
 
 export default function ZonePage() {
   return (
     <div className="min-h-screen bg-cream">
       <PageHero
-        title="Zone d'intervention — Grand Lyon"
+        title="Zone d'intervention Grand Lyon"
         subtitle={`Établissement ${brand.city}. Dépannage et travaux sur ${zone.cities.length} communes.`}
         kicker="SEO local"
         imageSrc={photos.interventionLyon}

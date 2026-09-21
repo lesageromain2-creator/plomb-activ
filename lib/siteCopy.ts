@@ -1,4 +1,4 @@
-/** PLOMB'ACTIV — Caluire-et-Cuire / Grand Lyon */
+/** PLOMB'ACTIV, Caluire-et-Cuire / Grand Lyon */
 
 export const brand = {
   name: "PLOMB'ACTIV",
@@ -12,12 +12,12 @@ export const brand = {
   plusCode: "QVR5+49 Caluire-et-Cuire",
   city: "Caluire-et-Cuire",
   postalCode: "69300",
-  hours: "Urgences : joignable 7j/7 — atelier Lun–Ven 8h–18h",
+  hours: "Urgences : joignable 7j/7. Atelier du lundi au vendredi, 8h à 18h",
   hoursShort: "Astreinte dépannage 7j/7",
   siret: "939 379 699 00019",
-  naf: "4322G — Travaux d'installation d'eau et de gaz",
+  naf: "4322G, travaux d'installation d'eau et de gaz",
   created: "2025",
-  tagline: "Plombier chauffagiste à Caluire-et-Cuire — dépannage Lyon",
+  tagline: "Plombier chauffagiste à Caluire-et-Cuire, dépannage Lyon",
   mapsQuery: "PLOMB'ACTIV 130 Grande rue de Saint Clair Caluire-et-Cuire",
   mapsUrl:
     "https://www.google.com/maps/search/?api=1&query=PLOMB%27ACTIV%20130%20Grande%20rue%20de%20Saint%20Clair%20Caluire-et-Cuire",
@@ -71,11 +71,11 @@ export const localLyon = {
   text:
     "PLOMB'ACTIV intervient sur vos réseaux d'eau froide / eau chaude sanitaire, gaz et chauffage. Établissement à Caluire-et-Cuire (130 Grande rue de Saint Clair, QVR5+49). Pas de standard : vous joignez l'atelier qui se déplace.",
   sub:
-    "Collecteurs PER, cuivre, évacuation PVC, ballon ECS, chaudière gaz, split inverter. Devis avant ouverture du chantier. Fiche Google Business validée — 5,0/5.",
+    "Collecteurs PER, cuivre, évacuation PVC, ballon ECS, chaudière gaz, split inverter. Devis avant ouverture du chantier. Fiche Google Business validée, 5,0/5.",
 };
 
 export const equipeConfiance = {
-  title: "Chantiers réalisés — photos de l'atelier",
+  title: "Chantiers réalisés, photos de l'atelier",
   intro:
     "Ballons Atlantic, chaudière gaz, brasage cuivre, WC suspendu, charge frigorifique Fujitsu : le matériel et les finitions tels qu'ils sont faits sur site.",
   bullets: [
@@ -99,23 +99,23 @@ export const home = {
   heroTitle: "Le plombier",
   heroTitleAccent: "qu'il vous faut",
   heroLead:
-    "Urgence plomberie, débouchage, fuite d'eau, chaudière ou climatisation — PLOMB'ACTIV intervient rapidement 7j/7 sur Caluire et Lyon. Devis gratuit, sans engagement.",
+    "Urgence plomberie, débouchage, fuite d'eau, chaudière ou climatisation. PLOMB'ACTIV intervient rapidement 7j/7 sur Caluire et Lyon. Devis gratuit, sans engagement.",
   stats: [
     { value: "5,0/5", label: "Google Business", detail: "8 avis vérifiés" },
-    { value: "7j/7", label: "Dépannage", detail: "Caluire & métropole" },
+    { value: "7j/7", label: "Dépannage", detail: "Caluire et métropole" },
     { value: "06 67 44 79 29", label: "Ligne directe", detail: "PLOMB'ACTIV" },
     { value: "Devis", label: "Gratuit", detail: "Sans engagement" },
   ],
   serviceCards: [
     {
-      title: "Urgence & dégât des eaux",
+      title: "Urgence et dégât des eaux",
       desc: "Fuite active, inondation, vanne à remplacer, isolation du réseau. Intervention rapide sur Lyon et Caluire.",
       href: "/urgences",
       tag: "Urgence",
       image: "/images/chantier/degat-eaux.jpg",
     },
     {
-      title: "Débouchage & sanitaires",
+      title: "Débouchage et sanitaires",
       desc: "WC, colonnes d'évacuation, siphons. Pose et remplacement de WC à poser ou suspendu.",
       href: "/services",
       tag: "Sanitaire",
@@ -136,7 +136,7 @@ export const home = {
       image: "/images/chantier/chaudiere.jpg",
     },
     {
-      title: "Réseaux cuivre & PER",
+      title: "Réseaux cuivre et PER",
       desc: "Collecteurs, nourrices, évacuation PVC, eau potable. Brasage oxyacétylénique, sertissage, épreuve.",
       href: "/services",
       tag: "Installation",
@@ -163,7 +163,7 @@ export const home = {
     },
     {
       n: "03",
-      title: "Réparation & mise en eau",
+      title: "Réparation et mise en eau",
       text: "Devis avant travaux hors urgence vitale. Réparation, remplacement, épreuve, remise en service. Chantier propre.",
     },
   ],
@@ -185,5 +185,5 @@ export const pages = {
   tarifsIntro:
     "Devis gratuit selon le chantier. Les fourchettes indiquées sont des ordres de grandeur, pas un tarif forfaitaire.",
   avisIntro:
-    "Fiche Google Business validée — 5,0/5 (8 avis). Ballon ECS, chaudière Vaillant, plomberie, dégât des eaux en commerce.",
+    "Fiche Google Business validée, 5,0/5 (8 avis). Ballon ECS, chaudière Vaillant, plomberie, dégât des eaux en commerce.",
 };

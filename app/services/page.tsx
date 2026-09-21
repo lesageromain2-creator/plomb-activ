@@ -14,7 +14,7 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-cream">
       <PageHero
-        title="Prestations — plomberie, chauffage, clim"
+        title="Plomberie, chauffage, climatisation"
         subtitle={pages.servicesIntro}
         kicker="Grand Lyon"
         imageSrc={photos.reseaux}

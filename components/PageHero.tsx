@@ -16,7 +16,7 @@ export default function PageHero({
   subtitle,
   kicker,
   imageSrc = "/images/chantier/hero.jpg",
-  imageAlt = "PLOMB'ACTIV — plomberie à Caluire-et-Cuire",
+  imageAlt = "PLOMB'ACTIV, plomberie à Caluire-et-Cuire",
   variant = "default",
 }: Props) {
   const isUrgent = variant === "urgent";

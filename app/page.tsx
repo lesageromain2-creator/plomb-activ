@@ -11,23 +11,20 @@ export default function HomePage() {
       <section className="relative min-h-[92vh] text-white overflow-hidden flex items-center">
         <Image
           src={photos.hero}
-          alt="Plombier PLOMB'ACTIV en intervention — réparation sous évier, Caluire Lyon"
+          alt="Plombier PLOMB'ACTIV en train d'installer un chauffe-eau, Caluire Lyon"
           fill
           priority
-          className="object-cover object-[78%_center]"
+          className="object-cover object-[70%_center]"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/45 to-transparent" aria-hidden />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a]/80 via-[#0f172a]/35 to-transparent" aria-hidden />
         <div className="relative z-10 max-w-6xl mx-auto px-4 py-24 w-full">
           <p className="text-secondary font-extrabold uppercase tracking-[0.18em] text-sm mb-3 drop-shadow">
             {home.heroKicker}
           </p>
-          <h1 className="font-heading text-5xl md:text-7xl font-extrabold tracking-tight max-w-3xl leading-[0.95] drop-shadow-lg">
+          <h1 className="font-heading text-5xl md:text-7xl font-extrabold tracking-tight max-w-xl leading-[0.95] drop-shadow-lg">
             {home.heroTitle}
             <span className="block text-secondary">{home.heroTitleAccent}</span>
           </h1>
-          <p className="mt-3 text-2xl md:text-3xl font-heading font-bold italic text-white drop-shadow">
-            Artisan de proximité
-          </p>
           <p className="mt-5 text-base md:text-lg text-white max-w-lg leading-relaxed bg-black/45 border-l-4 border-secondary pl-4 py-3 rounded-r-md">
             {home.heroLead}
           </p>
@@ -69,7 +66,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <p className="text-center text-xs font-bold uppercase tracking-widest text-secondary mb-2">Nos prestations</p>
           <h2 className="font-heading text-3xl md:text-4xl text-primary text-center font-bold mb-3">
-            Débouchage, fuite &amp; installations
+            Débouchage, fuite et installations
           </h2>
           <p className="text-center text-primary/70 max-w-2xl mx-auto mb-10">
             Du dépannage d&apos;urgence à la pose complète : réseaux, sanitaires, ECS, chaudière, climatisation.
@@ -101,7 +98,7 @@ export default function HomePage() {
           <div className="relative w-full aspect-[3/4] overflow-hidden rounded-2xl shadow-card">
             <Image
               src={photos.artisan}
-              alt="Brasage cuivre sous ballon ECS — PLOMB'ACTIV"
+              alt="Brasage cuivre sous ballon ECS, PLOMB'ACTIV"
               fill
               className="object-cover"
             />
@@ -112,11 +109,11 @@ export default function HomePage() {
             <p className="text-gray-700 leading-relaxed">{localLyon.text}</p>
             <p className="mt-4 text-gray-700 leading-relaxed">{localLyon.sub}</p>
             <ul className="mt-6 space-y-2 text-sm text-gray-800">
-              <li>— Recherche et réparation de fuites, dégât des eaux</li>
-              <li>— Ballon ECS, groupe de sécurité, cumulus Atlantic</li>
-              <li>— Chaudière gaz (dont Vaillant), entretien et remplacement</li>
-              <li>— Réseaux cuivre / PER, évacuation PVC, brasage</li>
-              <li>— Split inverter : pose, charge, mise en service</li>
+              <li>Recherche et réparation de fuites, dégât des eaux</li>
+              <li>Ballon ECS, groupe de sécurité, cumulus Atlantic</li>
+              <li>Chaudière gaz (dont Vaillant), entretien et remplacement</li>
+              <li>Réseaux cuivre et PER, évacuation PVC, brasage</li>
+              <li>Split inverter : pose, charge, mise en service</li>
             </ul>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href={brand.phoneHref} className="rounded-lg bg-secondary text-white px-6 py-3 font-bold">
@@ -152,7 +149,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <h2 className="font-heading text-3xl text-primary mb-2 text-center font-bold">Réalisations sur site</h2>
           <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
-            Photos de chantiers PLOMB&apos;ACTIV — {zone.cities.slice(0, 5).join(", ")}.
+            Photos de chantiers PLOMB&apos;ACTIV, {zone.cities.slice(0, 5).join(", ")}.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {[

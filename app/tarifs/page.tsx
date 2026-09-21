@@ -4,16 +4,16 @@ import PageHero from "@/components/PageHero";
 import { pages } from "@/lib/siteCopy";
 
 export const metadata = {
-  title: "Tarifs — PLOMB'ACTIV | Prix indicatifs plomberie Caluire",
+  title: "Tarifs PLOMB'ACTIV | Prix indicatifs plomberie Caluire"
   description:
     "Fourchettes de marché pour un plombier à Caluire-et-Cuire. Devis gratuit PLOMB'ACTIV selon votre chantier.",
 };
 
 const tarifs = [
-  { service: "Tarif horaire (marché)", prix: "45 – 65 €/h", inclus: "Moyenne constatée, hors fournitures" },
-  { service: "Remplacement chauffe-eau", prix: "800 – 2 500 €", inclus: "Fourchette marché, fourniture + pose" },
-  { service: "Refonte plomberie T3", prix: "3 000 – 8 000 €", inclus: "Réseaux, selon configuration" },
-  { service: "Rénovation salle de bains complète", prix: "8 000 – 15 000 €", inclus: "Fourchette marché, projet complet" },
+  { service: "Tarif horaire (marché)", prix: "45 à 65 €/h", inclus: "Moyenne constatée, hors fournitures" },
+  { service: "Remplacement chauffe-eau", prix: "800 à 2 500 €", inclus: "Fourchette marché, fourniture + pose" },
+  { service: "Refonte plomberie T3", prix: "3 000 à 8 000 €", inclus: "Réseaux, selon configuration" },
+  { service: "Rénovation salle de bains complète", prix: "8 000 à 15 000 €", inclus: "Fourchette marché, projet complet" },
   { service: "Dépannage fuite / débouchage", prix: "Sur devis", inclus: "Diagnostic + intervention" },
   { service: "Détartrage équipements", prix: "Sur devis", inclus: "Selon accessibilité et état" },
 ];
@@ -40,7 +40,7 @@ export default function TarifsPage() {
       <section className="py-12 px-4 bg-white">
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center">
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-card order-2 md:order-1">
-            <Image src="/images/chantier/reseaux.jpg" alt="Réseaux cuivre et PER — PLOMB'ACTIV" fill className="object-cover" />
+            <Image src="/images/chantier/reseaux.jpg" alt="Réseaux cuivre et PER, PLOMB'ACTIV" fill className="object-cover" />
           </div>
           <p className="text-gray-700 leading-relaxed order-1 md:order-2">
             Chez PLOMB&apos;ACTIV, pas de surprise : le devis décrit ce qui est inclus avant de commencer. Artisan{" "}
@@ -74,7 +74,7 @@ export default function TarifsPage() {
             Sources : fourchettes publiques de marché (Omizi). Elles ne représentent pas les tarifs de PLOMB&apos;ACTIV.
           </p>
           <div className="mt-12">
-            <h2 className="font-heading text-2xl text-primary mb-4">FAQ — Prix</h2>
+            <h2 className="font-heading text-2xl text-primary mb-4">Questions sur les prix</h2>
             <div className="space-y-4">
               {faq.map((f) => (
                 <div key={f.q} className="bg-white p-5 rounded-xl border border-primary/10 shadow-sm">

@@ -20,7 +20,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || brand.si
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Plombier Caluire-et-Cuire Lyon | PLOMB'ACTIV — dépannage, chaudière, clim",
+    default: "Plombier Caluire-et-Cuire Lyon | PLOMB'ACTIV, dépannage, chaudière, clim",
     template: "%s | PLOMB'ACTIV Caluire",
   },
   description:
@@ -46,10 +46,10 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     url: siteUrl,
     siteName: "PLOMB'ACTIV",
-    title: "Plombier Caluire & Lyon — PLOMB'ACTIV, dépannage 7j/7",
+    title: "Plombier Caluire et Lyon, PLOMB'ACTIV, dépannage 7j/7",
     description:
       "PLOMB'ACTIV. Recherche de fuite, sanitaires, ECS, chaudière, clim. 130 Grande rue de Saint Clair, Caluire. 06 67 44 79 29.",
-    images: [{ url: "/images/chantier/hero-landing.png", width: 1376, height: 768, alt: "PLOMB'ACTIV plombier Caluire Lyon" }],
+    images: [{ url: "/images/chantier/hero-landing.jpg", width: 1280, height: 720, alt: "PLOMB'ACTIV, pose de chauffe-eau Caluire Lyon" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: siteUrl },

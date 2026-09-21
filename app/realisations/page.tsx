@@ -5,7 +5,7 @@ import { gallery, photos } from "@/lib/photos";
 export const metadata = {
   title: "Réalisations plomberie Caluire Lyon | Chantiers PLOMB'ACTIV",
   description:
-    "Photos de chantiers : réseaux PER/cuivre, WC suspendu, ballon ECS, chaudière, clim split. PLOMB'ACTIV — Caluire-et-Cuire.",
+    "Photos de chantiers : réseaux PER/cuivre, WC suspendu, ballon ECS, chaudière, clim split. PLOMB'ACTIV, Caluire-et-Cuire.",
 };
 
 export default function RealisationsPage() {
@@ -13,7 +13,7 @@ export default function RealisationsPage() {
     <div className="min-h-screen bg-cream">
       <PageHero
         title="Chantiers réalisés"
-        subtitle="Installations, rénovations et dépannages — photos prises sur site."
+        subtitle="Installations, rénovations et dépannages, photos prises sur site."
         kicker="Galerie"
         imageSrc={photos.reseaux}
       />

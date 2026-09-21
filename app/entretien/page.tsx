@@ -5,16 +5,16 @@ import { brand, pages } from "@/lib/siteCopy";
 import { photos } from "@/lib/photos";
 
 export const metadata = {
-  title: "Chaudière gaz & ballon ECS Lyon Caluire | PLOMB'ACTIV",
+  title: "Chaudière gaz et ballon ECS Lyon Caluire | PLOMB'ACTIV"
   description:
-    "Remplacement chaudière gaz (Vaillant…), entretien, ballon ECS Atlantic. PLOMB'ACTIV — Caluire-et-Cuire. 06 67 44 79 29.",
+    "Remplacement chaudière gaz (Vaillant…), entretien, ballon ECS Atlantic. PLOMB'ACTIV, Caluire-et-Cuire. 06 67 44 79 29.",
 };
 
 export default function EntretienPage() {
   return (
     <div className="min-h-screen bg-cream">
       <PageHero
-        title="Chaudière gaz & eau chaude sanitaire"
+        title="Chaudière gaz et eau chaude sanitaire"
         subtitle="Dépannage, entretien, remplacement de chaudière. Pose de ballon ECS, groupe de sécurité."
         kicker="Chauffage"
         imageSrc={photos.chaudiere}
@@ -23,7 +23,7 @@ export default function EntretienPage() {
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-4">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-              <Image src={photos.chaudiere} alt="Chaudière gaz — brûleur, vase d'expansion" fill className="object-cover" />
+              <Image src={photos.chaudiere} alt="Chaudière gaz, brûleur, vase d'expansion" fill className="object-cover" />
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image src={photos.cumulus} alt="Ballon ECS Atlantic sur support" fill className="object-cover" />
@@ -41,7 +41,7 @@ export default function EntretienPage() {
               <h2 className="font-heading text-2xl text-primary mb-3 font-bold">Ballon ECS</h2>
               <p className="text-gray-700 leading-relaxed">
                 Cumulus mural ou au sol, groupe de sécurité, brasage cuivre, raccordement PER. Pose Atlantic et équivalents.
-                Diagnostic rapide — plusieurs avis 5 étoiles sur ce geste.
+                Diagnostic rapide. Plusieurs avis 5 étoiles sur ce geste.
               </p>
             </div>
             <div>

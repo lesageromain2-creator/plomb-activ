@@ -24,7 +24,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-3 min-w-0">
           <Image
             src="/images/logo.png"
-            alt={`${brand.name} — logo`}
+            alt={`Logo ${brand.name}`}
             width={44}
             height={44}
             className="rounded-md ring-1 ring-black/10 shrink-0 object-cover"

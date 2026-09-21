@@ -7,7 +7,7 @@ import { photos } from "@/lib/photos";
 export const metadata = {
   title: "Contact plombier Caluire | PLOMB'ACTIV 06 67 44 79 29",
   description:
-    "PLOMB'ACTIV — 130 Grande rue de Saint Clair, 69300 Caluire-et-Cuire. Tél 06 67 44 79 29 · ghoulifoued@icloud.com. Fiche Google Business.",
+    "PLOMB'ACTIV, 130 Grande rue de Saint Clair, 69300 Caluire-et-Cuire. Tél 06 67 44 79 29 · ghoulifoued@icloud.com. Fiche Google Business.",
 };
 
 export default function ContactPage() {
@@ -20,7 +20,7 @@ export default function ContactPage() {
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-              <Image src={photos.artisan} alt="Brasage cuivre sous ballon ECS — PLOMB'ACTIV" fill className="object-cover" />
+              <Image src={photos.artisan} alt="Brasage cuivre sous ballon ECS, PLOMB'ACTIV" fill className="object-cover" />
             </div>
             <div className="rounded-2xl bg-white border border-black/5 p-6">
               <h2 className="font-heading text-xl text-primary mb-4 font-bold">{brand.name}</h2>
@@ -71,7 +71,7 @@ export default function ContactPage() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Carte Google — PLOMB'ACTIV Caluire-et-Cuire"
+            title="Carte Google PLOMB'ACTIV Caluire-et-Cuire"
           />
         </div>
       </section>
