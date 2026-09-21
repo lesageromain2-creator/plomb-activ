@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
   return paths.map((p) => ({
     url: `${base}${p}`,
-    lastModified: new Date(),
+    lastModified: new Date("2026-09-22"),
     changeFrequency: p === "" || p === "/urgences" ? "weekly" : "monthly",
     priority: p === "" ? 1 : p === "/urgences" || p === "/services" ? 0.9 : 0.7,
   }));

@@ -5,6 +5,12 @@ import { photos } from "@/lib/photos";
 import GoogleReviewsCarousel from "@/components/GoogleReviewsCarousel";
 import DevisForm from "@/components/DevisForm";
 
+export const metadata = {
+  title: { absolute: "Plombier Lyon Caluire | PLOMB'ACTIV" },
+  description:
+    "Appelez directement nos experts chez PLOMB'ACTIV au 06 67 44 79 29. Dépannage plomberie, chauffage et clim à Caluire-et-Cuire, Lyon et le Grand Lyon. Devis gratuit.",
+};
+
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-cream">

@@ -7,7 +7,7 @@ import { photos } from "@/lib/photos";
 export const metadata = {
   title: "Urgence plombier Lyon Caluire | Fuite, dégât des eaux 7j/7",
   description:
-    "Dépannage plomberie à Caluire et Lyon : fuite, dégât des eaux, WC, chaudière en sécurité. PLOMB'ACTIV, 06 67 44 79 29.",
+    "Appelez directement nos experts chez PLOMB'ACTIV au 06 67 44 79 29. Fuite, dégât des eaux, WC, chaudière. Caluire et Lyon, 7j/7.",
 };
 
 export default function UrgencesPage() {

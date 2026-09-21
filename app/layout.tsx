@@ -21,11 +21,11 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || brand.si
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Plombier Caluire-et-Cuire Lyon | PLOMB'ACTIV, dépannage, chaudière, clim",
-    template: "%s | PLOMB'ACTIV Caluire",
+    default: "Plombier Lyon Caluire | PLOMB'ACTIV",
+    template: "%s | PLOMB'ACTIV",
   },
   description:
-    "PLOMB'ACTIV, plombier à Caluire-et-Cuire (130 Grande rue de Saint Clair). Recherche de fuite, débouchage, ballon ECS, chaudière gaz, split. 06 67 44 79 29. Fiche Google 5,0/5.",
+    "Appelez directement nos experts chez PLOMB'ACTIV au 06 67 44 79 29. Dépannage plomberie, chauffage et clim à Caluire-et-Cuire, Lyon, Villeurbanne et le Grand Lyon. Devis gratuit.",
   keywords: [
     "plombier Caluire-et-Cuire",
     "plombier Lyon",
@@ -47,9 +47,9 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     url: siteUrl,
     siteName: "PLOMB'ACTIV",
-    title: "Plombier Caluire et Lyon, PLOMB'ACTIV, dépannage 7j/7",
+    title: "Plombier Lyon Caluire | PLOMB'ACTIV",
     description:
-      "PLOMB'ACTIV. Recherche de fuite, sanitaires, ECS, chaudière, clim. 130 Grande rue de Saint Clair, Caluire. 06 67 44 79 29.",
+      "Appelez directement nos experts chez PLOMB'ACTIV au 06 67 44 79 29. Plomberie, chauffage, clim. Caluire, Lyon, Grand Lyon. Devis gratuit.",
     images: [{ url: "/images/chantier/hero-landing-v3.jpg", width: 1920, height: 1080, alt: "PLOMB'ACTIV, pose de chauffe-eau Caluire Lyon" }],
   },
   twitter: { card: "summary_large_image" },

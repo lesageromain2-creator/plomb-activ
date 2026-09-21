@@ -7,7 +7,7 @@ import { brand, equipeConfiance } from "@/lib/siteCopy";
 export const metadata = {
   title: "Devis gratuit plombier Caluire Lyon | PLOMB'ACTIV",
   description:
-    "Devis gratuit plomberie, recherche de fuite, chaudière, ballon ECS, clim à Caluire et Lyon. PLOMB'ACTIV, 06 67 44 79 29.",
+    "Appelez directement nos experts chez PLOMB'ACTIV au 06 67 44 79 29. Devis gratuit plomberie, chaudière, ballon ECS, clim à Caluire et Lyon.",
 };
 
 export default function DevisPage() {

@@ -9,7 +9,7 @@ export function localBusinessJsonLd() {
     name: brand.name,
     alternateName: ["Plomb'activ", "Plombactiv", "Plomb'Activ Caluire"],
     description:
-      "PLOMB'ACTIV, plombier chauffagiste à Caluire-et-Cuire. Recherche de fuite, débouchage, ballon ECS, chaudière gaz, climatisation split. Dépannage Lyon.",
+      "Appelez directement nos experts chez PLOMB'ACTIV au 06 67 44 79 29. Plombier chauffagiste à Caluire-et-Cuire. Dépannage Lyon, chauffage, clim.",
     url: brand.siteUrl,
     telephone: "+33667447929",
     email: brand.email,
