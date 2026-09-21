@@ -8,15 +8,16 @@ import DevisForm from "@/components/DevisForm";
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-cream">
-      <section className="relative min-h-[92vh] text-white overflow-hidden flex items-center">
+      <section className="relative min-h-[92vh] w-full text-white overflow-hidden flex items-center">
         <Image
           src={photos.hero}
           alt="Plombier PLOMB'ACTIV en train d'installer un chauffe-eau, Caluire Lyon"
           fill
           priority
-          className="object-cover object-[70%_center]"
+          sizes="100vw"
+          className="object-cover object-right"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a]/80 via-[#0f172a]/35 to-transparent" aria-hidden />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/20 to-transparent" aria-hidden />
         <div className="relative z-10 max-w-6xl mx-auto px-4 py-24 w-full">
           <p className="text-secondary font-extrabold uppercase tracking-[0.18em] text-sm mb-3 drop-shadow">
             {home.heroKicker}
