@@ -1,62 +1,45 @@
 import Link from "next/link";
 import Image from "next/image";
 import PageHero from "@/components/PageHero";
-import { pages } from "@/lib/siteCopy";
+import { brand, home, pages } from "@/lib/siteCopy";
+import { photos } from "@/lib/photos";
 
 export const metadata = {
-  title: "Plombier chauffagiste Lyon Caluire | Services PLOMB'ACTIV",
+  title: "Prestations plombier Caluire Lyon | Fuite, ECS, chaudière, clim",
   description:
-    "Plomberie, chauffage, climatisation, chaudière, pose et entretien de clim, dépannage à Caluire-et-Cuire et Lyon. Devis gratuit GHOULI Foued.",
+    "Recherche de fuite, débouchage, ballon ECS, chaudière gaz, réseaux PER/cuivre, climatisation split. PLOMB'ACTIV — GHOULI Foued, Caluire-et-Cuire.",
 };
-
-const prestations = [
-  { nom: "Urgence fuite d'eau", prix: "Sur devis", duree: "Intervention rapide", urgence: true, desc: "Détection et réparation. Particuliers et commerces (intervention discrète en service)." },
-  { nom: "Débouchage & WC", prix: "Sur devis", duree: "1-2h", urgence: true, desc: "Canalisations, WC, évacuations — comme au Nuage Café, sans déranger la clientèle." },
-  { nom: "Chauffe-eau", prix: "Sur devis", duree: "Demi-journée", urgence: true, desc: "Diagnostic en quelques minutes, réparation ou remplacement. Avis 5 étoiles sur ce geste." },
-  { nom: "Chaudière", prix: "Sur devis", duree: "Selon modèle", urgence: true, desc: "Pose, remplacement (Vaillant et autres), dépannage, entretien." },
-  { nom: "Climatisation", prix: "Sur devis", duree: "1-2j", urgence: false, desc: "Pose de clim, entretien annuel, dépannage." },
-  { nom: "Plomberie complète", prix: "Sur devis", duree: "Selon chantier", urgence: false, desc: "Réseaux, garage, sanitaires, salle de bain — du neuf à l'ancien." },
-];
 
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-cream">
       <PageHero
-        title="Services — plomberie, chauffage, clim"
-        subtitle="GHOULI Foued à Caluire : urgence, dépannage, chaudière, pose et entretien de clim."
+        title="Prestations — plomberie, chauffage, clim"
+        subtitle={pages.servicesIntro}
         kicker="Grand Lyon"
-        imageSrc="/images/metier/pipes.jpg"
+        imageSrc={photos.reseaux}
       />
-      <section className="py-12 px-4 bg-white border-b border-primary/10">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-8 items-center">
-          <div className="relative w-full md:w-1/2 aspect-[4/3] rounded-2xl overflow-hidden shadow-card shrink-0">
-            <Image src="/images/metier/kit.jpg" alt="Outils plomberie chauffage climatisation" fill className="object-cover" />
-          </div>
-          <p className="text-gray-700 leading-relaxed text-lg">{pages.servicesIntro}</p>
-        </div>
-      </section>
-      <section className="py-16 px-4 bg-slate-50">
-        <div className="max-w-4xl mx-auto">
-          <p className="text-gray-600 text-center mb-10">Devis gratuit avant travaux — appelez le 07 65 26 65 26.</p>
-          <div className="space-y-5">
-            {prestations.map((p) => (
-              <div key={p.nom} className="bg-white rounded-2xl p-6 shadow-card border border-primary/10">
-                <div className="flex flex-wrap items-start justify-between gap-2">
-                  <h2 className="font-heading text-xl text-primary">{p.nom}</h2>
-                  <span className="text-secondary font-bold">{p.prix}</span>
-                </div>
-                <p className="text-gray-600 mt-2 leading-relaxed">{p.desc}</p>
-                <div className="mt-3 flex flex-wrap gap-2 items-center">
-                  <span className="text-sm text-gray-500">{p.duree}</span>
-                  {p.urgence && <span className="text-xs bg-red-50 text-red-700 px-2 py-1 rounded-full font-medium">Urgence</span>}
-                </div>
-                <Link href="/devis" className="mt-4 inline-block text-secondary font-semibold hover:underline">
-                  Demander un devis →
-                </Link>
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {home.serviceCards.map((c) => (
+            <Link key={c.title} href={c.href} className="group relative aspect-[4/3] rounded-2xl overflow-hidden">
+              <Image src={c.image} alt={c.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent" />
+              <span className="absolute top-3 left-3 text-[11px] font-bold uppercase bg-secondary text-white px-2 py-1 rounded">
+                {c.tag}
+              </span>
+              <div className="absolute bottom-0 p-5 text-white">
+                <h2 className="font-heading text-xl font-bold">{c.title}</h2>
+                <p className="mt-1 text-sm text-white/85">{c.desc}</p>
               </div>
-            ))}
-          </div>
+            </Link>
+          ))}
         </div>
+        <p className="text-center mt-10">
+          <a href={brand.phoneHref} className="inline-block rounded-lg bg-secondary text-white px-8 py-3 font-bold">
+            {brand.phone}
+          </a>
+        </p>
       </section>
     </div>
   );

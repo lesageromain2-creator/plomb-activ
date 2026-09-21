@@ -15,12 +15,12 @@ export default function AidesEtatPage() {
         title="Aides de l&apos;État"
         subtitle="MaPrimeRénov', CEE, TVA 5,5 % — financez votre projet chauffage et rénovation énergétique."
         kicker="Accompagnement"
-        imageSrc="/images/lyon/lyon-1.jpg"
+        imageSrc="/images/chantier/chaudiere.jpg"
       />
       <section className="py-16 px-4 bg-slate-50">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-card">
-            <Image src="/images/lyon/lyon-4.jpg" alt="Caluire et métropole lyonnaise" fill className="object-cover" />
+            <Image src="/images/chantier/clim.jpg" alt="Mise en service climatisation — PLOMB'ACTIV" fill className="object-cover" />
           </div>
           <div className="space-y-8">
             <div>

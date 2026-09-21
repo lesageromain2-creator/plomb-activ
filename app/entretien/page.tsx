@@ -2,49 +2,56 @@ import Image from "next/image";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import { brand, pages } from "@/lib/siteCopy";
+import { photos } from "@/lib/photos";
 
 export const metadata = {
-  title: "Chaudière & chauffage Lyon Caluire | Entretien PLOMB'ACTIV",
+  title: "Chaudière gaz & ballon ECS Lyon Caluire | PLOMB'ACTIV",
   description:
-    "Remplacement chaudière Vaillant, entretien chauffage et chauffe-eau à Caluire et Lyon. GHOULI Foued — 07 65 26 65 26.",
+    "Remplacement chaudière gaz (Vaillant…), entretien, ballon ECS Atlantic. GHOULI Foued — Caluire-et-Cuire. 06 67 44 79 29.",
 };
 
 export default function EntretienPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-cream">
       <PageHero
-        title="Chauffage, chaudière, entretien"
-        subtitle="Pose, remplacement et entretien de chaudière. Chauffe-eau. Détartrage. Caluire & Lyon."
-        kicker="Chauffagiste"
-        imageSrc="/images/metier/heater.jpg"
+        title="Chaudière gaz & eau chaude sanitaire"
+        subtitle="Dépannage, entretien, remplacement de chaudière. Pose de ballon ECS, groupe de sécurité."
+        kicker="Chauffage"
+        imageSrc={photos.chaudiere}
       />
-      <section className="py-16 px-4 bg-slate-50">
+      <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-card ring-1 ring-primary/10">
-            <Image src="/images/about.jpg" alt="Chaudière et chauffe-eau — GHOULI Foued" fill className="object-cover" />
+          <div className="space-y-4">
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+              <Image src={photos.chaudiere} alt="Chaudière gaz — brûleur, vase d'expansion" fill className="object-cover" />
+            </div>
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+              <Image src={photos.cumulus} alt="Ballon ECS Atlantic sur support" fill className="object-cover" />
+            </div>
           </div>
           <div className="space-y-8">
             <div>
-              <h2 className="font-heading text-2xl text-primary mb-3">Chaudière</h2>
+              <h2 className="font-heading text-2xl text-primary mb-3 font-bold">Chaudière gaz</h2>
               <p className="text-gray-700 leading-relaxed">
-                Installation, remplacement (Vaillant et autres marques) et dépannage. Un client Google : chaudière Vaillant
-                changée le 3 janvier, juste après les fêtes, à un prix abordable.
+                Corps de chauffe, brûleur, organe gaz, vase d&apos;expansion, carte. Dépannage, entretien, remplacement
+                (Vaillant et autres). Un avis Google : chaudière Vaillant changée le 3 janvier, juste après les fêtes.
               </p>
             </div>
             <div>
-              <h2 className="font-heading text-2xl text-primary mb-3">Chauffe-eau</h2>
+              <h2 className="font-heading text-2xl text-primary mb-3 font-bold">Ballon ECS</h2>
               <p className="text-gray-700 leading-relaxed">
-                Diagnostic rapide, réparation ou remplacement. Plusieurs avis 5 étoiles portent exactement sur ce geste.
+                Cumulus mural ou au sol, groupe de sécurité, brasage cuivre, raccordement PER. Pose Atlantic et équivalents.
+                Diagnostic rapide — plusieurs avis 5 étoiles sur ce geste.
               </p>
             </div>
             <div>
-              <h2 className="font-heading text-2xl text-primary mb-3">Entretien</h2>
+              <h2 className="font-heading text-2xl text-primary mb-3 font-bold">Entretien</h2>
               <p className="text-gray-700 leading-relaxed">{pages.entretienExtra}</p>
             </div>
-            <a href={brand.phoneHref} className="inline-block rounded-xl bg-primary text-white px-8 py-3 font-semibold">
+            <a href={brand.phoneHref} className="inline-block rounded-lg bg-secondary text-white px-8 py-3 font-bold">
               {brand.phone}
             </a>
-            <Link href="/devis" className="ml-3 text-secondary font-semibold hover:underline">
+            <Link href="/devis" className="ml-3 text-secondary font-semibold">
               Devis →
             </Link>
           </div>

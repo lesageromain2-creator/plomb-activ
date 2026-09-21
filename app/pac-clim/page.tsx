@@ -2,46 +2,47 @@ import Image from "next/image";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import { brand, pages } from "@/lib/siteCopy";
+import { photos } from "@/lib/photos";
 
 export const metadata = {
-  title: "Pose clim Lyon Caluire | Entretien climatisation PLOMB'ACTIV",
+  title: "Pose clim split Lyon Caluire | Mise en service PLOMB'ACTIV",
   description:
-    "Pose de climatisation, entretien et dépannage clim à Caluire-et-Cuire et Lyon. GHOULI Foued — devis gratuit.",
+    "Pose, charge frigorifique et mise en service de climatisation split (Fujitsu, Atlantic). Entretien et dépannage. GHOULI Foued, Caluire.",
 };
 
 export default function PacClimPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-cream">
       <PageHero
-        title="Climatisation — pose & entretien"
-        subtitle="Pose de clim, entretien annuel, dépannage. Confort sur Lyon et Caluire."
+        title="Climatisation split — pose & mise en service"
+        subtitle="Liaisons frigorifiques, tirage au vide, charge, mise en service. Entretien et dépannage."
         kicker="Clim"
-        imageSrc="/images/metier/heater.jpg"
+        imageSrc={photos.clim}
       />
-      <section className="py-16 px-4 bg-slate-50">
+      <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-8 order-2 lg:order-1">
             <div>
-              <h2 className="font-heading text-2xl text-primary mb-3">Pose de clim</h2>
+              <h2 className="font-heading text-2xl text-primary mb-3 font-bold">Pose de split</h2>
               <p className="text-gray-700 leading-relaxed">{pages.pacExtra}</p>
             </div>
             <div>
-              <h2 className="font-heading text-2xl text-primary mb-3">Entretien & dépannage</h2>
+              <h2 className="font-heading text-2xl text-primary mb-3 font-bold">Entretien &amp; dépannage</h2>
               <p className="text-gray-700 leading-relaxed">
-                Entretien pour garder le rendement. Panne en pleine chaleur : appelez le {brand.phone}.
+                Contrôle d&apos;étanchéité, filtres, pressions. Panne en saison : {brand.phone}.
               </p>
             </div>
+            <Link href="/aides-etat" className="text-secondary font-semibold">
+              Aides possibles (PAC) →
+            </Link>
             <div>
-              <Link href="/aides-etat" className="text-secondary font-semibold hover:underline">
-                Aides possibles (PAC) →
-              </Link>
+              <a href={brand.phoneHref} className="inline-block rounded-lg bg-secondary text-white px-8 py-3 font-bold">
+                {brand.phone}
+              </a>
             </div>
-            <a href={brand.phoneHref} className="inline-block rounded-xl bg-primary text-white px-8 py-3 font-semibold">
-              {brand.phone}
-            </a>
           </div>
-          <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-card ring-1 ring-primary/10 order-1 lg:order-2">
-            <Image src="/images/metier/bathroom.jpg" alt="Pose et entretien climatisation Lyon" fill className="object-cover" />
+          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden order-1 lg:order-2">
+            <Image src={photos.clim} alt="Mise en service split Fujitsu Atlantic — manomètres" fill className="object-cover" />
           </div>
         </div>
       </section>

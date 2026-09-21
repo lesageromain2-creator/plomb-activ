@@ -79,9 +79,19 @@ export default function GoogleReviewsCarousel() {
     <section id="avis" className="py-16 px-4 bg-white" aria-labelledby="avis-title">
       <div className="max-w-6xl mx-auto">
         <p className="text-center text-xs font-semibold uppercase tracking-widest text-secondary mb-2">Avis</p>
-        <h2 id="avis-title" className="font-heading text-3xl text-primary text-center mb-6">
-          Plomb&apos;activ
+        <h2 id="avis-title" className="font-heading text-3xl text-primary text-center mb-2 font-bold">
+          Avis Google Business
         </h2>
+        <p className="text-center mb-6">
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=PLOMB%27ACTIV%20130%20Grande%20rue%20de%20Saint%20Clair%20Caluire-et-Cuire"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-secondary font-semibold text-sm"
+          >
+            Voir la fiche Google validée →
+          </a>
+        </p>
         <div className="max-w-md mx-auto mb-10 rounded-2xl border border-gray-200 bg-gray-50 p-5">
           <p className="text-sm font-medium text-gray-800 mb-3">Résumé des avis Google</p>
           <div className="flex items-center gap-6">

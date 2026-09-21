@@ -4,9 +4,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#0369a1",
-        secondary: "#0ea5e9",
-        accent: "#f0f9ff",
+        primary: "#0f172a",
+        secondary: "#ea580c",
+        accent: "#fff7ed",
+        cream: "#f6f1e7",
       },
       fontFamily: { heading: ["var(--font-heading)"], body: ["var(--font-body)"] },
       boxShadow: {

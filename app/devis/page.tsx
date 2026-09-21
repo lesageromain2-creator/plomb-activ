@@ -3,28 +3,30 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import DevisForm from "@/components/DevisForm";
 import { brand, equipeConfiance } from "@/lib/siteCopy";
+import { photos } from "@/lib/photos";
 
 export const metadata = {
-  title: "Devis gratuit plombier Lyon | Clim chaudière urgence PLOMB'ACTIV",
+  title: "Devis gratuit plombier Caluire Lyon | PLOMB'ACTIV",
   description:
-    "Devis gratuit plomberie, chauffage, clim et dépannage à Caluire et Lyon. GHOULI Foued — 07 65 26 65 26.",
+    "Devis gratuit plomberie, recherche de fuite, chaudière, ballon ECS, clim à Caluire et Lyon. GHOULI Foued — 06 67 44 79 29.",
 };
 
 export default function DevisPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-cream">
       <PageHero
-        title="Demander un devis gratuit"
-        subtitle="Décrivez votre projet : réponse sous 24 h ouvrées. Pour une urgence, appelez pendant les horaires d&apos;ouverture."
-        kicker="Sans engagement"
+        title="Devis gratuit — sans engagement"
+        subtitle="Décrivez le désordre ou le chantier. Pour une urgence, appelez le 06 67 44 79 29."
+        kicker="Devis"
+        imageSrc={photos.reseaux}
       />
-      <section className="py-16 px-4 bg-slate-50">
+      <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
           <div>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-card mb-8 ring-1 ring-primary/10">
-              <Image src="/images/metier/tools.jpg" alt="Plomberie professionnelle" fill className="object-cover" />
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-8">
+              <Image src={photos.wcAvantApres} alt="Avant / après WC suspendu — PLOMB'ACTIV" fill className="object-cover" />
             </div>
-            <h2 className="font-heading text-xl text-primary mb-3">Pourquoi nous faire confiance ?</h2>
+            <h2 className="font-heading text-xl text-primary mb-3 font-bold">Pourquoi PLOMB&apos;ACTIV</h2>
             <p className="text-gray-700 leading-relaxed mb-4">{equipeConfiance.intro}</p>
             <ul className="space-y-3 text-gray-700 text-sm">
               {equipeConfiance.bullets.map((b) => (
@@ -34,15 +36,17 @@ export default function DevisPage() {
               ))}
             </ul>
             <p className="mt-6 text-sm text-gray-600">
-              Urgence ? <a href={brand.phoneHref} className="text-secondary font-semibold">{brand.phone}</a> — {brand.hours}.
+              Urgence ?{" "}
+              <a href={brand.phoneHref} className="text-secondary font-semibold">
+                {brand.phone}
+              </a>
             </p>
           </div>
-          <div className="max-w-xl mx-auto w-full lg:mx-0">
+          <div className="w-full rounded-2xl bg-white p-6 border border-black/5">
             <DevisForm />
             <p className="mt-6 text-center text-sm text-gray-600">
-              Prix indicatifs — devis gratuit.{" "}
-              <Link href="/tarifs" className="text-secondary font-medium hover:underline">
-                Voir la grille tarifaire
+              <Link href="/tarifs" className="text-secondary font-medium">
+                Voir les ordres de grandeur
               </Link>
             </p>
           </div>

@@ -11,7 +11,7 @@ export const metadata = {
 export default function AvisPage() {
   return (
     <div className="min-h-screen">
-      <PageHero title="Avis Google" subtitle={pages.avisIntro} kicker="5,0 / 5 · 8 avis" />
+      <PageHero title="Avis Google Business" subtitle={pages.avisIntro} kicker="5,0 / 5 · 8 avis" imageSrc="/images/chantier/cumulus.jpg" />
       <GoogleReviewsCarousel />
     </div>
   );

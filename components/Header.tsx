@@ -7,7 +7,7 @@ import { brand } from "@/lib/siteCopy";
 
 const navLinks = [
   { href: "/", label: "Accueil" },
-  { href: "/services", label: "Services" },
+  { href: "/services", label: "Prestations" },
   { href: "/urgences", label: "Urgences" },
   { href: "/entretien", label: "Chauffage" },
   { href: "/pac-clim", label: "Clim" },
@@ -19,7 +19,7 @@ const navLinks = [
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-primary/10">
+    <header className="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-black/10">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
         <Link href="/" className="flex items-center gap-3 min-w-0">
           <Image
@@ -27,24 +27,24 @@ export default function Header() {
             alt={`${brand.name} — logo`}
             width={44}
             height={44}
-            className="rounded-full ring-1 ring-primary/20 shrink-0 object-cover"
+            className="rounded-md ring-1 ring-black/10 shrink-0 object-cover"
             priority
           />
           <span className="flex flex-col min-w-0">
-            <span className="font-heading text-xl font-semibold text-primary leading-tight">{brand.name}</span>
-            <span className="text-[11px] text-gray-500 hidden sm:block">GHOULI Foued — Caluire &amp; Lyon</span>
+            <span className="font-heading text-lg font-bold text-primary leading-tight tracking-tight">{brand.name}</span>
+            <span className="text-[11px] text-secondary font-semibold hidden sm:block">Astreinte dépannage 7j/7</span>
           </span>
         </Link>
         <nav className="hidden lg:flex flex-wrap items-center justify-end gap-x-4 text-sm">
           {navLinks.map((l) => (
-            <Link key={l.href} href={l.href} className="text-gray-700 hover:text-primary font-medium">
+            <Link key={l.href} href={l.href} className="text-primary/80 hover:text-primary font-medium">
               {l.label}
             </Link>
           ))}
         </nav>
         <a
           href={brand.phoneHref}
-          className="hidden md:inline rounded-lg bg-red-600 text-white px-3 py-2 text-sm font-semibold hover:opacity-90 shrink-0"
+          className="hidden md:inline rounded-lg bg-secondary text-white px-3 py-2.5 text-sm font-bold hover:opacity-90 shrink-0 shadow-sm"
         >
           {brand.phone}
         </a>
@@ -59,17 +59,14 @@ export default function Header() {
         </button>
       </div>
       {open && (
-        <div className="lg:hidden border-t border-primary/10 bg-white px-4 py-4 flex flex-col gap-2">
+        <div className="lg:hidden border-t border-black/10 bg-cream px-4 py-4 flex flex-col gap-2">
           {navLinks.map((l) => (
-            <Link key={l.href} href={l.href} className="text-gray-700 hover:text-primary font-medium" onClick={() => setOpen(false)}>
+            <Link key={l.href} href={l.href} className="text-primary font-medium" onClick={() => setOpen(false)}>
               {l.label}
             </Link>
           ))}
-          <a href={brand.phoneHref} className="text-red-600 font-semibold">
+          <a href={brand.phoneHref} className="text-secondary font-bold">
             Appeler {brand.phone}
-          </a>
-          <a href={`mailto:${brand.email}`} className="text-primary font-medium">
-            {brand.email}
           </a>
         </div>
       )}

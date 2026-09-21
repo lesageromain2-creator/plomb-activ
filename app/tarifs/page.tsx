@@ -40,7 +40,7 @@ export default function TarifsPage() {
       <section className="py-12 px-4 bg-white">
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center">
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-card order-2 md:order-1">
-            <Image src="/images/metier/workshop.jpg" alt="Plomberie professionnelle" fill className="object-cover" />
+            <Image src="/images/chantier/reseaux.jpg" alt="Réseaux cuivre et PER — PLOMB'ACTIV" fill className="object-cover" />
           </div>
           <p className="text-gray-700 leading-relaxed order-1 md:order-2">
             Chez PLOMB&apos;ACTIV, pas de surprise : le devis décrit ce qui est inclus avant de commencer. Artisan{" "}
