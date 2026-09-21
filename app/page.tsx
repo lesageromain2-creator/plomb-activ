@@ -8,42 +8,47 @@ import DevisForm from "@/components/DevisForm";
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-cream">
-      <section className="relative min-h-[88vh] text-white overflow-hidden flex items-center">
+      <section className="relative min-h-[92vh] text-white overflow-hidden flex items-center">
         <Image
           src={photos.hero}
-          alt="Intervention plomberie — vanne et réseau cuivre, PLOMB'ACTIV Caluire"
+          alt="Plombier PLOMB'ACTIV en intervention — réparation sous évier, Caluire Lyon"
           fill
           priority
-          className="object-cover object-center"
+          className="object-cover object-[68%_center]"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/65 to-black/30" aria-hidden />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/45 to-transparent" aria-hidden />
         <div className="relative z-10 max-w-6xl mx-auto px-4 py-24 w-full">
-          <p className="text-secondary font-bold uppercase tracking-widest text-sm mb-3">{home.heroKicker}</p>
-          <h1 className="font-heading text-4xl md:text-6xl font-extrabold tracking-tight max-w-3xl leading-[1.05]">
+          <p className="text-secondary font-extrabold uppercase tracking-[0.18em] text-sm mb-3 drop-shadow">
+            {home.heroKicker}
+          </p>
+          <h1 className="font-heading text-5xl md:text-7xl font-extrabold tracking-tight max-w-3xl leading-[0.95] drop-shadow-lg">
             {home.heroTitle}
+            <span className="block text-secondary">{home.heroTitleAccent}</span>
           </h1>
-          <p className="mt-2 text-xl md:text-2xl font-heading font-semibold text-white/90">Artisan de proximité</p>
-          <p className="mt-5 text-base md:text-lg text-white/90 max-w-xl leading-relaxed border-l-4 border-secondary pl-4">
+          <p className="mt-3 text-2xl md:text-3xl font-heading font-bold italic text-white drop-shadow">
+            Artisan de proximité
+          </p>
+          <p className="mt-5 text-base md:text-lg text-white max-w-lg leading-relaxed bg-black/45 border-l-4 border-secondary pl-4 py-3 rounded-r-md">
             {home.heroLead}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href={brand.phoneHref}
-              className="rounded-lg bg-secondary text-white px-8 py-3.5 font-bold shadow-lg hover:opacity-90"
+              className="rounded-lg bg-secondary text-white px-8 py-4 text-lg font-extrabold shadow-lg hover:opacity-90"
             >
               {brand.phone}
             </a>
             <Link
               href="#devis-form"
-              className="rounded-lg bg-white text-primary px-8 py-3.5 font-bold hover:bg-accent"
+              className="rounded-lg bg-white text-primary px-8 py-4 text-lg font-extrabold hover:bg-accent"
             >
               Devis gratuit →
             </Link>
           </div>
           <div className="mt-8 flex flex-wrap gap-2 text-sm">
-            <span className="rounded-full bg-black/50 border border-white/20 px-3 py-1.5">Entreprise locale</span>
-            <span className="rounded-full bg-black/50 border border-white/20 px-3 py-1.5">Dépannage 7j/7</span>
-            <span className="rounded-full bg-black/50 border border-white/20 px-3 py-1.5">Fiche Google validée</span>
+            <span className="rounded-full bg-black/55 border border-white/25 px-3 py-1.5 font-medium">Entreprise locale</span>
+            <span className="rounded-full bg-black/55 border border-white/25 px-3 py-1.5 font-medium">Urgence 7j/7</span>
+            <span className="rounded-full bg-black/55 border border-white/25 px-3 py-1.5 font-medium">Devis gratuit</span>
           </div>
         </div>
       </section>

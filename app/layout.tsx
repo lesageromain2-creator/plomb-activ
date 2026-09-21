@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "Plombier Caluire & Lyon — PLOMB'ACTIV, dépannage 7j/7",
     description:
       "PLOMB'ACTIV. Recherche de fuite, sanitaires, ECS, chaudière, clim. 130 Grande rue de Saint Clair, Caluire. 06 67 44 79 29.",
-    images: [{ url: "/images/chantier/hero.jpg", width: 1200, height: 800, alt: "PLOMB'ACTIV plomberie Caluire" }],
+    images: [{ url: "/images/chantier/hero-landing.png", width: 1376, height: 768, alt: "PLOMB'ACTIV plombier Caluire Lyon" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: siteUrl },

@@ -95,10 +95,11 @@ export const equipeConfiance = {
 };
 
 export const home = {
-  heroKicker: "Artisan de proximité · Caluire & Grand Lyon",
-  heroTitle: "Le plombier qu'il vous faut",
+  heroKicker: "Artisan de proximité",
+  heroTitle: "Le plombier",
+  heroTitleAccent: "qu'il vous faut",
   heroLead:
-    "Recherche de fuite, débouchage, ballon d'eau chaude, chaudière gaz, pose et mise en service de climatisation. PLOMB'ACTIV se déplace. Devis gratuit, sans engagement.",
+    "Urgence plomberie, débouchage, fuite d'eau, chaudière ou climatisation — PLOMB'ACTIV intervient rapidement 7j/7 sur Caluire et Lyon. Devis gratuit, sans engagement.",
   stats: [
     { value: "5,0/5", label: "Google Business", detail: "8 avis vérifiés" },
     { value: "7j/7", label: "Dépannage", detail: "Caluire & métropole" },

@@ -1,6 +1,7 @@
 /** Chantiers réels PLOMB'ACTIV — uniquement le dossier « images site web ». */
 export const photos = {
-  hero: "/images/chantier/hero.jpg",
+  hero: "/images/chantier/hero-landing.png",
+  heroWork: "/images/chantier/hero.jpg",
   artisan: "/images/chantier/artisan.jpg",
   chaudiere: "/images/chantier/chaudiere.jpg",
   chalumeau: "/images/chantier/chalumeau.jpg",
@@ -25,6 +26,6 @@ export const gallery = [
   { src: photos.wc, alt: "Pose de WC à poser, raccordement évacuation" },
   { src: photos.ballonMural, alt: "Chauffe-eau électrique mural et colonne d'alimentation" },
   { src: photos.chalumeau, alt: "Poste oxyacétylénique pour brasage cuivre sur chantier" },
-  { src: photos.hero, alt: "Serrage vanne et réseau cuivre sous évier" },
+  { src: photos.heroWork, alt: "Serrage vanne et réseau cuivre sous évier" },
   { src: photos.interventionLyon, alt: "Intervention PLOMB'ACTIV à Lyon — matériel sur diable" },
 ];
