@@ -14,7 +14,7 @@ export default function HomePage() {
           alt="Plombier PLOMB'ACTIV en intervention — réparation sous évier, Caluire Lyon"
           fill
           priority
-          className="object-cover object-[68%_center]"
+          className="object-cover object-[78%_center]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/45 to-transparent" aria-hidden />
         <div className="relative z-10 max-w-6xl mx-auto px-4 py-24 w-full">
