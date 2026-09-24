@@ -5,11 +5,13 @@ import { photos } from "@/lib/photos";
 import RelatedLinks from "@/components/RelatedLinks";
 import CtaRow from "@/components/CtaRow";
 
-export const metadata = {
-  title: "Plombier urgence Lyon | Dépannage PLOMB'ACTIV Caluire",
-  description:
-    "Appelez directement nos experts chez PLOMB'ACTIV au 06 67 44 79 29. Fuite, dégât des eaux, WC, chaudière. Caluire et Lyon, 7j/7.",
-};
+import { pageMeta } from "@/lib/pageMeta";
+
+export const metadata = pageMeta(
+  "/urgences",
+  "Plombier urgence Lyon | Dépannage Caluire",
+  "Appelez directement nos experts chez PLOMB'ACTIV au 06 67 44 79 29. Fuite, dégât des eaux, WC, chaudière. Caluire et Lyon, 7j/7."
+);
 
 export default function UrgencesPage() {
   return (

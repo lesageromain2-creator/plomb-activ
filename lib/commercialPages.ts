@@ -5,7 +5,7 @@ import type { CommercialContent } from "@/components/CommercialPage";
 const phone = brand.phone;
 
 export const fuiteEau: CommercialContent = {
-  title: "Fuite d'eau Lyon | Recherche et réparation PLOMB'ACTIV",
+  title: "Fuite d'eau Lyon | Recherche et réparation",
   description: `Recherche et réparation de fuite d'eau à Lyon et Caluire-et-Cuire. Appelez ${phone}. Isolation du réseau, diagnostic, remise en eau.`,
   h1: "Fuite d'eau à Lyon et Caluire",
   kicker: "Recherche de fuite",
@@ -13,10 +13,12 @@ export const fuiteEau: CommercialContent = {
   image: photos.degatEaux,
   imageAlt: "Dégât des eaux sur plafond, recherche de fuite à Caluire-et-Cuire",
   showUrgence: true,
+  delayNote: "Urgence joignable 7j/7. On confirme le créneau au téléphone, sans délai affiché en minutes.",
+  priceNote: "Diagnostic et réparation sur devis. Hors urgence, devis gratuit avant ouverture du chantier. Ordres de grandeur sur la page tarifs.",
   crumbs: [{ name: "Fuite d'eau", path: "/fuite-eau" }],
   related: [
-    { href: "/urgences", label: "Urgence plomberie" },
-    { href: "/debouchage", label: "Débouchage" },
+    { href: "/recherche-de-fuite", label: "Recherche de fuite" },
+    { href: "/degat-des-eaux", label: "Dégât des eaux" },
     { href: "/plombier-lyon", label: "Plombier Lyon" },
   ],
   sections: [
@@ -48,6 +50,8 @@ export const debouchage: CommercialContent = {
   lead: "WC qui reflue, siphon lent, colonne qui sent : on diagnostique avant de forcer. Pose et remplacement de WC à poser ou suspendu si le sanitaire est en cause.",
   image: photos.wc,
   imageAlt: "Pose de WC et raccordement d'évacuation, chantier PLOMB'ACTIV",
+  delayNote: "Souvent le jour même en semaine si l'accès est clair. Week-end : astreinte, on dit si on peut passer.",
+  priceNote: "Pas de forfait unique : accès, colonne ou siphon changent le geste. Devis avant de forcer si ce n'est pas une urgence vitale.",
   crumbs: [{ name: "Débouchage", path: "/debouchage" }],
   related: [
     { href: "/fuite-eau", label: "Fuite d'eau" },
@@ -79,6 +83,8 @@ export const chauffeEau: CommercialContent = {
   lead: "Plus d'eau chaude, groupe de sécurité qui fuit, ballon en fin de vie : diagnostic, remplacement mural ou au sol, brasage et mise en eau.",
   image: photos.cumulus,
   imageAlt: "Pose de ballon d'eau chaude sanitaire Atlantic sur support, Caluire",
+  delayNote: "Chantier programmé en semaine (atelier 8h-18h). Panne d'eau chaude : on voit si un créneau d'astreinte tient.",
+  priceNote: "Le marché public cite souvent 800 à 2 500 € fourniture + pose selon capacité et accès. Devis PLOMB'ACTIV, gratuit hors urgence.",
   crumbs: [{ name: "Chauffe-eau", path: "/chauffe-eau" }],
   related: [
     { href: "/chauffage", label: "Chaudière gaz" },
@@ -164,7 +170,7 @@ export const climatisation: CommercialContent = {
 };
 
 export const plombierCaluire: CommercialContent = {
-  title: "Plombier Caluire-et-Cuire | PLOMB'ACTIV dépannage local",
+  title: "Plombier Caluire-et-Cuire | Dépannage local",
   description: `Plombier à Caluire-et-Cuire, 130 Grande rue de Saint Clair. Fuite, débouchage, chauffe-eau, chaudière, clim. Appelez ${phone}.`,
   h1: "Plombier à Caluire-et-Cuire",
   kicker: "Artisan local",
@@ -195,7 +201,7 @@ export const plombierCaluire: CommercialContent = {
 };
 
 export const plombierLyon: CommercialContent = {
-  title: "Plombier Lyon | Dépannage, chauffage, clim PLOMB'ACTIV",
+  title: "Plombier Lyon | Dépannage, chauffage, clim",
   description: `Plombier à Lyon depuis Caluire-et-Cuire. Urgence, fuite, débouchage, chaudière, clim. Ligne directe ${phone}. Devis gratuit.`,
   h1: "Plombier à Lyon",
   kicker: "Grand Lyon",
@@ -224,3 +230,105 @@ export const plombierLyon: CommercialContent = {
     { q: "Urgence le dimanche ?", a: "Ligne joignable 7j/7. On ne garantit pas un délai en minutes." },
   ],
 };
+
+export const rechercheDeFuite: CommercialContent = {
+  title: "Recherche de fuite Lyon | Diagnostic Caluire-et-Cuire",
+  description: `Recherche de fuite encastrée, compteur qui tourne, humidité plafond. PLOMB'ACTIV isole, localise, répare. ${phone}. Caluire, Lyon, Villeurbanne.`,
+  h1: "Recherche de fuite à Lyon et Caluire",
+  kicker: "Diagnostic",
+  lead: "Fuite invisible, compteur qui tourne à vide, tache qui s'étend : on cherche avant de casser. Isolation du réseau, test, réparation ciblée.",
+  image: photos.degatEaux,
+  imageAlt: "Plafond dégradé, recherche de fuite et dégât des eaux",
+  showUrgence: true,
+  delayNote: "Fuite active : joignable 7j/7. Fuite lente : rendez-vous atelier en semaine.",
+  priceNote: "Le coût dépend de l'accessibilité (encastré, dalle, colonne). Devis expliqué avant d'ouvrir un mur, hors urgence vitale.",
+  crumbs: [{ name: "Recherche de fuite", path: "/recherche-de-fuite" }],
+  related: [
+    { href: "/fuite-eau", label: "Fuite d'eau" },
+    { href: "/degat-des-eaux", label: "Dégât des eaux" },
+    { href: "/urgences", label: "Urgence" },
+  ],
+  sections: [
+    {
+      h2: "Ce que ça veut dire sur place",
+      body: "On démarre par l'évidence : vanne, compteur, joints, groupe de sécurité, siphon. Si le réseau est encastré, on affine (écoute, points humides, secteurs) avant de casser. L'objectif est de réparer le bon tube, pas de démolir la salle de bains.",
+      bullets: ["Compteur qui tourne robinets fermés", "Humidité plafond ou plinthe", "Fuite PER / cuivre encastrée", "Joint de chasse, vanne, collier"],
+    },
+    {
+      h2: "Après la localisation",
+      body: "Réparation (brasage, collier, remplacement de tronçon, vanne). Remise en eau et contrôle. Photos du dégât utiles pour l'assurance : on vous laisse le temps de les faire.",
+    },
+  ],
+  faqs: [
+    { q: "Faut-il casser le carrelage ?", a: "Pas systématiquement. On commence par le non destructif. Si un ouverture est nécessaire, on vous le dit avant." },
+    { q: "Caluire et Villeurbanne ?", a: "Oui. Base à Saint Clair. Villeurbanne, Lyon, Rillieux et communes dans un rayon réaliste depuis l'atelier." },
+  ],
+};
+
+export const remplacementWc: CommercialContent = {
+  title: "Remplacement WC Lyon | Pose et évacuation Caluire",
+  description: `Remplacement WC à poser ou suspendu, raccordement évacuation, débouchage associé. PLOMB'ACTIV, Caluire et Lyon. ${phone}.`,
+  h1: "Remplacement de WC à Lyon et Caluire",
+  kicker: "Sanitaires",
+  lead: "WC fissuré, chasse qui fuit, cuvette instable ou évacuation mal raccordée : dépose, pose à poser ou suspendu, joint et essai.",
+  image: photos.wcAvantApres,
+  imageAlt: "Remplacement WC : sanitaire ancien vers WC suspendu, chantier PLOMB'ACTIV",
+  delayNote: "Travaux programmés en semaine. Fuite chasse ou débouchage : possible en astreinte selon le créneau.",
+  priceNote: "Fourniture + pose selon modèle (à poser, suspendu, bâti-support). Devis avant commande du sanitaire.",
+  crumbs: [{ name: "Remplacement WC", path: "/remplacement-wc" }],
+  related: [
+    { href: "/debouchage", label: "Débouchage" },
+    { href: "/fuite-eau", label: "Fuite" },
+    { href: "/realisations", label: "Photos avant / après" },
+  ],
+  sections: [
+    {
+      h2: "Quand changer plutôt que débouchager",
+      body: "Si la cuvette est fêlée, le mécanisme HS, le WC se déplace ou l'évacuation est mal calée, le débouchage ne suffit pas. Photos avant / après sur le site : passage d'un ancien sanitaire à un suspendu.",
+      bullets: ["WC à poser", "WC suspendu et bâti-support", "Joint à lèvre, raccord PVC", "Fuite au pied de cuvette"],
+    },
+    {
+      h2: "Déroulement",
+      body: "Protection du sol, dépose, contrôle de la sortie (sortie horizontale ou verticale), pose, silicone si besoin, essai chasse. Propre, comme sur les photos d'atelier.",
+    },
+  ],
+  faqs: [
+    { q: "Vous fournissez le WC ?", a: "Oui, ou on pose le vôtre si le modèle est compatible avec la sortie. On le dit au devis." },
+    { q: "WC bouché sans remplacement ?", a: "Oui, page débouchage. On ne change pas un WC qui n'en a pas besoin." },
+  ],
+};
+
+export const degatDesEaux: CommercialContent = {
+  title: "Dégât des eaux Lyon | Plombier assurance Caluire",
+  description: `Fuite, inondation, plafond, recherche de cause pour assurance. PLOMB'ACTIV isole et répare. Photos du dégât. ${phone}. Lyon et Caluire.`,
+  h1: "Dégât des eaux à Lyon et Caluire",
+  kicker: "Assurance",
+  lead: "Eau au plafond, au sol, dans un commerce : on coupe, on trouve l'origine, on répare. Vous photographiez pour le dossier assurance ; on ne rédige pas l'expertise à votre place.",
+  image: photos.degatEaux,
+  imageAlt: "Dégât des eaux plafond, intervention plomberie PLOMB'ACTIV",
+  showUrgence: true,
+  delayNote: "Fuite active : ligne 7j/7. On ne promet pas 30 minutes. On dit si on peut passer.",
+  priceNote: "Intervention sur devis. Le remboursement assurance dépend de votre contrat, pas de nous.",
+  crumbs: [{ name: "Dégât des eaux", path: "/degat-des-eaux" }],
+  related: [
+    { href: "/recherche-de-fuite", label: "Recherche de fuite" },
+    { href: "/fuite-eau", label: "Fuite d'eau" },
+    { href: "/urgences", label: "Urgence" },
+  ],
+  sections: [
+    {
+      h2: "Ce qu'on fait (et ce qu'on ne fait pas)",
+      body: "On est plombier : isolation, recherche, réparation du réseau. On n'est pas expert d'assurance ni peintre. Un avis Google décrit une fuite WC en commerce, intervention discrète pendant l'ouverture.",
+      bullets: ["Couper l'eau, limiter le sinistre", "Trouver la cause (joint, tube, chasse, ballon)", "Réparer pour arrêter l'eau", "Vous laissez des photos datées pour l'assureur"],
+    },
+    {
+      h2: "Zone",
+      body: "Caluire-et-Cuire, Lyon, Villeurbanne, Rillieux et communes dans un rayon d'environ 50 km quand le trajet tient. Confirmez au 06 67 44 79 29.",
+    },
+  ],
+  faqs: [
+    { q: "Intervenez-vous pour l'assurance ?", a: "On répare la cause plomberie. Le dossier (constat, expert) reste le vôtre et celui de l'assureur." },
+    { q: "Faut-il garder l'eau ouverte ?", a: "Non. Coupez si vous pouvez, photographiez, appelez." },
+  ],
+};
+

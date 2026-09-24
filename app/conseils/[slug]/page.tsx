@@ -4,16 +4,17 @@ import PageHero from "@/components/PageHero";
 import CtaRow from "@/components/CtaRow";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import { photos } from "@/lib/photos";
+import { pageMeta } from "@/lib/pageMeta";
 import { conseils } from "@/lib/conseils";
-
-export function generateStaticParams() {
-  return conseils.map((c) => ({ slug: c.slug }));
-}
 
 export function generateMetadata({ params }: { params: { slug: string } }) {
   const c = conseils.find((x) => x.slug === params.slug);
   if (!c) return {};
-  return { title: c.title, description: c.description };
+  return pageMeta(`/conseils/${c.slug}`, c.title, c.description);
+}
+
+export function generateStaticParams() {
+  return conseils.map((c) => ({ slug: c.slug }));
 }
 
 export default function ConseilPage({ params }: { params: { slug: string } }) {

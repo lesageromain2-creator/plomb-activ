@@ -3,11 +3,13 @@ import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import { pages } from "@/lib/siteCopy";
 
-export const metadata = {
-  title: "Tarifs PLOMB'ACTIV | Prix indicatifs plomberie Caluire",
-  description:
-    "Fourchettes de marché pour un plombier à Caluire-et-Cuire. Devis gratuit PLOMB'ACTIV selon votre chantier.",
-};
+import { pageMeta } from "@/lib/pageMeta";
+
+export const metadata = pageMeta(
+  "/tarifs",
+  "Tarifs | Prix indicatifs plomberie Caluire",
+  "Fourchettes de marché pour un plombier à Caluire-et-Cuire. Devis gratuit PLOMB'ACTIV selon votre chantier."
+);
 
 const tarifs = [
   { service: "Tarif horaire (marché)", prix: "45 à 65 €/h", inclus: "Moyenne constatée, hors fournitures" },

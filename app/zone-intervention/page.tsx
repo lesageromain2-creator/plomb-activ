@@ -1,13 +1,17 @@
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
+import { pageMeta } from "@/lib/pageMeta";
 import { brand, zone } from "@/lib/siteCopy";
 import { photos } from "@/lib/photos";
+import { villes } from "@/lib/villes";
 
-export const metadata = {
-  title: "Plombier Lyon Villeurbanne Caluire | Zone d'intervention PLOMB'ACTIV",
-  description:
-    "Plombier à Caluire-et-Cuire : interventions Lyon 1er à 9e, Villeurbanne, Rillieux, Monts d'Or, Bron, Vénissieux. Dépannage, chauffage, clim.",
-};
+const villeSlug: Record<string, string> = Object.fromEntries(villes.map((v) => [v.name, `/plombier/${v.slug}`]));
+
+export const metadata = pageMeta(
+  "/zone-intervention",
+  "Plombier Lyon Villeurbanne Caluire | Zone d'intervention",
+  "Plombier à Caluire-et-Cuire : interventions Lyon 1er à 9e, Villeurbanne, Rillieux, Monts d'Or, Bron, Vénissieux. Dépannage, chauffage, clim."
+);
 
 export default function ZonePage() {
   return (
@@ -33,6 +37,10 @@ export default function ZonePage() {
                   </Link>
                 ) : c.startsWith("Lyon") ? (
                   <Link href="/plombier-lyon" className="hover:text-secondary">
+                    Plombier {c}
+                  </Link>
+                ) : villeSlug[c] ? (
+                  <Link href={villeSlug[c]} className="text-secondary font-semibold">
                     Plombier {c}
                   </Link>
                 ) : (

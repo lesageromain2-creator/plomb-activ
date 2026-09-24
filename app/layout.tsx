@@ -26,21 +26,6 @@ export const metadata: Metadata = {
   },
   description:
     "Appelez directement nos experts chez PLOMB'ACTIV au 06 67 44 79 29. Dépannage plomberie, chauffage et clim à Caluire-et-Cuire, Lyon, Villeurbanne et le Grand Lyon. Devis gratuit.",
-  keywords: [
-    "plombier Caluire-et-Cuire",
-    "plombier Lyon",
-    "plombier Caluire",
-    "dépannage plomberie Lyon",
-    "urgence plombier Lyon",
-    "recherche de fuite Lyon",
-    "débouchage canalisation Caluire",
-    "chauffagiste Caluire",
-    "chaudière gaz Lyon",
-    "ballon eau chaude Caluire",
-    "climatisation split Lyon",
-    "dégât des eaux Lyon",
-    "PLOMB'ACTIV",
-  ],
   authors: [{ name: "PLOMB'ACTIV" }],
   openGraph: {
     type: "website",
@@ -53,7 +38,6 @@ export const metadata: Metadata = {
     images: [{ url: "/images/chantier/hero-landing-v3.jpg", width: 1920, height: 1080, alt: "PLOMB'ACTIV, pose de chauffe-eau Caluire Lyon" }],
   },
   twitter: { card: "summary_large_image" },
-  alternates: { canonical: siteUrl },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" } },
   icons: { icon: "/images/logo.png", apple: "/images/logo.png" },
   verification: {

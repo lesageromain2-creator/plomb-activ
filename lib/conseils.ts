@@ -50,4 +50,52 @@ export const conseils = [
       "Plusieurs clients ont noté PLOMB'ACTIV 5 étoiles précisément pour un chauffe-eau. Appelez le 06 67 44 79 29.",
     ],
   },
+  {
+    slug: "odeur-gaz-chaudiere",
+    title: "Odeur de gaz près de la chaudière",
+    description: "Que faire en cas d'odeur de gaz à Lyon ou Caluire : aérer, couper, appeler. PLOMB'ACTIV dépannage chaudière gaz.",
+    h1: "Odeur de gaz près de la chaudière",
+    body: [
+      "Aérez, n'actionnez pas d'interrupteur, n'allumez pas une flamme. Si l'odeur est nette, sortez et appelez le 04 72 11 13 13 (Urgence sécurité gaz GRDF) en plus du plombier.",
+      "Coupez l'arrivée gaz si vous savez où est le robinet, sans forcer.",
+      "PLOMB'ACTIV intervient sur chaudière gaz (brûleur, organe, étanchéité). On n'est pas le service d'urgence réseau GRDF : les deux numéros peuvent se succéder.",
+      "Atelier Caluire : 06 67 44 79 29.",
+    ],
+  },
+  {
+    slug: "ballon-eau-chaude-fuit",
+    title: "Ballon d'eau chaude qui fuit",
+    description: "Groupe de sécurité qui goutte, fuite sous le cumulus, flaque au sol. Gestes et remplacement à Caluire et Lyon.",
+    h1: "Ballon d'eau chaude qui fuit",
+    body: [
+      "Un groupe de sécurité goutte un peu au réchauffage : c'est normal. Un filet continu ou une flaque sous la cuve : ce n'est plus du fonctionnement.",
+      "Coupez l'arrivée d'eau du ballon et l'électrique. Posez une bassine. Ne videz pas à l'aveugle un ballon encore chaud sans précaution.",
+      "Souvent : groupe HS, raccord, ou cuve percée (changement de l'appareil). Photos de poses Atlantic sur le site.",
+      "PLOMB'ACTIV, 06 67 44 79 29.",
+    ],
+  },
+  {
+    slug: "mitigeur-qui-goutte",
+    title: "Mitigeur ou robinet qui goutte",
+    description: "Robinet qui goutte à Lyon ou Caluire : cartouche, siège, remplacement. PLOMB'ACTIV plomberie sanitaire.",
+    h1: "Mitigeur qui goutte",
+    body: [
+      "Un goutte-à-goutte use le siège et fait exploser la facture d'eau. Coupez l'eau au point d'eau ou à la vanne d'arrêt.",
+      "Souvent une cartouche céramique. Parfois le corps du mitigeur est mort : remplacement.",
+      "On intervient cuisine, salle de bains, douche. Devis avant si ce n'est pas une urgence.",
+      "06 67 44 79 29, atelier à Caluire-et-Cuire.",
+    ],
+  },
+  {
+    slug: "radiateur-froid",
+    title: "Radiateur froid alors que la chaudière tourne",
+    description: "Radiateur froid, purger, vase d'expansion, vanne. Chauffagiste PLOMB'ACTIV à Caluire et Lyon.",
+    h1: "Radiateur froid, chaudière en marche",
+    body: [
+      "Un seul radiateur froid : souvent air (purge) ou vanne coincée. Tous froids : chaudière, circulateur, pression.",
+      "Purgez avec un clé, bassine sous la vis. Si de l'eau sort sans air et que ça reste froid, arrêtez de purger.",
+      "Pression chaudière trop basse : on regarde ensemble, sans vous faire bricoler le vase d'expansion à l'aveugle.",
+      "Dépannage gaz : 06 67 44 79 29.",
+    ],
+  },
 ] as const;

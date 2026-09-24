@@ -34,20 +34,24 @@ export function localBusinessJsonLd() {
       longitude: brand.geo.lng,
     },
     hasMap: brand.gbpUrl,
-    areaServed: zone.cities.map((c) => ({ "@type": "City", name: c })),
+    areaServed: [
+      {
+        "@type": "GeoCircle",
+        geoMidpoint: {
+          "@type": "GeoCoordinates",
+          latitude: brand.geo.lat,
+          longitude: brand.geo.lng,
+        },
+        geoRadius: String(zone.radiusKm * 1000),
+      },
+      ...zone.cities.map((c) => ({ "@type": "City", name: c })),
+    ],
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
         dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
         opens: "08:00",
         closes: "18:00",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Saturday", "Sunday"],
-        opens: "08:00",
-        closes: "18:00",
-        description: "Astreinte dépannage, joignable 7j/7. Pas d'accueil atelier le week-end.",
       },
     ],
     contactPoint: [
@@ -83,7 +87,7 @@ export function localBusinessJsonLd() {
       reviewBody: r.text,
       reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
     })),
-    sameAs: [brand.gbpUrl, brand.mapsUrl],
+    sameAs: [brand.gbpUrl],
     knowsAbout: [
       "plombier Lyon",
       "plombier Caluire-et-Cuire",

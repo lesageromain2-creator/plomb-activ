@@ -5,11 +5,15 @@ import { photos } from "@/lib/photos";
 import GoogleReviewsCarousel from "@/components/GoogleReviewsCarousel";
 import DevisForm from "@/components/DevisForm";
 import { faqJsonLd } from "@/lib/seo";
+import { pageMeta } from "@/lib/pageMeta";
 
 export const metadata = {
+  ...pageMeta(
+    "/",
+    "Plombier Caluire-et-Cuire et Lyon",
+    "Appelez directement nos experts chez PLOMB'ACTIV au 06 67 44 79 29. Dépannage plomberie, chauffage et clim à Caluire-et-Cuire, Lyon et le Grand Lyon. Devis gratuit."
+  ),
   title: { absolute: "Plombier Caluire-et-Cuire et Lyon | PLOMB'ACTIV" },
-  description:
-    "Appelez directement nos experts chez PLOMB'ACTIV au 06 67 44 79 29. Dépannage plomberie, chauffage et clim à Caluire-et-Cuire, Lyon et le Grand Lyon. Devis gratuit.",
 };
 
 export default function HomePage() {
@@ -184,6 +188,23 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+          <p className="mt-8 text-center text-sm text-gray-700">
+            <Link href="/plombier/villeurbanne" className="text-secondary font-semibold">
+              Villeurbanne
+            </Link>
+            {" · "}
+            <Link href="/plombier/rillieux-la-pape" className="text-secondary font-semibold">
+              Rillieux
+            </Link>
+            {" · "}
+            <Link href="/plombier/vaulx-en-velin" className="text-secondary font-semibold">
+              Vaulx-en-Velin
+            </Link>
+            {" · "}
+            <Link href="/zone-intervention" className="text-secondary font-semibold">
+              Toutes les communes
+            </Link>
+          </p>
         </div>
       </section>
 

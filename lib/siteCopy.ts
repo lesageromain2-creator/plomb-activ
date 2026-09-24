@@ -20,15 +20,15 @@ export const brand = {
   tagline: "Plombier chauffagiste à Caluire-et-Cuire, dépannage Lyon",
   mapsQuery: "PLOMB'ACTIV 130 Grande rue de Saint Clair Caluire-et-Cuire",
   mapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=PLOMB%27ACTIV%20130%20Grande%20rue%20de%20Saint%20Clair%20Caluire-et-Cuire",
+    "https://www.google.com/maps/place/130+Grande+Rue+de+Saint-Clair,+69300+Caluire-et-Cuire/@45.7953,4.8472,17z",
   gbpUrl:
-    "https://www.google.com/maps/search/?api=1&query=PLOMB%27ACTIV%2C+130+Grande+rue+de+Saint+Clair%2C+69300+Caluire-et-Cuire",
+    "https://www.google.com/maps/place/130+Grande+Rue+de+Saint-Clair,+69300+Caluire-et-Cuire/@45.7953,4.8472,17z",
   geo: { lat: 45.7953, lng: 4.8472 },
   siteUrl: "https://plombactiv.com",
 };
 
 export const zone = {
-  radiusKm: 20,
+  radiusKm: 50,
   cities: [
     "Caluire-et-Cuire",
     "Lyon 1er",
@@ -59,6 +59,9 @@ export const zone = {
     "Sathonay-Village",
     "Décines-Charpieu",
     "Meyzieu",
+    "Saint-Priest",
+    "Neuville-sur-Saône",
+    "Miribel",
     "Saint-Fons",
     "Pierre-Bénite",
     "Sainte-Foy-lès-Lyon",

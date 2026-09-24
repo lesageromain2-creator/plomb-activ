@@ -2,11 +2,13 @@ import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import { gallery, photos } from "@/lib/photos";
 
-export const metadata = {
-  title: "Réalisations plomberie Caluire Lyon | Chantiers PLOMB'ACTIV",
-  description:
-    "Photos de chantiers : réseaux PER/cuivre, WC suspendu, ballon ECS, chaudière, clim split. PLOMB'ACTIV, Caluire-et-Cuire.",
-};
+import { pageMeta } from "@/lib/pageMeta";
+
+export const metadata = pageMeta(
+  "/realisations",
+  "Réalisations plomberie Caluire Lyon",
+  "Photos de chantiers : réseaux PER/cuivre, WC suspendu, ballon ECS, chaudière, clim split. PLOMB'ACTIV, Caluire-et-Cuire."
+);
 
 export default function RealisationsPage() {
   return (

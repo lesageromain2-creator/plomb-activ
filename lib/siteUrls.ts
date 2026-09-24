@@ -1,0 +1,42 @@
+import { conseils } from "./conseils";
+import { villes } from "./villes";
+
+export const SITE_URLS: { path: string; lastmod: string; priority: number; changefreq: "weekly" | "monthly" }[] = [
+  { path: "/", lastmod: "2026-09-24", priority: 1, changefreq: "weekly" },
+  { path: "/plombier-caluire-et-cuire", lastmod: "2026-09-21", priority: 0.95, changefreq: "weekly" },
+  { path: "/plombier-lyon", lastmod: "2026-09-21", priority: 0.95, changefreq: "weekly" },
+  { path: "/urgences", lastmod: "2026-09-22", priority: 0.95, changefreq: "weekly" },
+  { path: "/fuite-eau", lastmod: "2026-09-21", priority: 0.9, changefreq: "weekly" },
+  { path: "/recherche-de-fuite", lastmod: "2026-09-24", priority: 0.9, changefreq: "monthly" },
+  { path: "/degat-des-eaux", lastmod: "2026-09-24", priority: 0.9, changefreq: "monthly" },
+  { path: "/debouchage", lastmod: "2026-09-21", priority: 0.9, changefreq: "weekly" },
+  { path: "/remplacement-wc", lastmod: "2026-09-24", priority: 0.85, changefreq: "monthly" },
+  { path: "/chauffe-eau", lastmod: "2026-09-21", priority: 0.9, changefreq: "monthly" },
+  { path: "/chauffage", lastmod: "2026-09-22", priority: 0.9, changefreq: "monthly" },
+  { path: "/climatisation", lastmod: "2026-09-22", priority: 0.9, changefreq: "monthly" },
+  { path: "/services", lastmod: "2026-09-16", priority: 0.7, changefreq: "monthly" },
+  { path: "/devis", lastmod: "2026-09-16", priority: 0.85, changefreq: "monthly" },
+  { path: "/contact", lastmod: "2026-09-16", priority: 0.8, changefreq: "monthly" },
+  { path: "/avis", lastmod: "2026-09-16", priority: 0.7, changefreq: "weekly" },
+  { path: "/realisations", lastmod: "2026-09-16", priority: 0.7, changefreq: "monthly" },
+  { path: "/tarifs", lastmod: "2026-09-16", priority: 0.75, changefreq: "monthly" },
+  { path: "/aides-etat", lastmod: "2026-09-16", priority: 0.5, changefreq: "monthly" },
+  { path: "/zone-intervention", lastmod: "2026-09-24", priority: 0.8, changefreq: "monthly" },
+  { path: "/a-propos", lastmod: "2026-09-22", priority: 0.6, changefreq: "monthly" },
+  { path: "/mentions-legales", lastmod: "2026-09-24", priority: 0.2, changefreq: "monthly" },
+  { path: "/confidentialite", lastmod: "2026-09-24", priority: 0.2, changefreq: "monthly" },
+  { path: "/plan-du-site", lastmod: "2026-09-24", priority: 0.4, changefreq: "weekly" },
+  { path: "/conseils", lastmod: "2026-09-24", priority: 0.7, changefreq: "weekly" },
+  ...conseils.map((c) => ({
+    path: `/conseils/${c.slug}` as string,
+    lastmod: "2026-09-22",
+    priority: 0.65,
+    changefreq: "monthly" as const,
+  })),
+  ...villes.map((v) => ({
+    path: `/plombier/${v.slug}`,
+    lastmod: "2026-09-24",
+    priority: 0.85,
+    changefreq: "monthly" as const,
+  })),
+];

@@ -4,11 +4,13 @@ import BrandCard from "@/components/BrandCard";
 import { brand, pages, zone } from "@/lib/siteCopy";
 import { photos } from "@/lib/photos";
 
-export const metadata = {
-  title: "Contact plombier Caluire | PLOMB'ACTIV 06 67 44 79 29",
-  description:
-    "Appelez directement nos experts chez PLOMB'ACTIV au 06 67 44 79 29. 130 Grande rue de Saint Clair, 69300 Caluire-et-Cuire. Fiche Google Business.",
-};
+import { pageMeta } from "@/lib/pageMeta";
+
+export const metadata = pageMeta(
+  "/contact",
+  "Contact plombier Caluire | 06 67 44 79 29",
+  "Appelez directement nos experts chez PLOMB'ACTIV au 06 67 44 79 29. 130 Grande rue de Saint Clair, 69300 Caluire-et-Cuire. Fiche Google Business."
+);
 
 export default function ContactPage() {
   const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(brand.mapsQuery)}&output=embed`;

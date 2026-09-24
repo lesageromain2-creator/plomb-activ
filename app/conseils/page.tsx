@@ -1,13 +1,14 @@
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
+import { pageMeta } from "@/lib/pageMeta";
 import { photos } from "@/lib/photos";
 import { conseils } from "@/lib/conseils";
 
-export const metadata = {
-  title: "Conseils plomberie Lyon Caluire | PLOMB'ACTIV",
-  description:
-    "Gestes utiles avant l'arrivée du plombier : fuite, couper l'eau, WC bouché, chauffe-eau. Conseils d'atelier PLOMB'ACTIV à Caluire.",
-};
+export const metadata = pageMeta(
+  "/conseils",
+  "Conseils plomberie Lyon et Caluire",
+  "Gestes utiles avant l'arrivée du plombier : fuite, couper l'eau, WC bouché, chauffe-eau. Conseils d'atelier PLOMB'ACTIV à Caluire."
+);
 
 export default function ConseilsIndex() {
   return (

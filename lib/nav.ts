@@ -12,7 +12,10 @@ export const navLinks = [
 export const footerServices = [
   { href: "/urgences", label: "Urgence plomberie Lyon" },
   { href: "/fuite-eau", label: "Fuite d'eau" },
+  { href: "/recherche-de-fuite", label: "Recherche de fuite" },
+  { href: "/degat-des-eaux", label: "Dégât des eaux" },
   { href: "/debouchage", label: "Débouchage" },
+  { href: "/remplacement-wc", label: "Remplacement WC" },
   { href: "/chauffe-eau", label: "Chauffe-eau" },
   { href: "/chauffage", label: "Chauffage et chaudière" },
   { href: "/climatisation", label: "Climatisation" },

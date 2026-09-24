@@ -1,13 +1,15 @@
 import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import CtaRow from "@/components/CtaRow";
+import { pageMeta } from "@/lib/pageMeta";
 import { brand } from "@/lib/siteCopy";
 import { photos } from "@/lib/photos";
 
-export const metadata = {
-  title: "À propos | PLOMB'ACTIV Caluire-et-Cuire",
-  description: `PLOMB'ACTIV, plombier chauffagiste à Caluire-et-Cuire. SIRET ${brand.siret}. Atelier 130 Grande rue de Saint Clair. ${brand.phone}.`,
-};
+export const metadata = pageMeta(
+  "/a-propos",
+  "Atelier à Caluire-et-Cuire",
+  `PLOMB'ACTIV, plombier chauffagiste à Caluire-et-Cuire. SIRET ${brand.siret}. Atelier 130 Grande rue de Saint Clair. ${brand.phone}.`
+);
 
 export default function AProposPage() {
   return (

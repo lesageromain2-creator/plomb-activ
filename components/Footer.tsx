@@ -1,6 +1,6 @@
 import Link from "next/link";
 import LsdevFooterCredit from "@/components/LsdevFooterCredit";
-import { brand, zone } from "@/lib/siteCopy";
+import { brand } from "@/lib/siteCopy";
 import { footerServices } from "@/lib/nav";
 
 export default function Footer() {
@@ -34,6 +34,21 @@ export default function Footer() {
                 À propos
               </Link>
             </li>
+            <li>
+              <Link href="/plan-du-site" className="hover:text-white">
+                Plan du site
+              </Link>
+            </li>
+            <li>
+              <Link href="/mentions-legales" className="hover:text-white">
+                Mentions légales
+              </Link>
+            </li>
+            <li>
+              <Link href="/confidentialite" className="hover:text-white">
+                Confidentialité
+              </Link>
+            </li>
           </ul>
         </div>
         <div>
@@ -57,7 +72,28 @@ export default function Footer() {
         </div>
         <div>
           <h3 className="font-heading text-lg font-semibold mb-2">Grand Lyon</h3>
-          <p className="text-white/80 text-xs leading-relaxed">{zone.cities.slice(0, 12).join(" · ")}…</p>
+          <ul className="space-y-1 text-sm text-white/90">
+            <li>
+              <Link href="/plombier/villeurbanne" className="hover:text-white">
+                Plombier Villeurbanne
+              </Link>
+            </li>
+            <li>
+              <Link href="/plombier/rillieux-la-pape" className="hover:text-white">
+                Plombier Rillieux-la-Pape
+              </Link>
+            </li>
+            <li>
+              <Link href="/plombier/vaulx-en-velin" className="hover:text-white">
+                Plombier Vaulx-en-Velin
+              </Link>
+            </li>
+            <li>
+              <Link href="/zone-intervention" className="hover:text-white">
+                Toutes les communes
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
       <div className="max-w-6xl mx-auto mt-8 px-4">

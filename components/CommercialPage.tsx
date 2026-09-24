@@ -4,6 +4,7 @@ import CtaRow from "@/components/CtaRow";
 import RelatedLinks from "@/components/RelatedLinks";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import { brand } from "@/lib/siteCopy";
+import { pageMeta } from "@/lib/pageMeta";
 
 export type CommercialContent = {
   title: string;
@@ -18,10 +19,13 @@ export type CommercialContent = {
   related: { href: string; label: string }[];
   crumbs: { name: string; path: string }[];
   showUrgence?: boolean;
+  priceNote?: string;
+  delayNote?: string;
 };
 
-export function commercialMetadata(c: Pick<CommercialContent, "title" | "description">) {
-  return { title: c.title, description: c.description };
+export function commercialMetadata(c: Pick<CommercialContent, "title" | "description" | "crumbs">) {
+  const path = c.crumbs[c.crumbs.length - 1]?.path ?? "/";
+  return pageMeta(path, c.title, c.description);
 }
 
 export default function CommercialPage({ content }: { content: CommercialContent }) {
@@ -49,6 +53,22 @@ export default function CommercialPage({ content }: { content: CommercialContent
             <Image src={content.image} alt={content.imageAlt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
           </div>
           <div>
+            {(content.priceNote || content.delayNote) && (
+              <div className="mb-8 rounded-2xl border border-black/5 bg-white p-5 text-sm text-gray-800 space-y-2">
+                {content.delayNote && (
+                  <p>
+                    <span className="font-semibold text-primary">Délai : </span>
+                    {content.delayNote}
+                  </p>
+                )}
+                {content.priceNote && (
+                  <p>
+                    <span className="font-semibold text-primary">Tarif : </span>
+                    {content.priceNote}
+                  </p>
+                )}
+              </div>
+            )}
             {content.sections.map((s) => (
               <div key={s.h2} className="mb-8">
                 <h2 className="font-heading text-2xl text-primary mb-3 font-bold">{s.h2}</h2>
