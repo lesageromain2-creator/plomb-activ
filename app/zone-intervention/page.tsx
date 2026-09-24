@@ -3,9 +3,7 @@ import PageHero from "@/components/PageHero";
 import { pageMeta } from "@/lib/pageMeta";
 import { brand, zone } from "@/lib/siteCopy";
 import { photos } from "@/lib/photos";
-import { villes } from "@/lib/villes";
-
-const villeSlug: Record<string, string> = Object.fromEntries(villes.map((v) => [v.name, `/plombier/${v.slug}`]));
+import { pathForZoneName } from "@/lib/villes";
 
 export const metadata = pageMeta(
   "/zone-intervention",
@@ -29,25 +27,20 @@ export default function ZonePage() {
             climatisation split et les urgences. NAP identique à la fiche Google Business. {brand.phone}.
           </p>
           <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-2">
-            {zone.cities.map((c) => (
-              <li key={c} className="rounded-xl bg-white border border-black/5 px-4 py-3 text-sm text-gray-800">
-                {c === "Caluire-et-Cuire" ? (
-                  <Link href="/plombier-caluire-et-cuire" className="text-secondary font-semibold">
-                    Plombier {c}
-                  </Link>
-                ) : c.startsWith("Lyon") ? (
-                  <Link href="/plombier-lyon" className="hover:text-secondary">
-                    Plombier {c}
-                  </Link>
-                ) : villeSlug[c] ? (
-                  <Link href={villeSlug[c]} className="text-secondary font-semibold">
-                    Plombier {c}
-                  </Link>
-                ) : (
-                  <>Plombier {c}</>
-                )}
-              </li>
-            ))}
+            {zone.cities.map((c) => {
+              const href = pathForZoneName(c);
+              return (
+                <li key={c} className="rounded-xl bg-white border border-black/5 px-4 py-3 text-sm text-gray-800">
+                  {href ? (
+                    <Link href={href} className="text-secondary font-semibold">
+                      Plombier {c}
+                    </Link>
+                  ) : (
+                    <>Plombier {c}</>
+                  )}
+                </li>
+              );
+            })}
           </ul>
           <p className="mt-10 text-center">
             <Link href="/urgences" className="rounded-lg bg-secondary text-white px-8 py-3 font-bold inline-block">

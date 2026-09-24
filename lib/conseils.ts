@@ -98,4 +98,37 @@ export const conseils = [
       "Dépannage gaz : 06 67 44 79 29.",
     ],
   },
+  {
+    slug: "fuite-sous-evier",
+    title: "Fuite sous l'évier : que faire",
+    description: "Fuite sous évier à Caluire, Rillieux ou Lyon : siphon, flexible, vanne. Gestes et appel PLOMB'ACTIV.",
+    h1: "Fuite sous l'évier",
+    body: [
+      "Bassine, chiffons, ouvrez le meuble. Souvent un siphon desserré, un flexible fendillé ou un joint de bonde.",
+      "Coupez la vanne d'arrêt sous l'évier (sens horaire) si elle n'est pas grippée.",
+      "Ne serrez pas à fond un plastique craqué. Appelez le 06 67 44 79 29 : Caluire, Cuire, Rillieux, Sathonay.",
+    ],
+  },
+  {
+    slug: "chasse-eau-qui-fuit",
+    title: "Chasse d'eau qui fuit",
+    description: "Chasse d'eau qui coule, flotteur, mécanisme. Plombier Caluire et Rillieux, PLOMB'ACTIV.",
+    h1: "Chasse d'eau qui fuit",
+    body: [
+      "Coupez l'arrivée du WC (souvent à gauche du réservoir). Un filet continu use l'eau et le mécanisme.",
+      "Flotteur, clapet, joint de mécanisme : parfois un remplacement de pièce, parfois tout le WC (page remplacement).",
+      "Atelier Saint-Clair : 06 67 44 79 29.",
+    ],
+  },
+  {
+    slug: "vanne-arret-bloquee",
+    title: "Vanne d'arrêt bloquée ou qui fuit",
+    description: "Vanne d'arrêt grippée, fuyarde, à remplacer. Plombier Caluire-et-Cuire PLOMB'ACTIV.",
+    h1: "Vanne d'arrêt bloquée",
+    body: [
+      "Ne forcez pas une vanne collée : le col peut casser. Coupez plus haut (compteur) si vous y avez accès.",
+      "Remplacement vanne d'arrêt, papillon, après compteur : geste d'atelier fréquent à Caluire et dans les Monts d'Or.",
+      "06 67 44 79 29.",
+    ],
+  },
 ] as const;

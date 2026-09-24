@@ -2,6 +2,7 @@ import Link from "next/link";
 import LsdevFooterCredit from "@/components/LsdevFooterCredit";
 import { brand } from "@/lib/siteCopy";
 import { footerServices } from "@/lib/nav";
+import { footerCityLinks } from "@/lib/villes";
 
 export default function Footer() {
   return (
@@ -71,28 +72,15 @@ export default function Footer() {
           </a>
         </div>
         <div>
-          <h3 className="font-heading text-lg font-semibold mb-2">Grand Lyon</h3>
+          <h3 className="font-heading text-lg font-semibold mb-2">Autour de Caluire</h3>
           <ul className="space-y-1 text-sm text-white/90">
-            <li>
-              <Link href="/plombier/villeurbanne" className="hover:text-white">
-                Plombier Villeurbanne
-              </Link>
-            </li>
-            <li>
-              <Link href="/plombier/rillieux-la-pape" className="hover:text-white">
-                Plombier Rillieux-la-Pape
-              </Link>
-            </li>
-            <li>
-              <Link href="/plombier/vaulx-en-velin" className="hover:text-white">
-                Plombier Vaulx-en-Velin
-              </Link>
-            </li>
-            <li>
-              <Link href="/zone-intervention" className="hover:text-white">
-                Toutes les communes
-              </Link>
-            </li>
+            {footerCityLinks.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} className="hover:text-white">
+                  {l.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

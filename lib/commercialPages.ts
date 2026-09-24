@@ -179,23 +179,29 @@ export const plombierCaluire: CommercialContent = {
   imageAlt: "Matériel PLOMB'ACTIV prêt pour une intervention depuis Caluire-et-Cuire",
   crumbs: [{ name: "Plombier Caluire-et-Cuire", path: "/plombier-caluire-et-cuire" }],
   related: [
-    { href: "/plombier-lyon", label: "Plombier Lyon" },
-    { href: "/urgences", label: "Urgence" },
-    { href: "/zone-intervention", label: "Toutes les communes" },
+    { href: "/plombier/saint-clair", label: "Saint-Clair" },
+    { href: "/plombier/cuire", label: "Cuire" },
+    { href: "/plombier/rillieux-la-pape", label: "Rillieux-la-Pape" },
+    { href: "/zone-intervention", label: "Toute la zone" },
   ],
   sections: [
     {
-      h2: "Un atelier dans la commune",
-      body: "PLOMB'ACTIV est basé à Caluire, pas « quelque part en France ». NAP identique à la fiche Google Business validée. SIRET 939 379 699 00019.",
-      bullets: ["Caluire-et-Cuire", "Sathonay, Fontaines-sur-Saône, Monts d'Or proches", "Lyon accessible rapidement depuis Saint Clair"],
+      h2: "Un atelier dans la commune, pas un réseau 24h/24",
+      body: "PLOMB'ACTIV est au 130 Grande rue de Saint Clair (69300). Les pages « plombier Caluire urgence 30 min » que vous voyez en tête de Google sont souvent des plateformes nationales. Ici : SIRET 939 379 699 00019, photos de chantier, 8 extraits d'avis Google sur le site, ligne 06 67 44 79 29.",
+      bullets: [
+        "Saint-Clair, Cuire, Montessuy, Bourg, Vassieux",
+        "Sathonay-Camp, Fontaines-sur-Saône, Collonges, Rillieux (Crépieux)",
+        "Croix-Rousse (Lyon 4e) et Lyon 6e depuis les quais",
+      ],
     },
     {
-      h2: "Prestations depuis Caluire",
-      body: "Urgence, fuite, débouchage, ballon ECS, chaudière gaz, split. Photos de chantiers réels (brasage, cumulus Atlantic, WC, clim).",
+      h2: "Ce que les gens cherchent à Caluire",
+      body: "Fuite d'eau, débouchage WC, chauffe-eau qui fuit, groupe de sécurité, mitigeur, chaudière gaz, dégât des eaux. On répond à ces recherches par des pages métier, pas par du texte identique recopié 40 fois.",
     },
   ],
   faqs: [
     { q: "Intervenez-vous à Caluire ?", a: "Oui, c'est la base. 130 Grande rue de Saint Clair, 69300." },
+    { q: "Et Cuire, Saint-Clair, Montessuy ?", a: "Oui, ce sont des quartiers de Caluire. Pages dédiées sur le site." },
     { q: "Comment obtenir un devis ?", a: "Appelez ou passez par la page devis. Gratuit, sans engagement." },
   ],
 };
@@ -331,4 +337,105 @@ export const degatDesEaux: CommercialContent = {
     { q: "Faut-il garder l'eau ouverte ?", a: "Non. Coupez si vous pouvez, photographiez, appelez." },
   ],
 };
+
+export const robinetterie: CommercialContent = {
+  title: "Robinetterie et mitigeur Lyon | Caluire-et-Cuire",
+  description: `Mitigeur qui goutte, robinet cuisine, douche, vanne d'arrêt. Remplacement et cartouche. PLOMB'ACTIV ${phone}. Caluire, Rillieux, Lyon.`,
+  h1: "Robinetterie et mitigeurs",
+  kicker: "Sanitaire",
+  lead: "Goutte-à-goutte, mitigeur dur, douchette, vanne d'arrêt : diagnostic, cartouche ou remplacement. Photos de chantier, devis hors urgence.",
+  image: photos.heroWork,
+  imageAlt: "Serrage vanne et réseau cuivre sous évier, PLOMB'ACTIV",
+  delayNote: "Souvent programmable en semaine. Fuite importante : astreinte 7j/7, on dit si on passe.",
+  priceNote: "Cartouche ou mitigeur complet selon l'usure. Devis avant commande de la pièce.",
+  crumbs: [{ name: "Robinetterie", path: "/robinetterie" }],
+  related: [
+    { href: "/fuite-eau", label: "Fuite d'eau" },
+    { href: "/groupe-de-securite", label: "Groupe de sécurité" },
+    { href: "/plombier-caluire-et-cuire", label: "Plombier Caluire" },
+  ],
+  sections: [
+    {
+      h2: "Cuisine, salle de bains, douche",
+      body: "Les plateformes vendent « robinetterie Grohe Hansgrohe » en page ville. Ici on pose ce qui convient à votre arrivée (équerre, PER, cuivre) et à votre budget. Marque au devis, pas en slogan.",
+      bullets: ["Mitigeur évier / lavabo / douche", "Cartouche céramique", "Vanne d'arrêt, flexibles", "Fuite au col de cygne ou au bec"],
+    },
+    {
+      h2: "Zone",
+      body: "Caluire, Cuire, Saint-Clair, Rillieux, Sathonay, Fontaines, Croix-Rousse. Même artisan.",
+    },
+  ],
+  faqs: [
+    { q: "Vous fournissez le mitigeur ?", a: "Oui, ou on pose le vôtre s'il est compatible. On le dit avant." },
+    { q: "Un robinet qui goutte, c'est urgent ?", a: "Ça use l'eau. Pas toujours une inondation. On peut souvent le caler en semaine." },
+  ],
+};
+
+export const canalisation: CommercialContent = {
+  title: "Canalisation bouchée Lyon | Débouchage Caluire Rillieux",
+  description: `Canalisation bouchée, évier, douche, colonne. Débouchage mécanique à Caluire-et-Cuire, Rillieux, Lyon. ${phone}. Pas de délai magique.`,
+  h1: "Canalisation bouchée",
+  kicker: "Débouchage",
+  lead: "Eau qui descend mal, glouglou, reflux : on diagnostique siphon, WC ou colonne avant de forcer. Atelier Caluire, déplacements Rillieux et Grand Lyon nord.",
+  image: photos.wc,
+  imageAlt: "Évacuation et pose WC, débouchage canalisation",
+  showUrgence: true,
+  delayNote: "Reflux WC : joignable 7j/7. Lentille chronique : rendez-vous atelier.",
+  priceNote: "Selon accès (siphon vs colonne). Pas de forfait unique copié d'un site national.",
+  crumbs: [{ name: "Canalisation", path: "/canalisation" }],
+  related: [
+    { href: "/debouchage", label: "Débouchage" },
+    { href: "/remplacement-wc", label: "WC" },
+    { href: "/plombier/rillieux-la-pape", label: "Rillieux-la-Pape" },
+  ],
+  sections: [
+    {
+      h2: "Évier, douche, WC, colonne",
+      body: "On n'annonce pas hydrocureur + caméra si le geste du jour est un siphon. Si le bouchon est trop loin, on vous le dit. Produits chimiques : à éviter avant notre arrivée.",
+      bullets: ["Canalisation évier / lavabo", "Douche et baignoire", "WC et chute", "Colonne d'immeuble (accès)"],
+    },
+    {
+      h2: "Caluire, Rillieux, Sathonay",
+      body: "Les recherches « débouchage Caluire » et « canalisation Rillieux » tombent souvent sur des pages 24h/24. Notre différence : adresse Saint-Clair, photos, numéro unique.",
+    },
+  ],
+  faqs: [
+    { q: "Avez-vous une caméra d'inspection ?", a: "On diagnostique d'abord à l'accès. Si une inspection plus lourde s'impose, on vous le dit plutôt que de facturer un forfait gadget." },
+    { q: "Rillieux et Crépieux ?", a: "Oui. 10 à 20 min depuis Saint Clair." },
+  ],
+};
+
+export const groupeDeSecurite: CommercialContent = {
+  title: "Groupe de sécurité chauffe-eau | Fuite Caluire Lyon",
+  description: `Groupe de sécurité qui goutte ou fuit, remplacement sur ballon ECS. PLOMB'ACTIV Caluire, Rillieux, Lyon. ${phone}.`,
+  h1: "Groupe de sécurité qui fuit",
+  kicker: "Eau chaude",
+  lead: "Un groupe doit goutter un peu au réchauffage. Un filet continu, une flaque, un sifflement : diagnostic, remplacement, contrôle de pression.",
+  image: photos.cumulus,
+  imageAlt: "Ballon ECS et groupe de sécurité, chantier PLOMB'ACTIV",
+  delayNote: "Flaque au sol : on isole. Fuite lente : créneau semaine.",
+  priceNote: "Pièce + pose selon accès et filetage. Parfois le ballon est percé : on ne change pas que le groupe pour rien.",
+  crumbs: [{ name: "Groupe de sécurité", path: "/groupe-de-securite" }],
+  related: [
+    { href: "/chauffe-eau", label: "Chauffe-eau" },
+    { href: "/fuite-eau", label: "Fuite" },
+    { href: "/conseils/ballon-eau-chaude-fuit", label: "Conseil ballon qui fuit" },
+  ],
+  sections: [
+    {
+      h2: "Normal ou en panne ?",
+      body: "Le groupe évacue la dilatation. Un goutte-à-goutte au chauffe, siphonné, c'est souvent normal. Un écoulement continu à froid, un groupe bloqué, une odeur de chauffe : on vient voir.",
+      bullets: ["Remplacement groupe 20x27", "Siphon et évacuation", "Pression réseau trop haute", "Lien avec cuve percée"],
+    },
+    {
+      h2: "Où on se déplace",
+      body: "Caluire, Rillieux, Sathonay, Fontaines, Villeurbanne, Croix-Rousse. Cumulus Atlantic et équivalents : photos sur le site.",
+    },
+  ],
+  faqs: [
+    { q: "Je dois couper l'eau ?", a: "Si ça coule au sol, coupez l'arrivée du ballon et l'électrique. Bassine. Puis 06 67 44 79 29." },
+    { q: "C'est forcément le ballon à changer ?", a: "Non. Souvent le groupe. On le dit après le diagnostic." },
+  ],
+};
+
 

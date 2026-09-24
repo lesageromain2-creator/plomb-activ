@@ -19,6 +19,9 @@ export const footerServices = [
   { href: "/chauffe-eau", label: "Chauffe-eau" },
   { href: "/chauffage", label: "Chauffage et chaudière" },
   { href: "/climatisation", label: "Climatisation" },
+  { href: "/robinetterie", label: "Robinetterie" },
+  { href: "/canalisation", label: "Canalisation bouchée" },
+  { href: "/groupe-de-securite", label: "Groupe de sécurité" },
   { href: "/plombier-caluire-et-cuire", label: "Plombier Caluire" },
   { href: "/plombier-lyon", label: "Plombier Lyon" },
 ];

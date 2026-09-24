@@ -62,6 +62,7 @@ export const zone = {
     "Saint-Priest",
     "Neuville-sur-Saône",
     "Miribel",
+    "Neyron",
     "Saint-Fons",
     "Pierre-Bénite",
     "Sainte-Foy-lès-Lyon",
