@@ -4,7 +4,7 @@ import CtaRow from "@/components/CtaRow";
 import RelatedLinks from "@/components/RelatedLinks";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import { brand } from "@/lib/siteCopy";
-import { pageMeta } from "@/lib/pageMeta";
+import { pageMeta, absoluteUrl } from "@/lib/pageMeta";
 
 export type CommercialContent = {
   title: string;
@@ -42,9 +42,23 @@ export default function CommercialPage({ content }: { content: CommercialContent
         }
       : null;
 
+  const path = content.crumbs[content.crumbs.length - 1]?.path ?? "/";
+  const pageUrl = absoluteUrl(path);
+  const serviceLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: content.h1,
+    description: content.description,
+    url: pageUrl,
+    provider: { "@id": `${brand.siteUrl}/#business` },
+    areaServed: { "@type": "AdministrativeArea", name: "Métropole de Lyon" },
+    mainEntityOfPage: pageUrl,
+  };
+
   return (
     <div className="min-h-screen bg-cream">
       <BreadcrumbJsonLd items={[{ name: "Accueil", path: "/" }, ...content.crumbs]} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLd) }} />
       {faqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />}
       <PageHero title={content.h1} subtitle={content.lead} kicker={content.kicker} imageSrc={content.image} />
       <section className="py-12 md:py-16 px-4">

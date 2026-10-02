@@ -4,7 +4,8 @@ import { brand } from "@/lib/siteCopy";
 export const metadata = pageMeta(
   "/mentions-legales",
   "Mentions légales",
-  `Mentions légales du site ${brand.name}, plombier à Caluire-et-Cuire. SIRET ${brand.siret}.`
+  `Mentions légales du site ${brand.name}, plombier à Caluire-et-Cuire. SIRET ${brand.siret}.`,
+  { index: false }
 );
 
 export default function MentionsLegalesPage() {

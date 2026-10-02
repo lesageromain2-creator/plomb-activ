@@ -9,7 +9,8 @@ import { pageMeta } from "@/lib/pageMeta";
 export const metadata = pageMeta(
   "/services",
   "Prestations plombier Caluire Lyon | Fuite, ECS, chaudière, clim",
-  "Recherche de fuite, débouchage, ballon ECS, chaudière gaz, réseaux PER/cuivre, climatisation split. PLOMB'ACTIV, Caluire-et-Cuire."
+  "Recherche de fuite, débouchage, ballon ECS, chaudière gaz, réseaux PER/cuivre, climatisation split. PLOMB'ACTIV, Caluire-et-Cuire.",
+  { index: false }
 );
 
 export default function ServicesPage() {

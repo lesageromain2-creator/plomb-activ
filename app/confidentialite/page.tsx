@@ -4,7 +4,8 @@ import { brand } from "@/lib/siteCopy";
 export const metadata = pageMeta(
   "/confidentialite",
   "Politique de confidentialité",
-  `Données personnelles collectées par ${brand.name} via plombactiv.com (devis, contact, appels).`
+  `Données personnelles collectées par ${brand.name} via plombactiv.com (devis, contact, appels).`,
+  { index: false }
 );
 
 export default function ConfidentialitePage() {

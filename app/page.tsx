@@ -6,11 +6,12 @@ import GoogleReviewsCarousel from "@/components/GoogleReviewsCarousel";
 import DevisForm from "@/components/DevisForm";
 import { faqJsonLd } from "@/lib/seo";
 import { pageMeta } from "@/lib/pageMeta";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   ...pageMeta(
     "/",
-    "Plombier Caluire-et-Cuire et Lyon",
+    "Plombier Caluire-et-Cuire et Lyon | PLOMB'ACTIV",
     "Appelez directement nos experts chez PLOMB'ACTIV au 06 67 44 79 29. Dépannage plomberie, chauffage et clim à Caluire-et-Cuire, Lyon et le Grand Lyon. Devis gratuit."
   ),
   title: { absolute: "Plombier Caluire-et-Cuire et Lyon | PLOMB'ACTIV" },
@@ -19,6 +20,7 @@ export const metadata = {
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-cream">
+      <JsonLd />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd()) }} />
       <section className="hero-landing relative w-full overflow-hidden text-white flex items-end md:items-stretch md:grid">
         <div className="hero-photo">
@@ -278,13 +280,28 @@ export default function HomePage() {
 
       <section className="py-14 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-heading text-3xl text-primary text-center font-bold mb-8">Caluire, Lyon et alentours</h2>
+          <h2 className="font-heading text-3xl text-primary text-center font-bold mb-3">Un besoin, une page Google</h2>
+          <p className="text-center text-gray-600 max-w-2xl mx-auto mb-8 text-sm">
+            Chaque recherche (fuite, débouchage, chauffe-eau, Caluire, Rillieux…) a son URL. Pas de page unique qui absorbe tout.
+          </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              { href: "/plombier-caluire-et-cuire", t: "Plombier Caluire-et-Cuire", d: "L'atelier, 130 Grande rue de Saint Clair" },
-              { href: "/plombier-lyon", t: "Plombier Lyon", d: "1er à 9e, depuis Caluire" },
-              { href: "/urgences", t: "Urgence plomberie", d: "Joignable 7j/7" },
-              { href: "/conseils", t: "Conseils", d: "Fuite, WC, chauffe-eau" },
+              { href: "/urgences", t: "Urgence plomberie", d: "Fuite active, WC, plus d'eau" },
+              { href: "/fuite-eau", t: "Fuite d'eau", d: "Réparer une fuite visible" },
+              { href: "/recherche-de-fuite", t: "Recherche de fuite", d: "Compteur qui tourne, encastré" },
+              { href: "/degat-des-eaux", t: "Dégât des eaux", d: "Sinistre, photos assurance" },
+              { href: "/debouchage", t: "Débouchage WC / siphon", d: "WC, évier, douche" },
+              { href: "/canalisation", t: "Canalisation bouchée", d: "Colonne, évacuation" },
+              { href: "/remplacement-wc", t: "Remplacement WC", d: "À poser ou suspendu" },
+              { href: "/robinetterie", t: "Mitigeur / robinet", d: "Goutte-à-goutte, cartouche" },
+              { href: "/chauffe-eau", t: "Chauffe-eau", d: "Ballon ECS, plus d'eau chaude" },
+              { href: "/groupe-de-securite", t: "Groupe de sécurité", d: "Ballon qui goutte" },
+              { href: "/chauffage", t: "Chaudière gaz", d: "Dépannage et entretien" },
+              { href: "/climatisation", t: "Climatisation split", d: "Pose et mise en service" },
+              { href: "/plombier-caluire-et-cuire", t: "Plombier Caluire", d: "69300, Saint-Clair" },
+              { href: "/plombier/rillieux-la-pape", t: "Plombier Rillieux", d: "69140, Crépieux" },
+              { href: "/plombier-lyon", t: "Plombier Lyon", d: "1er à 9e depuis Caluire" },
+              { href: "/zone-intervention", t: "Toute la zone", d: "Sathonay, Fontaines, Monts d'Or" },
             ].map((x) => (
               <Link key={x.href} href={x.href} className="rounded-2xl border border-black/10 p-5 hover:border-secondary bg-cream">
                 <h3 className="font-heading font-bold text-primary">{x.t}</h3>
