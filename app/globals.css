@@ -10,9 +10,9 @@ body { font-family: var(--font-body), system-ui, sans-serif; }
 }
 .scrollbar-hide::-webkit-scrollbar { display: none; }
 
-/* Landing hero: full-bleed on phone, 16/9 under the header on desktop so the plumber stays in frame */
+/* Mobile: face stays clear at the top; copy sits on the vest. Desktop: split panel. */
 .hero-landing {
-  min-height: 92svh;
+  min-height: calc(100svh - 4.25rem);
 }
 .hero-photo {
   position: absolute;

@@ -100,8 +100,9 @@ export const equipeConfiance = {
 
 export const home = {
   heroKicker: "Plombier à Lyon · Caluire-et-Cuire · Rillieux",
-  heroTitle: "Un plombier qui se déplace",
-  heroTitleAccent: "sur Lyon",
+  heroTitle: "Votre plombier",
+  heroTitleLine: "qui se déplace",
+  heroTitleAccent: "chez vous !",
   heroLead:
     "Fuite, WC, chauffe-eau, chaudière ou clim : PLOMB'ACTIV intervient à domicile. Joignable au 06 67 44 79 29, 7j/7 pour les urgences. Devis gratuit, sans engagement.",
   heroQuote:

@@ -30,22 +30,52 @@ export default function HomePage() {
             fill
             priority
             sizes="(min-width: 768px) 55vw, 100vw"
-            className="object-cover object-[88%_center] md:object-[90%_78%]"
+            className="object-cover object-[80%_12%] md:object-[90%_78%]"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/25 to-black/10 md:hidden" aria-hidden />
-        <div className="hero-copy relative z-10 w-full px-4 pt-16 pb-10 md:flex md:flex-col md:justify-center md:px-10 lg:px-14 md:py-12 md:bg-primary">
-          <p className="text-secondary font-extrabold uppercase tracking-[0.18em] text-xs sm:text-sm mb-3 drop-shadow">
+        <div
+          className="absolute inset-0 md:hidden pointer-events-none bg-[linear-gradient(to_top,rgba(15,23,42,0.72)_0%,transparent_34%)]"
+          aria-hidden
+        />
+
+        <div className="md:hidden absolute inset-0 z-10 flex flex-col px-4 pb-5">
+          <div className="mt-[62%] ml-auto w-[11.5rem] text-right pr-1">
+            <h1 className="font-heading text-[1.65rem] font-extrabold tracking-tight leading-[1.1] drop-shadow-[0_2px_8px_rgba(0,0,0,0.75)]">
+              {home.heroTitle}
+              <span className="block">{home.heroTitleLine}</span>
+              <span className="block text-white">{home.heroTitleAccent}</span>
+            </h1>
+          </div>
+          <div className="mt-auto flex gap-2 pr-16">
+            <a
+              href={brand.phoneHref}
+              data-cta="tel"
+              className="flex-1 rounded-lg bg-secondary text-white px-3 py-3 text-sm font-extrabold shadow-lg text-center"
+            >
+              {brand.phone}
+            </a>
+            <Link
+              href="#devis-form"
+              data-cta="devis"
+              className="flex-1 rounded-lg bg-white text-primary px-3 py-3 text-sm font-extrabold text-center"
+            >
+              Devis
+            </Link>
+          </div>
+        </div>
+
+        <div className="hero-copy hidden md:flex relative z-10 w-full flex-col justify-center px-10 lg:px-14 py-12 bg-primary">
+          <p className="text-secondary font-extrabold uppercase tracking-[0.16em] text-sm mb-2">
             {home.heroKicker}
           </p>
-          <h1 className="font-heading text-4xl sm:text-5xl md:text-5xl lg:text-[3.35rem] font-extrabold tracking-tight max-w-lg leading-[0.98] drop-shadow-lg">
-            {home.heroTitle}
+          <h1 className="font-heading text-5xl lg:text-[3.35rem] font-extrabold tracking-tight max-w-lg leading-[1.08]">
+            {home.heroTitle} {home.heroTitleLine}
             <span className="block text-secondary">{home.heroTitleAccent}</span>
           </h1>
-          <p className="mt-5 text-base md:text-lg text-white max-w-lg leading-relaxed bg-black/45 md:bg-white/10 border-l-4 border-secondary pl-4 py-3 rounded-r-md">
+          <p className="mt-5 text-lg text-white max-w-lg leading-relaxed bg-white/10 border-l-4 border-secondary pl-4 py-3 rounded-r-md">
             {home.heroLead}
           </p>
-          <blockquote className="mt-5 max-w-lg text-sm md:text-base text-white/90 italic leading-relaxed">
+          <blockquote className="mt-5 max-w-lg text-base text-white/90 italic leading-relaxed">
             « {home.heroQuote} »
             <footer className="mt-1 not-italic text-xs uppercase tracking-wider text-secondary font-semibold">
               {home.heroQuoteBy}
@@ -75,16 +105,16 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="mt-7 flex flex-wrap gap-2 text-sm">
-            <span className="rounded-full bg-black/55 md:bg-white/10 border border-white/25 px-3 py-1.5 font-medium">
+            <span className="rounded-full bg-white/10 border border-white/25 px-3 py-1.5 font-medium">
               Déplacements Lyon
             </span>
-            <span className="rounded-full bg-black/55 md:bg-white/10 border border-white/25 px-3 py-1.5 font-medium">
+            <span className="rounded-full bg-white/10 border border-white/25 px-3 py-1.5 font-medium">
               Urgences 7j/7
             </span>
-            <span className="rounded-full bg-black/55 md:bg-white/10 border border-white/25 px-3 py-1.5 font-medium">
+            <span className="rounded-full bg-white/10 border border-white/25 px-3 py-1.5 font-medium">
               Devis gratuit
             </span>
-            <span className="rounded-full bg-black/55 md:bg-white/10 border border-white/25 px-3 py-1.5 font-medium">
+            <span className="rounded-full bg-white/10 border border-white/25 px-3 py-1.5 font-medium">
               5,0/5 Google
             </span>
           </div>
@@ -92,12 +122,12 @@ export default function HomePage() {
       </section>
 
       <section className="bg-secondary text-white">
-        <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-white/25">
+        <div className="max-w-6xl mx-auto grid grid-cols-4 divide-x divide-white/25">
           {home.stats.map((s) => (
-            <div key={s.label} className="p-6 text-center">
-              <p className="font-heading text-2xl md:text-3xl font-extrabold">{s.value}</p>
-              <p className="font-semibold mt-1">{s.label}</p>
-              <p className="text-sm text-white/85 mt-0.5">{s.detail}</p>
+            <div key={s.label} className="px-1 py-3 md:p-6 text-center">
+              <p className="font-heading text-sm md:text-3xl font-extrabold leading-tight">{s.value}</p>
+              <p className="text-[10px] md:text-base font-semibold mt-0.5 leading-tight">{s.label}</p>
+              <p className="hidden md:block text-sm text-white/85 mt-0.5">{s.detail}</p>
             </div>
           ))}
         </div>
@@ -328,7 +358,7 @@ export default function HomePage() {
       </section>
 
       <section className="py-16 px-4 bg-secondary text-white text-center">
-        <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-3">Un plombier qui se déplace sur Lyon. Appelez.</h2>
+        <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-3">Votre plombier qui se déplace chez vous.</h2>
         <p className="mb-6 text-white/95 max-w-xl mx-auto">
           {brand.address} · {brand.hours}
         </p>
