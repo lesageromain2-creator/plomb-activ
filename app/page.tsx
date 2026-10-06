@@ -30,23 +30,28 @@ export default function HomePage() {
             fill
             priority
             sizes="(min-width: 768px) 55vw, 100vw"
-            className="object-cover object-[80%_12%] md:object-[90%_78%]"
+            className="object-cover object-[88%_18%] md:object-[90%_78%]"
           />
         </div>
         <div
-          className="absolute inset-0 md:hidden pointer-events-none bg-[linear-gradient(to_top,rgba(15,23,42,0.72)_0%,transparent_34%)]"
+          className="absolute inset-0 md:hidden pointer-events-none bg-[linear-gradient(to_top,rgba(15,23,42,0.7)_0%,transparent_38%)]"
           aria-hidden
         />
 
         <div className="md:hidden absolute inset-0 z-10 flex flex-col px-4 pb-5">
-          <div className="mt-[62%] ml-auto w-[11.5rem] text-right pr-1">
-            <h1 className="font-heading text-[1.65rem] font-extrabold tracking-tight leading-[1.1] drop-shadow-[0_2px_8px_rgba(0,0,0,0.75)]">
-              {home.heroTitle}
-              <span className="block">{home.heroTitleLine}</span>
-              <span className="block text-white">{home.heroTitleAccent}</span>
-            </h1>
+          <div className="flex-1 flex items-center justify-center">
+            <div className="w-full max-w-[21rem] text-center rounded-2xl bg-[#0f172a] px-5 py-8 shadow-[0_16px_48px_rgba(0,0,0,0.5)]">
+              <p className="font-heading text-secondary text-xl font-extrabold tracking-[0.22em]">
+                {brand.name}
+              </p>
+              <h1 className="mt-4 font-heading text-[2.05rem] font-extrabold tracking-tight leading-[1.12] text-white">
+                {home.heroTitle}
+                <span className="block">{home.heroTitleLine}</span>
+                <span className="block text-secondary">{home.heroTitleAccent}</span>
+              </h1>
+            </div>
           </div>
-          <div className="mt-auto flex gap-2 pr-16">
+          <div className="flex gap-2 pr-16">
             <a
               href={brand.phoneHref}
               data-cta="tel"
@@ -65,13 +70,16 @@ export default function HomePage() {
         </div>
 
         <div className="hero-copy hidden md:flex relative z-10 w-full flex-col justify-center px-10 lg:px-14 py-12 bg-primary">
-          <p className="text-secondary font-extrabold uppercase tracking-[0.16em] text-sm mb-2">
-            {home.heroKicker}
+          <p className="text-secondary font-extrabold uppercase tracking-[0.2em] text-sm mb-2">
+            {brand.name}
           </p>
           <h1 className="font-heading text-5xl lg:text-[3.35rem] font-extrabold tracking-tight max-w-lg leading-[1.08]">
             {home.heroTitle} {home.heroTitleLine}
             <span className="block text-secondary">{home.heroTitleAccent}</span>
           </h1>
+          <p className="mt-3 text-sm font-semibold uppercase tracking-[0.14em] text-white/70">
+            {home.heroKicker}
+          </p>
           <p className="mt-5 text-lg text-white max-w-lg leading-relaxed bg-white/10 border-l-4 border-secondary pl-4 py-3 rounded-r-md">
             {home.heroLead}
           </p>
