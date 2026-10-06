@@ -58,7 +58,7 @@ export default function ContactPage() {
             </div>
           </div>
           <div>
-            <h2 className="font-heading text-xl text-primary mb-4 font-bold">Écrire à l&apos;atelier</h2>
+            <h2 className="font-heading text-xl text-primary mb-4 font-bold">Écrire à PLOMB&apos;ACTIV</h2>
             <ContactForm />
           </div>
         </div>

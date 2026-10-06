@@ -76,7 +76,7 @@ export default function HomePage() {
           </div>
           <div className="mt-7 flex flex-wrap gap-2 text-sm">
             <span className="rounded-full bg-black/55 md:bg-white/10 border border-white/25 px-3 py-1.5 font-medium">
-              Atelier Saint-Clair
+              Déplacements Lyon
             </span>
             <span className="rounded-full bg-black/55 md:bg-white/10 border border-white/25 px-3 py-1.5 font-medium">
               Urgences 7j/7
@@ -173,7 +173,7 @@ export default function HomePage() {
           <p className="text-center text-xs font-bold uppercase tracking-widest text-secondary mb-2">Processus</p>
           <h2 className="font-heading text-3xl text-center font-bold mb-3">Comment ça se passe</h2>
           <p className="text-center text-white/75 max-w-xl mx-auto mb-10 text-sm">
-            Simple, lisible, sans forfait surprise. L&apos;atelier est à Caluire : le délai dépend du trajet, on le dit au téléphone.
+            Simple, lisible, sans forfait surprise. PLOMB&apos;ACTIV se déplace sur Lyon et Caluire : le délai dépend du trajet, on le dit au téléphone.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             {home.steps.map((s) => (
@@ -273,7 +273,7 @@ export default function HomePage() {
             <div className="rounded-2xl bg-white border border-black/5 p-5">
               <dt className="font-semibold text-primary">Intervenez-vous à Caluire ?</dt>
               <dd className="mt-2 text-gray-700 text-sm leading-relaxed">
-                Oui, l&apos;atelier est à Caluire-et-Cuire.{" "}
+                Oui. Interventions à Caluire-et-Cuire et sur Lyon.{" "}
                 <Link href="/plombier-caluire-et-cuire" className="text-secondary font-semibold">
                   Page plombier Caluire
                 </Link>
@@ -297,7 +297,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <h2 className="font-heading text-3xl text-primary text-center font-bold mb-3">Vous cherchez un geste précis</h2>
           <p className="text-center text-gray-600 max-w-2xl mx-auto mb-8 text-sm">
-            Fuite, débouchage, Caluire, Rillieux : ouvrez la page qui correspond. Un besoin, un interlocuteur, le même atelier.
+            Fuite, débouchage, Caluire, Rillieux : ouvrez la page qui correspond. Un besoin, un interlocuteur, le même plombier.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
@@ -328,7 +328,7 @@ export default function HomePage() {
       </section>
 
       <section className="py-16 px-4 bg-secondary text-white text-center">
-        <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-3">On est à Saint-Clair. Appelez.</h2>
+        <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-3">Un plombier qui se déplace sur Lyon. Appelez.</h2>
         <p className="mb-6 text-white/95 max-w-xl mx-auto">
           {brand.address} · {brand.hours}
         </p>

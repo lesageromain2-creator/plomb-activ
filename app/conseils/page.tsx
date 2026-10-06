@@ -7,14 +7,14 @@ import { conseils } from "@/lib/conseils";
 export const metadata = pageMeta(
   "/conseils",
   "Conseils plomberie Lyon et Caluire",
-  "Gestes utiles avant l'arrivée du plombier : fuite, couper l'eau, WC bouché, chauffe-eau. Conseils d'atelier PLOMB'ACTIV à Caluire."
+  "Gestes utiles avant l'arrivée du plombier : fuite, couper l'eau, WC bouché, chauffe-eau. Conseils PLOMB'ACTIV, Lyon et Caluire."
 );
 
 export default function ConseilsIndex() {
   return (
     <div className="min-h-screen bg-cream">
       <PageHero
-        title="Conseils d'atelier"
+        title="Conseils plomberie"
         subtitle="Des gestes concrets, sans promesse miracle. Pour le dépannage : 06 67 44 79 29."
         kicker="Guides"
         imageSrc={photos.heroWork}

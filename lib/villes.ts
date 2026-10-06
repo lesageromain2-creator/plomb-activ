@@ -39,7 +39,7 @@ export const villes: VillePage[] = [
     driveMin: "10 à 20 min depuis Saint Clair (montée ou périphérique nord)",
     housing: "Mix pavillons Crépieux / collectifs Ville Nouvelle, beaucoup de chaudières gaz.",
     localIssue: "Groupes de sécurité, cumulus tartre, fuites sous évier, WC dans les collectifs des années 70.",
-    extra: "Rillieux est la commune la plus rapide au nord de l'atelier. Crépieux-la-Pape, Semailles, Alagniers, Les Cailloux : on confirme le quartier au téléphone pour le trajet.",
+    extra: "Rillieux est proche au nord. Crépieux-la-Pape, Semailles, Alagniers, Les Cailloux : on confirme le quartier au téléphone pour le trajet.",
     quartiers: ["Rillieux centre", "Crépieux-la-Pape", "Semailles", "Alagniers", "Velette", "Les Cailloux", "Ville Nouvelle"],
     neighbors: [
       { slug: "sathonay-camp", label: "Sathonay-Camp" },
@@ -353,10 +353,10 @@ export const villes: VillePage[] = [
     slug: "saint-clair",
     name: "Saint-Clair",
     cp: "69300",
-    driveMin: "L'atelier est ici : 130 Grande rue de Saint Clair",
+    driveMin: "Quartier de Caluire, 130 Grande rue de Saint Clair",
     housing: "Mix immeubles et maisons, quais, accès rapides Lyon 6e / Caluire bourg.",
     localIssue: "Urgences du quartier, ballons, fuites, débouchage : souvent le plus court délai réel de la tournée.",
-    extra: "Ce n'est pas un quartier inventé pour le SEO : c'est l'adresse SIRET. Vous joignez l'atelier qui se déplace, pas un call center.",
+    extra: "Adresse de l'entreprise (SIRET). PLOMB'ACTIV se déplace pour les interventions sur Lyon et Caluire.",
     quartiers: ["Grande rue", "quais", "vers Cuire", "vers le pont"],
     neighbors: [
       { slug: "cuire", label: "Cuire" },
@@ -373,7 +373,7 @@ export const villes: VillePage[] = [
     driveMin: "5 à 12 min dans Caluire",
     housing: "Caluire historique, immeubles et maisons, salles de bains des années 70-90.",
     localIssue: "Mitigeurs, chasses, colonnes, chaudières murales.",
-    extra: "Cuire, c'est Caluire, pas Lyon. Beaucoup cherchent « plombier Cuire » : même atelier Saint-Clair, même ligne 06 67 44 79 29.",
+    extra: "Cuire, c'est Caluire, pas Lyon. Beaucoup cherchent « plombier Cuire » : même entreprise, même ligne 06 67 44 79 29, déplacements sur Lyon.",
     quartiers: ["Cuire-le-Bas", "vers le bourg", "vers la Saône"],
     neighbors: [
       { slug: "saint-clair", label: "Saint-Clair" },

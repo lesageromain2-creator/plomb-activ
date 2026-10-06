@@ -40,6 +40,6 @@ export const relatedLinks = {
   chauffage: [
     { href: "/chauffe-eau", label: "Remplacement chauffe-eau" },
     { href: "/climatisation", label: "Climatisation split" },
-    { href: "/contact", label: "Contacter l'atelier" },
+    { href: "/contact", label: "Nous contacter" },
   ],
 };

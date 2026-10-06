@@ -34,7 +34,7 @@ export function generateMetadata({ params }: { params: { ville: string } }) {
   return pageMeta(
     `/plombier/${v.slug}`,
     `Plombier ${v.name} (${v.cp}) | Fuite, débouchage, chauffe-eau`,
-    `Plombier à ${v.name} (${v.cp}) : fuite, débouchage, WC, chauffe-eau, chaudière. PLOMB'ACTIV, atelier Caluire-et-Cuire. ${v.driveMin}. ${brand.phone}.`
+    `Plombier à ${v.name} (${v.cp}) : fuite, débouchage, WC, chauffe-eau, chaudière. PLOMB'ACTIV se déplace depuis Caluire-et-Cuire. ${v.driveMin}. ${brand.phone}.`
   );
 }
 
@@ -51,7 +51,7 @@ export default function VillePage({ params }: { params: { ville: string } }) {
         name: `Quel plombier appeler à ${v.name} ?`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `PLOMB'ACTIV au ${brand.phone}. Atelier 130 Grande rue de Saint Clair, 69300 Caluire-et-Cuire. Intervention à ${v.name} (${v.cp}). ${v.driveMin}.`,
+          text: `PLOMB'ACTIV au ${brand.phone}. Interventions à ${v.name} (${v.cp}), depuis Caluire-et-Cuire. ${v.driveMin}.`,
         },
       },
       {
@@ -67,7 +67,7 @@ export default function VillePage({ params }: { params: { ville: string } }) {
         name: `Intervenez-vous 24h/24 à ${v.name} ?`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Joignable 7j/7 pour les urgences. Atelier du lundi au vendredi, 8h-18h. On ne promet pas 30 minutes ni un standard 24h/24 : on dit si on peut passer.",
+          text: "Joignable 7j/7 pour les urgences. Travaux programmés en semaine, 8h-18h. On ne promet pas 30 minutes ni un standard 24h/24 : on dit si on peut passer.",
         },
       },
     ],
@@ -132,7 +132,7 @@ export default function VillePage({ params }: { params: { ville: string } }) {
                 ))}
                 <li>
                   <Link href="/plombier-caluire-et-cuire" className="rounded-full bg-white border border-black/10 px-3 py-1 text-secondary">
-                    Atelier Caluire
+                    Plombier Caluire
                   </Link>
                 </li>
               </ul>

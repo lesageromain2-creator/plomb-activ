@@ -24,7 +24,7 @@ export const fuiteEau: CommercialContent = {
   sections: [
     {
       h2: "Quand appeler pour une fuite",
-      body: "Compteur qui tourne, tache au plafond, humidité au sol, vanne qui goutte, radiateur qui suinte : plus on attend, plus le dégât s'étend. Coupez l'arrivée générale si vous la trouvez, puis appelez l'atelier.",
+      body: "Compteur qui tourne, tache au plafond, humidité au sol, vanne qui goutte, radiateur qui suinte : plus on attend, plus le dégât s'étend. Coupez l'arrivée générale si vous la trouvez, puis appelez.",
       bullets: ["Fuite sous évier ou sous baignoire", "Fuite encastrée (PER, cuivre)", "Colonne, plafond, joint de chasse", "Dégât des eaux en logement ou commerce"],
     },
     {
@@ -38,7 +38,7 @@ export const fuiteEau: CommercialContent = {
   ],
   faqs: [
     { q: "Que faire avant l'arrivée du plombier ?", a: "Coupez l'eau au compteur ou à la vanne d'arrêt si vous y avez accès. Éloignez les meubles, photographiez les dégâts pour l'assurance." },
-    { q: "Intervenez-vous le week-end ?", a: "PLOMB'ACTIV est joignable 7j/7 pour les urgences. L'atelier est ouvert du lundi au vendredi, 8h à 18h, pour les travaux programmés." },
+    { q: "Intervenez-vous le week-end ?", a: "PLOMB'ACTIV est joignable 7j/7 pour les urgences. Les travaux programmés se font en semaine, 8h à 18h." },
   ],
 };
 
@@ -83,7 +83,7 @@ export const chauffeEau: CommercialContent = {
   lead: "Plus d'eau chaude, groupe de sécurité qui fuit, ballon en fin de vie : diagnostic, remplacement mural ou au sol, brasage et mise en eau.",
   image: photos.cumulus,
   imageAlt: "Pose de ballon d'eau chaude sanitaire Atlantic sur support, Caluire",
-  delayNote: "Chantier programmé en semaine (atelier 8h-18h). Panne d'eau chaude : on voit si un créneau d'astreinte tient.",
+  delayNote: "Chantier programmé en semaine (8h-18h). Panne d'eau chaude : on voit si un créneau d'astreinte tient.",
   priceNote: "Le marché public cite souvent 800 à 2 500 € fourniture + pose selon capacité et accès. Devis PLOMB'ACTIV, gratuit hors urgence.",
   crumbs: [{ name: "Chauffe-eau", path: "/chauffe-eau" }],
   related: [
@@ -165,7 +165,7 @@ export const climatisation: CommercialContent = {
   ],
   faqs: [
     { q: "Faites-vous la climatisation ?", a: "Oui : pose de split, mise en service, entretien et dépannage. PAC : orientation aides si le projet le justifie." },
-    { q: "Intervenez-vous à Caluire ?", a: "Oui. L'atelier est à Caluire-et-Cuire. Lyon et communes limitrophes aussi." },
+    { q: "Intervenez-vous à Caluire ?", a: "Oui. PLOMB'ACTIV se déplace à Caluire-et-Cuire, sur Lyon et les communes limitrophes." },
   ],
 };
 
@@ -174,7 +174,7 @@ export const plombierCaluire: CommercialContent = {
   description: `Plombier à Caluire-et-Cuire, 130 Grande rue de Saint Clair. Fuite, débouchage, chauffe-eau, chaudière, clim. Appelez ${phone}.`,
   h1: "Plombier à Caluire-et-Cuire",
   kicker: "Artisan local",
-  lead: "Établissement au 130 Grande rue de Saint Clair (QVR5+49). Vous joignez l'atelier qui se déplace, pas un standard national.",
+  lead: "Basé à Caluire-et-Cuire (130 Grande rue de Saint Clair). Vous joignez le plombier qui se déplace sur Lyon, pas un standard national.",
   image: photos.interventionLyon,
   imageAlt: "Matériel PLOMB'ACTIV prêt pour une intervention depuis Caluire-et-Cuire",
   crumbs: [{ name: "Plombier Caluire-et-Cuire", path: "/plombier-caluire-et-cuire" }],
@@ -186,7 +186,7 @@ export const plombierCaluire: CommercialContent = {
   ],
   sections: [
     {
-      h2: "Un atelier dans la commune, pas un réseau 24h/24",
+      h2: "Un plombier local, pas un réseau 24h/24",
       body: "PLOMB'ACTIV est au 130 Grande rue de Saint Clair (69300). Les pages « plombier Caluire urgence 30 min » que vous voyez en tête de Google sont souvent des plateformes nationales. Ici : SIRET 939 379 699 00019, photos de chantier, 8 extraits d'avis Google sur le site, ligne 06 67 44 79 29.",
       bullets: [
         "Saint-Clair, Cuire, Montessuy, Bourg, Vassieux",
@@ -246,7 +246,7 @@ export const rechercheDeFuite: CommercialContent = {
   image: photos.degatEaux,
   imageAlt: "Plafond dégradé, recherche de fuite et dégât des eaux",
   showUrgence: true,
-  delayNote: "Fuite active : joignable 7j/7. Fuite lente : rendez-vous atelier en semaine.",
+  delayNote: "Fuite active : joignable 7j/7. Fuite lente : rendez-vous en semaine.",
   priceNote: "Le coût dépend de l'accessibilité (encastré, dalle, colonne). Devis expliqué avant d'ouvrir un mur, hors urgence vitale.",
   crumbs: [{ name: "Recherche de fuite", path: "/recherche-de-fuite" }],
   related: [
@@ -267,7 +267,7 @@ export const rechercheDeFuite: CommercialContent = {
   ],
   faqs: [
     { q: "Faut-il casser le carrelage ?", a: "Pas systématiquement. On commence par le non destructif. Si un ouverture est nécessaire, on vous le dit avant." },
-    { q: "Caluire et Villeurbanne ?", a: "Oui. Base à Saint Clair. Villeurbanne, Lyon, Rillieux et communes dans un rayon réaliste depuis l'atelier." },
+    { q: "Caluire et Villeurbanne ?", a: "Oui. Déplacements à Villeurbanne, Lyon, Rillieux et Caluire-et-Cuire." },
   ],
 };
 
@@ -295,7 +295,7 @@ export const remplacementWc: CommercialContent = {
     },
     {
       h2: "Déroulement",
-      body: "Protection du sol, dépose, contrôle de la sortie (sortie horizontale ou verticale), pose, silicone si besoin, essai chasse. Propre, comme sur les photos d'atelier.",
+      body: "Protection du sol, dépose, contrôle de la sortie (sortie horizontale ou verticale), pose, silicone si besoin, essai chasse. Propre, comme sur les photos de chantier.",
     },
   ],
   faqs: [
@@ -376,11 +376,11 @@ export const canalisation: CommercialContent = {
   description: `Canalisation bouchée, évier, douche, colonne. Débouchage mécanique à Caluire-et-Cuire, Rillieux, Lyon. ${phone}. Pas de délai magique.`,
   h1: "Canalisation bouchée",
   kicker: "Débouchage",
-  lead: "Eau qui descend mal, glouglou, reflux : on diagnostique siphon, WC ou colonne avant de forcer. Atelier Caluire, déplacements Rillieux et Grand Lyon nord.",
+  lead: "Eau qui descend mal, glouglou, reflux : on diagnostique siphon, WC ou colonne avant de forcer. Déplacements Caluire, Rillieux et Lyon.",
   image: photos.wc,
   imageAlt: "Évacuation et pose WC, débouchage canalisation",
   showUrgence: true,
-  delayNote: "Reflux WC : joignable 7j/7. Lentille chronique : rendez-vous atelier.",
+  delayNote: "Reflux WC : joignable 7j/7. Lentille chronique : rendez-vous en semaine.",
   priceNote: "Selon accès (siphon vs colonne). Pas de forfait unique copié d'un site national.",
   crumbs: [{ name: "Canalisation", path: "/canalisation" }],
   related: [

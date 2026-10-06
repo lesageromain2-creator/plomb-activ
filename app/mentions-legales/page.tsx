@@ -32,7 +32,7 @@ export default function MentionsLegalesPage() {
           réseau Vercel.
         </p>
         <p>
-          Les photos publiées sont des chantiers de l&apos;atelier. Toute reproduction du contenu sans accord est
+          Les photos publiées sont des chantiers de l&apos;entreprise. Toute reproduction du contenu sans accord est
           interdite.
         </p>
       </div>

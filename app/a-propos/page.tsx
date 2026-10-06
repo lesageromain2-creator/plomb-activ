@@ -7,15 +7,15 @@ import { photos } from "@/lib/photos";
 
 export const metadata = pageMeta(
   "/a-propos",
-  "Atelier à Caluire-et-Cuire",
-  `PLOMB'ACTIV, plombier chauffagiste à Caluire-et-Cuire. SIRET ${brand.siret}. Atelier 130 Grande rue de Saint Clair. ${brand.phone}.`
+  "PLOMB'ACTIV, plombier à Lyon et Caluire",
+  `PLOMB'ACTIV, plombier chauffagiste. Interventions à domicile sur Lyon et Caluire-et-Cuire. SIRET ${brand.siret}. ${brand.phone}.`
 );
 
 export default function AProposPage() {
   return (
     <div className="min-h-screen bg-cream">
       <PageHero
-        title="L'atelier PLOMB'ACTIV"
+        title="PLOMB'ACTIV"
         subtitle="Entreprise à Caluire-et-Cuire. Plomberie, chauffage gaz, climatisation split, urgences."
         kicker="À propos"
         imageSrc={photos.artisan}
@@ -36,11 +36,11 @@ export default function AProposPage() {
               {brand.siret}, basée au {brand.address}.
             </p>
             <p>
-              Pas de plateforme, pas de prénom mis en avant sur le site : vous appelez l&apos;atelier. Fiche Google Business
+              Pas de plateforme, pas de prénom mis en avant sur le site : vous appelez le plombier qui se déplace. Fiche Google Business
               validée. Photos de chantiers (ballon Atlantic, chaudière, clim Fujitsu, WC, réseaux) prises sur site.
             </p>
             <p>
-              Horaires atelier : du lundi au vendredi, 8h à 18h. Urgences : joignable 7j/7. On n&apos;affiche pas « 24h/24 »
+              Interventions en semaine, 8h à 18h. Urgences : joignable 7j/7. On n&apos;affiche pas « 24h/24 »
               ni « 30 minutes ».
             </p>
             <CtaRow />

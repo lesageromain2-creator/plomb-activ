@@ -59,7 +59,7 @@ export const conseils = [
       "Aérez, n'actionnez pas d'interrupteur, n'allumez pas une flamme. Si l'odeur est nette, sortez et appelez le 04 72 11 13 13 (Urgence sécurité gaz GRDF) en plus du plombier.",
       "Coupez l'arrivée gaz si vous savez où est le robinet, sans forcer.",
       "PLOMB'ACTIV intervient sur chaudière gaz (brûleur, organe, étanchéité). On n'est pas le service d'urgence réseau GRDF : les deux numéros peuvent se succéder.",
-      "Atelier Caluire : 06 67 44 79 29.",
+      "PLOMB'ACTIV, Caluire : 06 67 44 79 29.",
     ],
   },
   {
@@ -83,7 +83,7 @@ export const conseils = [
       "Un goutte-à-goutte use le siège et fait exploser la facture d'eau. Coupez l'eau au point d'eau ou à la vanne d'arrêt.",
       "Souvent une cartouche céramique. Parfois le corps du mitigeur est mort : remplacement.",
       "On intervient cuisine, salle de bains, douche. Devis avant si ce n'est pas une urgence.",
-      "06 67 44 79 29, atelier à Caluire-et-Cuire.",
+      "06 67 44 79 29, plombier à Caluire-et-Cuire, déplacements Lyon.",
     ],
   },
   {
@@ -117,7 +117,7 @@ export const conseils = [
     body: [
       "Coupez l'arrivée du WC (souvent à gauche du réservoir). Un filet continu use l'eau et le mécanisme.",
       "Flotteur, clapet, joint de mécanisme : parfois un remplacement de pièce, parfois tout le WC (page remplacement).",
-      "Atelier Saint-Clair : 06 67 44 79 29.",
+      "PLOMB'ACTIV : 06 67 44 79 29.",
     ],
   },
   {
@@ -127,7 +127,7 @@ export const conseils = [
     h1: "Vanne d'arrêt bloquée",
     body: [
       "Ne forcez pas une vanne collée : le col peut casser. Coupez plus haut (compteur) si vous y avez accès.",
-      "Remplacement vanne d'arrêt, papillon, après compteur : geste d'atelier fréquent à Caluire et dans les Monts d'Or.",
+      "Remplacement vanne d'arrêt, papillon, après compteur : intervention fréquente à Caluire, Lyon et dans les Monts d'Or.",
       "06 67 44 79 29.",
     ],
   },

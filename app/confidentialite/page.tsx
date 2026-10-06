@@ -22,7 +22,7 @@ export default function ConfidentialitePage() {
           le temps du suivi commercial, puis suppression ou archivage limité aux obligations comptables.
         </p>
         <p>
-          Destinataire : l&apos;atelier {brand.name} ({brand.email}, {brand.phone}). Hébergeur du site : Vercel.
+          Destinataire : {brand.name} ({brand.email}, {brand.phone}). Hébergeur du site : Vercel.
         </p>
         <p>
           Aucun cookie publicitaire n&apos;est déposé par nos soins pour du reciblage. Les journaux techniques de

@@ -12,7 +12,7 @@ export const brand = {
   plusCode: "QVR5+49 Caluire-et-Cuire",
   city: "Caluire-et-Cuire",
   postalCode: "69300",
-  hours: "Urgences : joignable 7j/7. Atelier du lundi au vendredi, 8h à 18h",
+  hours: "Urgences : joignable 7j/7. Interventions en semaine, 8h à 18h",
   hoursShort: "Astreinte dépannage 7j/7",
   siret: "939 379 699 00019",
   naf: "4322G, travaux d'installation d'eau et de gaz",
@@ -70,16 +70,16 @@ export const zone = {
 };
 
 export const localLyon = {
-  badge: "Atelier à Saint-Clair · Caluire-et-Cuire",
+  badge: "Plombier · Caluire-et-Cuire et Lyon",
   title: "Vous parlez à celui qui vient chez vous",
   text:
-    "PLOMB'ACTIV, c'est un atelier au 130 Grande rue de Saint Clair, pas un call center. Fuite, débouchage, ballon, chaudière ou clim : un seul numéro, des explications claires, un chantier laissé propre.",
+    "PLOMB'ACTIV intervient à domicile sur Lyon et Caluire-et-Cuire. Fuite, débouchage, ballon, chaudière ou clim : un seul numéro, des explications claires, un chantier laissé propre.",
   sub:
     "Photos de vrais chantiers sur le site. Note Google 5,0/5 (8 avis publiés ici). Devis gratuit hors urgence. On ne promet pas 30 minutes : on dit si on peut passer.",
 };
 
 export const equipeConfiance = {
-  title: "Chantiers réalisés, photos de l'atelier",
+  title: "Chantiers réalisés, photos d'intervention",
   intro:
     "Ballons Atlantic, chaudière gaz, brasage cuivre, WC suspendu, charge frigorifique Fujitsu : le matériel et les finitions tels qu'ils sont faits sur site.",
   bullets: [
@@ -99,17 +99,17 @@ export const equipeConfiance = {
 };
 
 export const home = {
-  heroKicker: "Plombier à Caluire-et-Cuire · Lyon · Rillieux",
-  heroTitle: "L'atelier qui se déplace,",
-  heroTitleAccent: "pas un standard",
+  heroKicker: "Plombier à Lyon · Caluire-et-Cuire · Rillieux",
+  heroTitle: "Un plombier qui se déplace",
+  heroTitleAccent: "sur Lyon",
   heroLead:
-    "Fuite, WC, chauffe-eau, chaudière ou clim : vous joignez PLOMB'ACTIV au 06 67 44 79 29. 130 Grande rue de Saint Clair. Joignable 7j/7 pour les urgences. Devis gratuit, sans engagement.",
+    "Fuite, WC, chauffe-eau, chaudière ou clim : PLOMB'ACTIV intervient à domicile. Joignable au 06 67 44 79 29, 7j/7 pour les urgences. Devis gratuit, sans engagement.",
   heroQuote:
     "C'est rare de croiser des artisans aussi sérieux. Un vrai pro, digne de confiance.",
   heroQuoteBy: "Avis Google · chauffe-eau",
   stats: [
     { value: "5,0/5", label: "Sur Google", detail: "8 avis sur le site" },
-    { value: "Saint-Clair", label: "L'atelier", detail: "69300 Caluire" },
+    { value: "Lyon", label: "Déplacements", detail: "Caluire et métropole" },
     { value: "7j/7", label: "Urgences", detail: "On dit si on peut passer" },
     { value: "Devis", label: "Gratuit", detail: "Hors urgence vitale" },
   ],
@@ -160,13 +160,13 @@ export const home = {
   steps: [
     {
       n: "01",
-      title: "Vous appelez l'atelier",
+      title: "Vous appelez",
       text: "Décrivez ce qui se passe, la commune, si l'eau coule encore. Ligne directe : pas d'attente en plateforme.",
     },
     {
       n: "02",
       title: "On vous dit si on peut passer",
-      text: "Créneau réel depuis Saint-Clair. Diagnostic sur place, isolation du réseau si besoin. Pas de délai affiché en minutes.",
+      text: "Créneau réel selon le trajet. Diagnostic sur place, isolation du réseau si besoin. Pas de délai affiché en minutes.",
     },
     {
       n: "03",
