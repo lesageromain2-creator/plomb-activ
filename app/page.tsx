@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { brand, home, localLyon, zone } from "@/lib/siteCopy";
-import { photos } from "@/lib/photos";
+import { brand, home, localLyon } from "@/lib/siteCopy";
+import { photos, gallery } from "@/lib/photos";
 import GoogleReviewsCarousel from "@/components/GoogleReviewsCarousel";
 import DevisForm from "@/components/DevisForm";
 import { faqJsonLd } from "@/lib/seo";
@@ -35,17 +35,24 @@ export default function HomePage() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/25 to-black/10 md:hidden" aria-hidden />
         <div className="hero-copy relative z-10 w-full px-4 pt-16 pb-10 md:flex md:flex-col md:justify-center md:px-10 lg:px-14 md:py-12 md:bg-primary">
-          <p className="text-secondary font-extrabold uppercase tracking-[0.18em] text-sm mb-3 drop-shadow">
+          <p className="text-secondary font-extrabold uppercase tracking-[0.18em] text-xs sm:text-sm mb-3 drop-shadow">
             {home.heroKicker}
           </p>
-          <h1 className="font-heading text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-extrabold tracking-tight max-w-md leading-[0.95] drop-shadow-lg">
+          <h1 className="font-heading text-4xl sm:text-5xl md:text-5xl lg:text-[3.35rem] font-extrabold tracking-tight max-w-lg leading-[0.98] drop-shadow-lg">
             {home.heroTitle}
             <span className="block text-secondary">{home.heroTitleAccent}</span>
           </h1>
           <p className="mt-5 text-base md:text-lg text-white max-w-lg leading-relaxed bg-black/45 md:bg-white/10 border-l-4 border-secondary pl-4 py-3 rounded-r-md">
             {home.heroLead}
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
+          <blockquote className="mt-5 max-w-lg text-sm md:text-base text-white/90 italic leading-relaxed">
+            « {home.heroQuote} »
+            <footer className="mt-1 not-italic text-xs uppercase tracking-wider text-secondary font-semibold">
+              {home.heroQuoteBy}
+            </footer>
+          </blockquote>
+          <p className="mt-4 text-sm text-white/80">{brand.address}</p>
+          <div className="mt-7 flex flex-wrap gap-3">
             <a
               href={brand.phoneHref}
               data-cta="tel"
@@ -67,10 +74,19 @@ export default function HomePage() {
               Urgence plomberie
             </Link>
           </div>
-          <div className="mt-8 flex flex-wrap gap-2 text-sm">
-            <span className="rounded-full bg-black/55 md:bg-white/10 border border-white/25 px-3 py-1.5 font-medium">Entreprise locale</span>
-            <span className="rounded-full bg-black/55 md:bg-white/10 border border-white/25 px-3 py-1.5 font-medium">Urgence 7j/7</span>
-            <span className="rounded-full bg-black/55 md:bg-white/10 border border-white/25 px-3 py-1.5 font-medium">Devis gratuit</span>
+          <div className="mt-7 flex flex-wrap gap-2 text-sm">
+            <span className="rounded-full bg-black/55 md:bg-white/10 border border-white/25 px-3 py-1.5 font-medium">
+              Atelier Saint-Clair
+            </span>
+            <span className="rounded-full bg-black/55 md:bg-white/10 border border-white/25 px-3 py-1.5 font-medium">
+              Urgences 7j/7
+            </span>
+            <span className="rounded-full bg-black/55 md:bg-white/10 border border-white/25 px-3 py-1.5 font-medium">
+              Devis gratuit
+            </span>
+            <span className="rounded-full bg-black/55 md:bg-white/10 border border-white/25 px-3 py-1.5 font-medium">
+              5,0/5 Google
+            </span>
           </div>
         </div>
       </section>
@@ -89,12 +105,12 @@ export default function HomePage() {
 
       <section className="py-16 px-4 bg-cream">
         <div className="max-w-6xl mx-auto">
-          <p className="text-center text-xs font-bold uppercase tracking-widest text-secondary mb-2">Nos prestations</p>
+          <p className="text-center text-xs font-bold uppercase tracking-widest text-secondary mb-2">Prestations</p>
           <h2 className="font-heading text-3xl md:text-4xl text-primary text-center font-bold mb-3">
-            Débouchage, fuite et installations
+            Ce pour quoi on se déplace
           </h2>
           <p className="text-center text-primary/70 max-w-2xl mx-auto mb-10">
-            Du dépannage d&apos;urgence à la pose complète : réseaux, sanitaires, ECS, chaudière, climatisation.
+            Urgence le soir, ballon qui lâche, WC, chaudière, clim : chaque geste a sa page, avec des photos de chantier.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {home.serviceCards.map((c) => (
@@ -134,11 +150,11 @@ export default function HomePage() {
             <p className="text-gray-700 leading-relaxed">{localLyon.text}</p>
             <p className="mt-4 text-gray-700 leading-relaxed">{localLyon.sub}</p>
             <ul className="mt-6 space-y-2 text-sm text-gray-800">
-              <li>Recherche et réparation de fuites, dégât des eaux</li>
-              <li>Ballon ECS, groupe de sécurité, cumulus Atlantic</li>
-              <li>Chaudière gaz (dont Vaillant), entretien et remplacement</li>
-              <li>Réseaux cuivre et PER, évacuation PVC, brasage</li>
-              <li>Split inverter : pose, charge, mise en service</li>
+              <li>Fuite, recherche de fuite, dégât des eaux</li>
+              <li>Débouchage, WC, robinetterie</li>
+              <li>Chauffe-eau, groupe de sécurité</li>
+              <li>Chaudière gaz, climatisation split</li>
+              <li>Réseaux cuivre et PER, chantier propre</li>
             </ul>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href={brand.phoneHref} className="rounded-lg bg-secondary text-white px-6 py-3 font-bold">
@@ -155,7 +171,10 @@ export default function HomePage() {
       <section className="py-16 px-4 bg-primary text-white">
         <div className="max-w-6xl mx-auto">
           <p className="text-center text-xs font-bold uppercase tracking-widest text-secondary mb-2">Processus</p>
-          <h2 className="font-heading text-3xl text-center font-bold mb-10">Votre intervention en 3 étapes</h2>
+          <h2 className="font-heading text-3xl text-center font-bold mb-3">Comment ça se passe</h2>
+          <p className="text-center text-white/75 max-w-xl mx-auto mb-10 text-sm">
+            Simple, lisible, sans forfait surprise. L&apos;atelier est à Caluire : le délai dépend du trajet, on le dit au téléphone.
+          </p>
           <div className="grid md:grid-cols-3 gap-8">
             {home.steps.map((s) => (
               <div key={s.n} className="border border-white/15 rounded-2xl p-6 bg-white/5">
@@ -172,22 +191,18 @@ export default function HomePage() {
 
       <section id="gallery" className="py-16 px-4 bg-cream">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-heading text-3xl text-primary mb-2 text-center font-bold">Réalisations sur site</h2>
+          <h2 className="font-heading text-3xl text-primary mb-2 text-center font-bold">Le travail, tel qu&apos;il est fait</h2>
           <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
-            Photos de chantiers PLOMB&apos;ACTIV, {zone.cities.slice(0, 5).join(", ")}.
+            Pas de banque d&apos;images. Cumulus, chaudière, WC, clim, brasage : chantiers PLOMB&apos;ACTIV autour de Caluire.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            {[
-              photos.reseaux,
-              photos.wcAvantApres,
-              photos.cumulus,
-              photos.clim,
-              photos.chaudiere,
-              photos.interventionLyon,
-            ].map((src) => (
-              <div key={src} className="relative aspect-[4/3] overflow-hidden rounded-xl">
-                <Image src={src} alt="Chantier PLOMB'ACTIV" fill className="object-cover" />
-              </div>
+            {gallery.slice(0, 6).map((img) => (
+              <figure key={img.src} className="relative aspect-[4/3] overflow-hidden rounded-xl bg-white">
+                <Image src={img.src} alt={img.alt} fill className="object-cover" />
+                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 to-transparent p-3 text-xs text-white leading-snug">
+                  {img.alt}
+                </figcaption>
+              </figure>
             ))}
           </div>
           <p className="mt-8 text-center text-sm text-gray-700">
@@ -214,10 +229,10 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-secondary mb-2">Contact</p>
-            <h2 className="font-heading text-3xl text-primary font-bold mb-4">Demandez votre devis gratuit</h2>
+            <h2 className="font-heading text-3xl text-primary font-bold mb-4">Racontez-nous le chantier</h2>
             <p className="text-gray-700 leading-relaxed mb-6">
-              Sans engagement. Précisez la nature du désordre (fuite, ECS, chaudière, clim) et la commune. Pour une urgence,
-              appelez le {brand.phone}.
+              Un message suffit : commune, ce qui fuit ou ce qui est à changer. Pour une urgence, le plus simple reste d&apos;appeler
+              le {brand.phone}. Devis gratuit, sans engagement.
             </p>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image src={photos.chalumeau} alt="Poste de brasage oxyacétylénique PLOMB'ACTIV" fill className="object-cover" />
@@ -280,9 +295,9 @@ export default function HomePage() {
 
       <section className="py-14 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-heading text-3xl text-primary text-center font-bold mb-3">Un besoin, une page Google</h2>
+          <h2 className="font-heading text-3xl text-primary text-center font-bold mb-3">Vous cherchez un geste précis</h2>
           <p className="text-center text-gray-600 max-w-2xl mx-auto mb-8 text-sm">
-            Chaque recherche (fuite, débouchage, chauffe-eau, Caluire, Rillieux…) a son URL. Pas de page unique qui absorbe tout.
+            Fuite, débouchage, Caluire, Rillieux : ouvrez la page qui correspond. Un besoin, un interlocuteur, le même atelier.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
@@ -313,9 +328,9 @@ export default function HomePage() {
       </section>
 
       <section className="py-16 px-4 bg-secondary text-white text-center">
-        <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-3">Besoin d&apos;un plombier ?</h2>
+        <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-3">On est à Saint-Clair. Appelez.</h2>
         <p className="mb-6 text-white/95 max-w-xl mx-auto">
-          {brand.name} · {brand.address} · fiche Google Business en ligne
+          {brand.address} · {brand.hours}
         </p>
         <a href={brand.phoneHref} className="inline-block rounded-lg bg-primary text-white px-10 py-4 text-lg font-bold">
           Appeler {brand.phone}

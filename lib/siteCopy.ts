@@ -70,12 +70,12 @@ export const zone = {
 };
 
 export const localLyon = {
-  badge: "Artisan local · Caluire-et-Cuire",
-  title: "Un interlocuteur unique, du diagnostic à la mise en eau",
+  badge: "Atelier à Saint-Clair · Caluire-et-Cuire",
+  title: "Vous parlez à celui qui vient chez vous",
   text:
-    "PLOMB'ACTIV intervient sur vos réseaux d'eau froide / eau chaude sanitaire, gaz et chauffage. Établissement à Caluire-et-Cuire (130 Grande rue de Saint Clair, QVR5+49). Pas de standard : vous joignez l'atelier qui se déplace.",
+    "PLOMB'ACTIV, c'est un atelier au 130 Grande rue de Saint Clair, pas un call center. Fuite, débouchage, ballon, chaudière ou clim : un seul numéro, des explications claires, un chantier laissé propre.",
   sub:
-    "Collecteurs PER, cuivre, évacuation PVC, ballon ECS, chaudière gaz, split inverter. Devis avant ouverture du chantier. Fiche Google Business validée, 5,0/5.",
+    "Photos de vrais chantiers sur le site. Note Google 5,0/5 (8 avis publiés ici). Devis gratuit hors urgence. On ne promet pas 30 minutes : on dit si on peut passer.",
 };
 
 export const equipeConfiance = {
@@ -99,16 +99,19 @@ export const equipeConfiance = {
 };
 
 export const home = {
-  heroKicker: "Plombier Caluire-et-Cuire et Lyon",
-  heroTitle: "Le plombier",
-  heroTitleAccent: "qu'il vous faut",
+  heroKicker: "Plombier à Caluire-et-Cuire · Lyon · Rillieux",
+  heroTitle: "L'atelier qui se déplace,",
+  heroTitleAccent: "pas un standard",
   heroLead:
-    "Urgence plomberie, débouchage, fuite d'eau, chaudière ou climatisation. PLOMB'ACTIV intervient rapidement 7j/7 sur Caluire et Lyon. Devis gratuit, sans engagement.",
+    "Fuite, WC, chauffe-eau, chaudière ou clim : vous joignez PLOMB'ACTIV au 06 67 44 79 29. 130 Grande rue de Saint Clair. Joignable 7j/7 pour les urgences. Devis gratuit, sans engagement.",
+  heroQuote:
+    "C'est rare de croiser des artisans aussi sérieux. Un vrai pro, digne de confiance.",
+  heroQuoteBy: "Avis Google · chauffe-eau",
   stats: [
-    { value: "5,0/5", label: "Google Business", detail: "8 avis vérifiés" },
-    { value: "7j/7", label: "Dépannage", detail: "Caluire et métropole" },
-    { value: "06 67 44 79 29", label: "Ligne directe", detail: "PLOMB'ACTIV" },
-    { value: "Devis", label: "Gratuit", detail: "Sans engagement" },
+    { value: "5,0/5", label: "Sur Google", detail: "8 avis sur le site" },
+    { value: "Saint-Clair", label: "L'atelier", detail: "69300 Caluire" },
+    { value: "7j/7", label: "Urgences", detail: "On dit si on peut passer" },
+    { value: "Devis", label: "Gratuit", detail: "Hors urgence vitale" },
   ],
   serviceCards: [
     {
@@ -142,7 +145,7 @@ export const home = {
     {
       title: "Réseaux cuivre et PER",
       desc: "Collecteurs, nourrices, évacuation PVC, eau potable. Brasage oxyacétylénique, sertissage, épreuve.",
-      href: "/services",
+      href: "/realisations",
       tag: "Installation",
       image: "/images/chantier/reseaux.jpg",
     },
@@ -157,18 +160,18 @@ export const home = {
   steps: [
     {
       n: "01",
-      title: "Vous appelez",
-      text: "Décrivez le sinistre ou le chantier : fuite, ECS, chaudière, clim. Adresse sur Caluire, Lyon ou commune limitrophe.",
+      title: "Vous appelez l'atelier",
+      text: "Décrivez ce qui se passe, la commune, si l'eau coule encore. Ligne directe : pas d'attente en plateforme.",
     },
     {
       n: "02",
-      title: "Diagnostic sur site",
-      text: "PLOMB'ACTIV se déplace, isole si besoin, identifie la panne (groupe de sécurité, vanne, brûleur, carte, fuite).",
+      title: "On vous dit si on peut passer",
+      text: "Créneau réel depuis Saint-Clair. Diagnostic sur place, isolation du réseau si besoin. Pas de délai affiché en minutes.",
     },
     {
       n: "03",
-      title: "Réparation et mise en eau",
-      text: "Devis avant travaux hors urgence vitale. Réparation, remplacement, épreuve, remise en service. Chantier propre.",
+      title: "Réparation, chantier propre",
+      text: "Devis avant travaux hors urgence. Réparation ou remplacement, mise en eau, explications. Vous gardez le même interlocuteur.",
     },
   ],
 };
